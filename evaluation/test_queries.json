@@ -1,0 +1,121 @@
+[
+  {
+    "id": "SEM-01",
+    "category": "SEM",
+    "query": "Find tickets related to database connection timeout issues",
+    "expected_agents": ["vector"],
+    "notes": "Pure semantic ticket search — finds similar descriptions regardless of exact wording."
+  },
+  {
+    "id": "SEM-02",
+    "category": "SEM",
+    "query": "What architectural decisions mention circuit breaker or fallback patterns?",
+    "expected_agents": ["vector"],
+    "notes": "Semantic search over ADR documents."
+  },
+  {
+    "id": "SEM-03",
+    "category": "SEM",
+    "query": "Find postmortems where the root cause was an external dependency failure",
+    "expected_agents": ["vector"],
+    "notes": "Semantic retrieval over postmortem collection — varied vocabulary across documents."
+  },
+  {
+    "id": "SEM-04",
+    "category": "SEM",
+    "query": "Which tickets describe intermittent failures under high concurrent load?",
+    "expected_agents": ["vector"],
+    "notes": "Semantic match across bug and incident ticket descriptions."
+  },
+  {
+    "id": "REL-01",
+    "category": "REL",
+    "query": "Which teams are responsible for components that depend on the auth-gateway?",
+    "expected_agents": ["graph"],
+    "notes": "Graph traversal: Component DEPENDS_ON → Team RESPONSIBLE_FOR."
+  },
+  {
+    "id": "REL-02",
+    "category": "REL",
+    "query": "Who are the top contributors to database-type components by commit count?",
+    "expected_agents": ["graph"],
+    "notes": "Graph query: Developer CONTRIBUTED_TO Component filtered by type."
+  },
+  {
+    "id": "REL-03",
+    "category": "REL",
+    "query": "Which components have the deepest transitive dependency chains?",
+    "expected_agents": ["graph"],
+    "notes": "Multi-hop DEPENDS_ON traversal — key graph relationship."
+  },
+  {
+    "id": "STR-01",
+    "category": "STR",
+    "query": "Which components have a deployment rollback rate above 20% in the last 6 months?",
+    "expected_agents": ["sql"],
+    "notes": "Aggregation with status filter and date range over deployments table."
+  },
+  {
+    "id": "STR-02",
+    "category": "STR",
+    "query": "Show sprint velocity trends for the backend department over the last 10 sprints.",
+    "expected_agents": ["sql"],
+    "notes": "Time-series aggregation over sprint_metrics joined with team data."
+  },
+  {
+    "id": "STR-03",
+    "category": "STR",
+    "query": "Which components show 4 or more consecutive months of declining test coverage?",
+    "expected_agents": ["sql"],
+    "notes": "Window function or lag-based coverage trend detection over test_coverage table."
+  },
+  {
+    "id": "MIX-01",
+    "category": "MIX",
+    "query": "What teams own components with the highest bug reopen rates, and what do their ADRs say about quality practices?",
+    "expected_agents": ["sql", "vector"],
+    "notes": "Bug reopen aggregation via SQL; ADR content via Vector semantic search."
+  },
+  {
+    "id": "MIX-02",
+    "category": "MIX",
+    "query": "Which components have the most P1 incidents, and who owns them in the knowledge graph?",
+    "expected_agents": ["sql", "graph"],
+    "notes": "Incident counts via SQL; ownership traversal via Graph."
+  },
+  {
+    "id": "MIX-03",
+    "category": "MIX",
+    "query": "Find postmortems mentioning cascading failures and show the deployment rollback rate for the involved components.",
+    "expected_agents": ["vector", "sql"],
+    "notes": "Semantic postmortem search + structured deployment metrics."
+  },
+  {
+    "id": "CON-01",
+    "category": "CON",
+    "query": "How many P1 incidents in Q1 2024 involved components with more than 3 downstream dependencies?",
+    "expected_agents": ["graph", "sql"],
+    "notes": "Dependency fan-out via Graph; incident count and date filter via SQL."
+  },
+  {
+    "id": "CON-02",
+    "category": "CON",
+    "query": "Show me components flagged in postmortems and also with a high rollback rate — do the two lists agree?",
+    "expected_agents": ["vector", "sql"],
+    "notes": "Cross-source consistency check: semantic postmortem references vs. structured deployment data."
+  },
+  {
+    "id": "EDGE-01",
+    "category": "EDGE",
+    "query": "What is today's weather forecast for the Berlin engineering office?",
+    "expected_agents": [],
+    "notes": "Completely out of scope — system should gracefully handle."
+  },
+  {
+    "id": "EDGE-02",
+    "category": "EDGE",
+    "query": "Find postmortems for the non-existent service XYZ123Foobar.",
+    "expected_agents": ["vector"],
+    "notes": "Empty result set — system should report no results found."
+  }
+]

@@ -1,0 +1,5602 @@
+[
+  {
+    "id": "db522f00-8849-464e-adbf-374487ce1407",
+    "component_id": "comp-001",
+    "measured_at": "2024-01-01",
+    "line_coverage": 62.6,
+    "branch_coverage": 57.0,
+    "test_count": 533
+  },
+  {
+    "id": "c3e42cb0-3c87-41c3-ad97-7a7b1d77ac74",
+    "component_id": "comp-001",
+    "measured_at": "2024-02-07",
+    "line_coverage": 62.5,
+    "branch_coverage": 57.7,
+    "test_count": 576
+  },
+  {
+    "id": "426219c3-4f7e-4992-a3f1-580d75391e4b",
+    "component_id": "comp-001",
+    "measured_at": "2024-03-15",
+    "line_coverage": 61.400000000000006,
+    "branch_coverage": 57.8,
+    "test_count": 549
+  },
+  {
+    "id": "0daeae7b-97ec-4ca9-8d03-55fdcd573640",
+    "component_id": "comp-001",
+    "measured_at": "2024-04-21",
+    "line_coverage": 59.0,
+    "branch_coverage": 55.2,
+    "test_count": 588
+  },
+  {
+    "id": "8b8752f2-fcf0-4f08-9ad3-31163525302e",
+    "component_id": "comp-001",
+    "measured_at": "2024-05-28",
+    "line_coverage": 58.6,
+    "branch_coverage": 52.2,
+    "test_count": 579
+  },
+  {
+    "id": "c9d7bd1e-aa06-4a6b-83b1-8b3f5ed1faf3",
+    "component_id": "comp-001",
+    "measured_at": "2024-07-04",
+    "line_coverage": 60.300000000000004,
+    "branch_coverage": 49.3,
+    "test_count": 534
+  },
+  {
+    "id": "e0283e12-00af-44f9-b432-a0efad6b7e8f",
+    "component_id": "comp-001",
+    "measured_at": "2024-08-10",
+    "line_coverage": 62.2,
+    "branch_coverage": 53.9,
+    "test_count": 573
+  },
+  {
+    "id": "88cd965e-195b-4e23-91ea-3bfcb336cb16",
+    "component_id": "comp-001",
+    "measured_at": "2024-09-16",
+    "line_coverage": 61.5,
+    "branch_coverage": 49.3,
+    "test_count": 579
+  },
+  {
+    "id": "53513bcf-65ef-4ec1-87ba-a3b8f65a722c",
+    "component_id": "comp-001",
+    "measured_at": "2024-10-23",
+    "line_coverage": 62.2,
+    "branch_coverage": 54.3,
+    "test_count": 585
+  },
+  {
+    "id": "005c989e-42cd-40fb-8f9c-c631a1b3096c",
+    "component_id": "comp-001",
+    "measured_at": "2024-11-29",
+    "line_coverage": 59.5,
+    "branch_coverage": 52.3,
+    "test_count": 554
+  },
+  {
+    "id": "d631db46-4718-46d8-bac3-2b3f1b95bc92",
+    "component_id": "comp-002",
+    "measured_at": "2024-01-01",
+    "line_coverage": 61.300000000000004,
+    "branch_coverage": 55.0,
+    "test_count": 278
+  },
+  {
+    "id": "03ec56eb-e019-4f24-a707-87dd8529c4a2",
+    "component_id": "comp-002",
+    "measured_at": "2024-02-07",
+    "line_coverage": 61.1,
+    "branch_coverage": 55.1,
+    "test_count": 261
+  },
+  {
+    "id": "a06b3eae-4703-438a-9e06-f21cd44a7279",
+    "component_id": "comp-002",
+    "measured_at": "2024-03-15",
+    "line_coverage": 62.7,
+    "branch_coverage": 52.2,
+    "test_count": 234
+  },
+  {
+    "id": "d1eb9d25-66fa-4f56-b476-c2c3b36fc5e9",
+    "component_id": "comp-002",
+    "measured_at": "2024-04-21",
+    "line_coverage": 64.3,
+    "branch_coverage": 58.0,
+    "test_count": 264
+  },
+  {
+    "id": "1de4ce1b-059c-4a16-995b-60a1083d610d",
+    "component_id": "comp-002",
+    "measured_at": "2024-05-28",
+    "line_coverage": 64.2,
+    "branch_coverage": 57.9,
+    "test_count": 244
+  },
+  {
+    "id": "4e646a92-a570-4669-8a0f-1c46e95d9262",
+    "component_id": "comp-002",
+    "measured_at": "2024-07-04",
+    "line_coverage": 60.800000000000004,
+    "branch_coverage": 57.6,
+    "test_count": 287
+  },
+  {
+    "id": "57cd1812-220f-435e-8bd2-b18d6d2434b2",
+    "component_id": "comp-002",
+    "measured_at": "2024-08-10",
+    "line_coverage": 60.1,
+    "branch_coverage": 51.6,
+    "test_count": 262
+  },
+  {
+    "id": "cecb6798-3b2b-4774-9ac2-55e8702dded4",
+    "component_id": "comp-002",
+    "measured_at": "2024-09-16",
+    "line_coverage": 63.800000000000004,
+    "branch_coverage": 54.2,
+    "test_count": 258
+  },
+  {
+    "id": "5309c8b4-91de-45b6-8993-f4beedbf9cb5",
+    "component_id": "comp-002",
+    "measured_at": "2024-10-23",
+    "line_coverage": 59.7,
+    "branch_coverage": 48.3,
+    "test_count": 247
+  },
+  {
+    "id": "ba574d7d-7fc3-4a1b-870a-5af6e96550c9",
+    "component_id": "comp-002",
+    "measured_at": "2024-11-29",
+    "line_coverage": 65.3,
+    "branch_coverage": 61.3,
+    "test_count": 238
+  },
+  {
+    "id": "9e72349b-45d3-4354-8476-f1b21f2caceb",
+    "component_id": "comp-003",
+    "measured_at": "2024-01-01",
+    "line_coverage": 87.60000000000001,
+    "branch_coverage": 80.6,
+    "test_count": 191
+  },
+  {
+    "id": "28566d1a-6bf4-458a-94e0-30744e48a323",
+    "component_id": "comp-003",
+    "measured_at": "2024-02-07",
+    "line_coverage": 89.2,
+    "branch_coverage": 77.8,
+    "test_count": 193
+  },
+  {
+    "id": "7a0bd160-2940-4019-b410-b91371ee96cc",
+    "component_id": "comp-003",
+    "measured_at": "2024-03-15",
+    "line_coverage": 90.60000000000001,
+    "branch_coverage": 76.4,
+    "test_count": 200
+  },
+  {
+    "id": "2beee589-70c4-4370-9878-fa71d6bf97fe",
+    "component_id": "comp-003",
+    "measured_at": "2024-04-21",
+    "line_coverage": 87.3,
+    "branch_coverage": 81.9,
+    "test_count": 185
+  },
+  {
+    "id": "facd7dd6-9d83-4d1b-92e8-ce7a047e4906",
+    "component_id": "comp-003",
+    "measured_at": "2024-05-28",
+    "line_coverage": 90.9,
+    "branch_coverage": 78.3,
+    "test_count": 200
+  },
+  {
+    "id": "4a2ba8bb-0246-4779-baeb-6eb6228213b1",
+    "component_id": "comp-003",
+    "measured_at": "2024-07-04",
+    "line_coverage": 86.2,
+    "branch_coverage": 80.4,
+    "test_count": 160
+  },
+  {
+    "id": "bfe055f4-8a72-40be-9b27-9716adde30d0",
+    "component_id": "comp-003",
+    "measured_at": "2024-08-10",
+    "line_coverage": 85.3,
+    "branch_coverage": 71.7,
+    "test_count": 186
+  },
+  {
+    "id": "cc045d23-9dfc-44bd-97d9-4a8239354377",
+    "component_id": "comp-003",
+    "measured_at": "2024-09-16",
+    "line_coverage": 86.0,
+    "branch_coverage": 74.4,
+    "test_count": 200
+  },
+  {
+    "id": "7af31904-20ad-49ac-9f00-505eac4183e5",
+    "component_id": "comp-003",
+    "measured_at": "2024-10-23",
+    "line_coverage": 85.2,
+    "branch_coverage": 73.8,
+    "test_count": 160
+  },
+  {
+    "id": "8bfc1d42-2705-48d9-aabd-c7e54108c8e3",
+    "component_id": "comp-003",
+    "measured_at": "2024-11-29",
+    "line_coverage": 86.3,
+    "branch_coverage": 70.7,
+    "test_count": 201
+  },
+  {
+    "id": "0cb58777-9c27-4a5c-99f7-d0964a8018c2",
+    "component_id": "comp-004",
+    "measured_at": "2024-01-01",
+    "line_coverage": 80.5,
+    "branch_coverage": 69.8,
+    "test_count": 203
+  },
+  {
+    "id": "47f41b70-7b19-4da4-9aaf-bf7f8f307155",
+    "component_id": "comp-004",
+    "measured_at": "2024-02-07",
+    "line_coverage": 77.89999999999999,
+    "branch_coverage": 62.6,
+    "test_count": 174
+  },
+  {
+    "id": "e94f7b62-cb8f-436f-81ff-c19a5f3cdb75",
+    "component_id": "comp-004",
+    "measured_at": "2024-03-15",
+    "line_coverage": 78.39999999999999,
+    "branch_coverage": 71.5,
+    "test_count": 164
+  },
+  {
+    "id": "156e4de9-2f4d-4379-9e0e-1ef1337cba8a",
+    "component_id": "comp-004",
+    "measured_at": "2024-04-21",
+    "line_coverage": 78.3,
+    "branch_coverage": 68.4,
+    "test_count": 168
+  },
+  {
+    "id": "314edf42-c019-49ba-86db-3719cf3e7886",
+    "component_id": "comp-004",
+    "measured_at": "2024-05-28",
+    "line_coverage": 79.89999999999999,
+    "branch_coverage": 64.8,
+    "test_count": 212
+  },
+  {
+    "id": "a77939dd-04fd-4614-aa17-b733e1563b93",
+    "component_id": "comp-004",
+    "measured_at": "2024-07-04",
+    "line_coverage": 75.89999999999999,
+    "branch_coverage": 63.4,
+    "test_count": 203
+  },
+  {
+    "id": "c790f68c-8983-4c3d-8672-7a793580362a",
+    "component_id": "comp-004",
+    "measured_at": "2024-08-10",
+    "line_coverage": 79.89999999999999,
+    "branch_coverage": 67.1,
+    "test_count": 163
+  },
+  {
+    "id": "65f6a160-3475-44a9-bacf-6bca65065b4c",
+    "component_id": "comp-004",
+    "measured_at": "2024-09-16",
+    "line_coverage": 78.2,
+    "branch_coverage": 71.8,
+    "test_count": 189
+  },
+  {
+    "id": "e545d49f-0299-4312-acee-c22a39162442",
+    "component_id": "comp-004",
+    "measured_at": "2024-10-23",
+    "line_coverage": 76.89999999999999,
+    "branch_coverage": 66.9,
+    "test_count": 216
+  },
+  {
+    "id": "ca476ee8-f671-4a44-aec4-9491704979ca",
+    "component_id": "comp-004",
+    "measured_at": "2024-11-29",
+    "line_coverage": 78.1,
+    "branch_coverage": 73.2,
+    "test_count": 203
+  },
+  {
+    "id": "135097ef-14a8-443c-8f11-9da7f0213284",
+    "component_id": "comp-005",
+    "measured_at": "2024-01-01",
+    "line_coverage": 69.69999999999999,
+    "branch_coverage": 62.8,
+    "test_count": 426
+  },
+  {
+    "id": "8d840b8c-7041-47af-b3a9-05ccfb1c125f",
+    "component_id": "comp-005",
+    "measured_at": "2024-02-07",
+    "line_coverage": 70.1,
+    "branch_coverage": 64.1,
+    "test_count": 421
+  },
+  {
+    "id": "8083453b-c43d-4835-9340-db26a9523279",
+    "component_id": "comp-005",
+    "measured_at": "2024-03-15",
+    "line_coverage": 66.5,
+    "branch_coverage": 61.9,
+    "test_count": 395
+  },
+  {
+    "id": "ef2f1484-a168-4925-b93a-fb5a52f73ab1",
+    "component_id": "comp-005",
+    "measured_at": "2024-04-21",
+    "line_coverage": 67.39999999999999,
+    "branch_coverage": 62.9,
+    "test_count": 402
+  },
+  {
+    "id": "b643bf4f-d5b6-4a84-88fa-4c0f69c11a7f",
+    "component_id": "comp-005",
+    "measured_at": "2024-05-28",
+    "line_coverage": 70.8,
+    "branch_coverage": 59.7,
+    "test_count": 404
+  },
+  {
+    "id": "7a56a33c-ea84-4bc7-ab10-5a4b1da1c10b",
+    "component_id": "comp-005",
+    "measured_at": "2024-07-04",
+    "line_coverage": 70.39999999999999,
+    "branch_coverage": 57.5,
+    "test_count": 427
+  },
+  {
+    "id": "05bc9c82-8f7a-457d-adb6-fc2fcb335241",
+    "component_id": "comp-005",
+    "measured_at": "2024-08-10",
+    "line_coverage": 82.0,
+    "branch_coverage": 72.2,
+    "test_count": 401
+  },
+  {
+    "id": "69aa326b-99bb-4d94-b589-2b9ccffe8a0e",
+    "component_id": "comp-005",
+    "measured_at": "2024-09-16",
+    "line_coverage": 75.0,
+    "branch_coverage": 66.0,
+    "test_count": 446
+  },
+  {
+    "id": "35e66131-81be-4c28-86cf-9c824c65d183",
+    "component_id": "comp-005",
+    "measured_at": "2024-10-23",
+    "line_coverage": 68.0,
+    "branch_coverage": 59.8,
+    "test_count": 396
+  },
+  {
+    "id": "d71059d0-5263-42d1-a299-e51b63c889fd",
+    "component_id": "comp-005",
+    "measured_at": "2024-11-29",
+    "line_coverage": 61.0,
+    "branch_coverage": 53.7,
+    "test_count": 451
+  },
+  {
+    "id": "f8ea8301-6123-4228-89fe-48ffbfaea850",
+    "component_id": "comp-006",
+    "measured_at": "2024-01-01",
+    "line_coverage": 60.4,
+    "branch_coverage": 50.0,
+    "test_count": 416
+  },
+  {
+    "id": "5969a443-1c1c-47bb-8b57-2b9eae7ce44a",
+    "component_id": "comp-006",
+    "measured_at": "2024-02-07",
+    "line_coverage": 58.9,
+    "branch_coverage": 48.9,
+    "test_count": 368
+  },
+  {
+    "id": "39ae37a6-8ae8-430c-99df-76a75742d8c5",
+    "component_id": "comp-006",
+    "measured_at": "2024-03-15",
+    "line_coverage": 61.6,
+    "branch_coverage": 57.3,
+    "test_count": 399
+  },
+  {
+    "id": "c42bf504-85b9-405c-9852-8c0a95ad3e09",
+    "component_id": "comp-006",
+    "measured_at": "2024-04-21",
+    "line_coverage": 62.0,
+    "branch_coverage": 49.8,
+    "test_count": 369
+  },
+  {
+    "id": "0b94dcda-82ae-4aad-a2d0-61c900c706eb",
+    "component_id": "comp-006",
+    "measured_at": "2024-05-28",
+    "line_coverage": 62.7,
+    "branch_coverage": 53.5,
+    "test_count": 371
+  },
+  {
+    "id": "d6d4e93b-e959-4a44-9877-1b9cf22e82f5",
+    "component_id": "comp-006",
+    "measured_at": "2024-07-04",
+    "line_coverage": 58.2,
+    "branch_coverage": 52.6,
+    "test_count": 388
+  },
+  {
+    "id": "5db682c0-63ac-42c5-bd67-acff44b8d64a",
+    "component_id": "comp-006",
+    "measured_at": "2024-08-10",
+    "line_coverage": 60.2,
+    "branch_coverage": 53.5,
+    "test_count": 373
+  },
+  {
+    "id": "6080ac21-ba16-4c00-95af-c5fe72991dda",
+    "component_id": "comp-006",
+    "measured_at": "2024-09-16",
+    "line_coverage": 61.2,
+    "branch_coverage": 52.9,
+    "test_count": 395
+  },
+  {
+    "id": "8cdb8302-ad40-4ac8-811b-0543422ab031",
+    "component_id": "comp-006",
+    "measured_at": "2024-10-23",
+    "line_coverage": 62.300000000000004,
+    "branch_coverage": 51.9,
+    "test_count": 408
+  },
+  {
+    "id": "d42beb21-8529-4f59-8ae1-87ba87703750",
+    "component_id": "comp-006",
+    "measured_at": "2024-11-29",
+    "line_coverage": 62.800000000000004,
+    "branch_coverage": 52.7,
+    "test_count": 401
+  },
+  {
+    "id": "a5ed0031-fe40-41b8-8b45-f6839627d340",
+    "component_id": "comp-007",
+    "measured_at": "2024-01-01",
+    "line_coverage": 71.2,
+    "branch_coverage": 66.1,
+    "test_count": 338
+  },
+  {
+    "id": "1debcb52-fb2a-44f2-b137-face20d2366e",
+    "component_id": "comp-007",
+    "measured_at": "2024-02-07",
+    "line_coverage": 71.89999999999999,
+    "branch_coverage": 68.0,
+    "test_count": 377
+  },
+  {
+    "id": "43d3c24c-52ba-46b6-b4ae-30db5db4ead7",
+    "component_id": "comp-007",
+    "measured_at": "2024-03-15",
+    "line_coverage": 72.3,
+    "branch_coverage": 68.1,
+    "test_count": 364
+  },
+  {
+    "id": "383bc661-25c9-4538-88b1-8a1d4d1befee",
+    "component_id": "comp-007",
+    "measured_at": "2024-04-21",
+    "line_coverage": 71.2,
+    "branch_coverage": 57.3,
+    "test_count": 375
+  },
+  {
+    "id": "522b20d4-3305-4597-9612-51a109530ee2",
+    "component_id": "comp-007",
+    "measured_at": "2024-05-28",
+    "line_coverage": 75.7,
+    "branch_coverage": 66.1,
+    "test_count": 386
+  },
+  {
+    "id": "5705d37f-c62a-4475-8e1e-2d9ef87a33bc",
+    "component_id": "comp-007",
+    "measured_at": "2024-07-04",
+    "line_coverage": 71.2,
+    "branch_coverage": 65.2,
+    "test_count": 349
+  },
+  {
+    "id": "fb824fcf-de59-4a38-af76-7d383034b443",
+    "component_id": "comp-007",
+    "measured_at": "2024-08-10",
+    "line_coverage": 71.8,
+    "branch_coverage": 62.4,
+    "test_count": 353
+  },
+  {
+    "id": "5c87b32f-9f13-47c0-94b8-73edd5e8fb1c",
+    "component_id": "comp-007",
+    "measured_at": "2024-09-16",
+    "line_coverage": 73.39999999999999,
+    "branch_coverage": 68.7,
+    "test_count": 369
+  },
+  {
+    "id": "577b0521-910d-4b01-b84b-67904925a379",
+    "component_id": "comp-007",
+    "measured_at": "2024-10-23",
+    "line_coverage": 75.7,
+    "branch_coverage": 63.5,
+    "test_count": 373
+  },
+  {
+    "id": "2b574b32-b5be-4ad0-8ec1-f456c921eeca",
+    "component_id": "comp-007",
+    "measured_at": "2024-11-29",
+    "line_coverage": 70.3,
+    "branch_coverage": 66.2,
+    "test_count": 344
+  },
+  {
+    "id": "937b94ea-5629-4ca0-8a56-5bbc1bf05b3a",
+    "component_id": "comp-008",
+    "measured_at": "2024-01-01",
+    "line_coverage": 63.49999999999999,
+    "branch_coverage": 55.6,
+    "test_count": 87
+  },
+  {
+    "id": "40b938ff-0691-4d25-9a77-f70e7d69e4ae",
+    "component_id": "comp-008",
+    "measured_at": "2024-02-07",
+    "line_coverage": 64.5,
+    "branch_coverage": 60.7,
+    "test_count": 42
+  },
+  {
+    "id": "03545689-295d-448a-b0a4-7650caf538e7",
+    "component_id": "comp-008",
+    "measured_at": "2024-03-15",
+    "line_coverage": 66.89999999999999,
+    "branch_coverage": 56.0,
+    "test_count": 91
+  },
+  {
+    "id": "ea0e9c4d-1327-41d3-96ba-1da718f27f00",
+    "component_id": "comp-008",
+    "measured_at": "2024-04-21",
+    "line_coverage": 63.89999999999999,
+    "branch_coverage": 52.1,
+    "test_count": 75
+  },
+  {
+    "id": "ade9ff58-5eb3-4deb-be37-42df1604cbb5",
+    "component_id": "comp-008",
+    "measured_at": "2024-05-28",
+    "line_coverage": 65.3,
+    "branch_coverage": 56.9,
+    "test_count": 73
+  },
+  {
+    "id": "f45377ba-6349-4b4c-95df-f066e6dcb96c",
+    "component_id": "comp-008",
+    "measured_at": "2024-07-04",
+    "line_coverage": 63.99999999999999,
+    "branch_coverage": 60.5,
+    "test_count": 61
+  },
+  {
+    "id": "c1e6859e-3a08-4b1d-8e68-338935e3fc75",
+    "component_id": "comp-008",
+    "measured_at": "2024-08-10",
+    "line_coverage": 63.49999999999999,
+    "branch_coverage": 58.2,
+    "test_count": 84
+  },
+  {
+    "id": "c9d9df95-fad0-4420-b95f-7692d9abda25",
+    "component_id": "comp-008",
+    "measured_at": "2024-09-16",
+    "line_coverage": 67.6,
+    "branch_coverage": 55.1,
+    "test_count": 97
+  },
+  {
+    "id": "0adb798a-1730-450a-acd2-01a54d338578",
+    "component_id": "comp-008",
+    "measured_at": "2024-10-23",
+    "line_coverage": 65.6,
+    "branch_coverage": 61.2,
+    "test_count": 86
+  },
+  {
+    "id": "4c04b3d9-0c4a-4505-839d-0483cb12149e",
+    "component_id": "comp-008",
+    "measured_at": "2024-11-29",
+    "line_coverage": 63.199999999999996,
+    "branch_coverage": 59.0,
+    "test_count": 38
+  },
+  {
+    "id": "bbc8aa70-b15a-4cb1-b225-73c372b45843",
+    "component_id": "comp-009",
+    "measured_at": "2024-01-01",
+    "line_coverage": 85.1,
+    "branch_coverage": 77.8,
+    "test_count": 798
+  },
+  {
+    "id": "6d2a13b0-82f1-4756-a7c1-957f8ee98249",
+    "component_id": "comp-009",
+    "measured_at": "2024-02-07",
+    "line_coverage": 86.6,
+    "branch_coverage": 74.0,
+    "test_count": 787
+  },
+  {
+    "id": "e6c8134d-ec83-45dd-b7bf-c413eb45c7c5",
+    "component_id": "comp-009",
+    "measured_at": "2024-03-15",
+    "line_coverage": 82.6,
+    "branch_coverage": 66.2,
+    "test_count": 786
+  },
+  {
+    "id": "10ea7aa9-3878-4e22-85ef-676aab2b6333",
+    "component_id": "comp-009",
+    "measured_at": "2024-04-21",
+    "line_coverage": 84.6,
+    "branch_coverage": 71.9,
+    "test_count": 748
+  },
+  {
+    "id": "488c046f-aedf-4509-937b-dc9e884726cd",
+    "component_id": "comp-009",
+    "measured_at": "2024-05-28",
+    "line_coverage": 82.2,
+    "branch_coverage": 66.4,
+    "test_count": 796
+  },
+  {
+    "id": "5aa587cf-60ca-49f9-9d2f-73374e66ba6d",
+    "component_id": "comp-009",
+    "measured_at": "2024-07-04",
+    "line_coverage": 83.0,
+    "branch_coverage": 67.5,
+    "test_count": 761
+  },
+  {
+    "id": "407e485c-6bc9-442f-8cb7-63618197d573",
+    "component_id": "comp-009",
+    "measured_at": "2024-08-10",
+    "line_coverage": 86.89999999999999,
+    "branch_coverage": 81.1,
+    "test_count": 788
+  },
+  {
+    "id": "e72fb9d2-57c5-4fed-9970-df7be2417a6d",
+    "component_id": "comp-009",
+    "measured_at": "2024-09-16",
+    "line_coverage": 83.5,
+    "branch_coverage": 68.0,
+    "test_count": 801
+  },
+  {
+    "id": "b972b7fe-f28e-449f-98eb-87805ab1e233",
+    "component_id": "comp-009",
+    "measured_at": "2024-10-23",
+    "line_coverage": 83.5,
+    "branch_coverage": 73.9,
+    "test_count": 769
+  },
+  {
+    "id": "4d5b01f9-fd8d-45f0-9754-3ac8e88d8a97",
+    "component_id": "comp-009",
+    "measured_at": "2024-11-29",
+    "line_coverage": 82.89999999999999,
+    "branch_coverage": 77.7,
+    "test_count": 796
+  },
+  {
+    "id": "91ee477e-eca3-4177-b97a-ed73af055141",
+    "component_id": "comp-010",
+    "measured_at": "2024-01-01",
+    "line_coverage": 58.800000000000004,
+    "branch_coverage": 51.6,
+    "test_count": 168
+  },
+  {
+    "id": "dae5e34b-ee06-4f1a-9c8d-58065660ad76",
+    "component_id": "comp-010",
+    "measured_at": "2024-02-07",
+    "line_coverage": 54.6,
+    "branch_coverage": 46.7,
+    "test_count": 170
+  },
+  {
+    "id": "7a62510d-0343-469e-bf7e-fbef8fee66c1",
+    "component_id": "comp-010",
+    "measured_at": "2024-03-15",
+    "line_coverage": 57.6,
+    "branch_coverage": 50.8,
+    "test_count": 223
+  },
+  {
+    "id": "a317a71a-af9e-4f28-bdb3-074f0a1227ef",
+    "component_id": "comp-010",
+    "measured_at": "2024-04-21",
+    "line_coverage": 56.5,
+    "branch_coverage": 49.6,
+    "test_count": 178
+  },
+  {
+    "id": "8a37309b-ce46-4b93-b774-053520d75a35",
+    "component_id": "comp-010",
+    "measured_at": "2024-05-28",
+    "line_coverage": 57.900000000000006,
+    "branch_coverage": 52.1,
+    "test_count": 191
+  },
+  {
+    "id": "2c48d988-6b99-46c5-8d92-47f9f0ecda71",
+    "component_id": "comp-010",
+    "measured_at": "2024-07-04",
+    "line_coverage": 56.900000000000006,
+    "branch_coverage": 45.6,
+    "test_count": 214
+  },
+  {
+    "id": "fff546ca-d60a-4afa-abb2-e25637b71bf9",
+    "component_id": "comp-010",
+    "measured_at": "2024-08-10",
+    "line_coverage": 58.0,
+    "branch_coverage": 50.0,
+    "test_count": 202
+  },
+  {
+    "id": "21e926d6-fe5d-48f5-b3df-fcb5ccdb7b9d",
+    "component_id": "comp-010",
+    "measured_at": "2024-09-16",
+    "line_coverage": 57.400000000000006,
+    "branch_coverage": 53.7,
+    "test_count": 203
+  },
+  {
+    "id": "3bfd55e2-79f2-46a3-87fc-66d5bbf7cc7c",
+    "component_id": "comp-010",
+    "measured_at": "2024-10-23",
+    "line_coverage": 53.6,
+    "branch_coverage": 45.6,
+    "test_count": 192
+  },
+  {
+    "id": "830696d4-0873-4387-8982-77eb07dc8b90",
+    "component_id": "comp-010",
+    "measured_at": "2024-11-29",
+    "line_coverage": 54.400000000000006,
+    "branch_coverage": 49.3,
+    "test_count": 192
+  },
+  {
+    "id": "ccd9fa82-9803-4f6c-b23b-db09f2e4b20f",
+    "component_id": "comp-011",
+    "measured_at": "2024-01-01",
+    "line_coverage": 85.39999999999999,
+    "branch_coverage": 72.0,
+    "test_count": 225
+  },
+  {
+    "id": "b04b732d-82a1-44e9-9027-522128af223f",
+    "component_id": "comp-011",
+    "measured_at": "2024-02-07",
+    "line_coverage": 84.89999999999999,
+    "branch_coverage": 73.4,
+    "test_count": 199
+  },
+  {
+    "id": "b9215ff8-4157-4d2b-b13d-2d3b9d9ccd15",
+    "component_id": "comp-011",
+    "measured_at": "2024-03-15",
+    "line_coverage": 86.3,
+    "branch_coverage": 73.8,
+    "test_count": 207
+  },
+  {
+    "id": "a6c18604-7197-4ae4-8f93-681ee8f68b90",
+    "component_id": "comp-011",
+    "measured_at": "2024-04-21",
+    "line_coverage": 87.7,
+    "branch_coverage": 71.8,
+    "test_count": 227
+  },
+  {
+    "id": "ebb94356-7d0a-4f1d-9711-714ddc65f174",
+    "component_id": "comp-011",
+    "measured_at": "2024-05-28",
+    "line_coverage": 89.2,
+    "branch_coverage": 75.9,
+    "test_count": 198
+  },
+  {
+    "id": "30a30964-1c54-4bcf-9474-ae8d80b5a17d",
+    "component_id": "comp-011",
+    "measured_at": "2024-07-04",
+    "line_coverage": 88.89999999999999,
+    "branch_coverage": 84.1,
+    "test_count": 184
+  },
+  {
+    "id": "00c50511-607c-44c5-832e-464637b3ed85",
+    "component_id": "comp-011",
+    "measured_at": "2024-08-10",
+    "line_coverage": 86.6,
+    "branch_coverage": 81.6,
+    "test_count": 211
+  },
+  {
+    "id": "32751b78-0a9b-40ee-8180-4839b909bbe2",
+    "component_id": "comp-011",
+    "measured_at": "2024-09-16",
+    "line_coverage": 85.6,
+    "branch_coverage": 80.4,
+    "test_count": 219
+  },
+  {
+    "id": "4de11903-a325-4138-bb6b-ddef8e81cf14",
+    "component_id": "comp-011",
+    "measured_at": "2024-10-23",
+    "line_coverage": 84.89999999999999,
+    "branch_coverage": 68.5,
+    "test_count": 198
+  },
+  {
+    "id": "18a60aa1-41d5-4f0e-9689-1f9240d04a63",
+    "component_id": "comp-011",
+    "measured_at": "2024-11-29",
+    "line_coverage": 87.3,
+    "branch_coverage": 73.3,
+    "test_count": 232
+  },
+  {
+    "id": "8bb537e2-766b-4800-99f2-a32929d87d58",
+    "component_id": "comp-012",
+    "measured_at": "2024-01-01",
+    "line_coverage": 86.6,
+    "branch_coverage": 72.2,
+    "test_count": 430
+  },
+  {
+    "id": "b6479655-d9ea-4fdf-aaf4-cf85ada94ac8",
+    "component_id": "comp-012",
+    "measured_at": "2024-02-07",
+    "line_coverage": 88.4,
+    "branch_coverage": 76.3,
+    "test_count": 448
+  },
+  {
+    "id": "b021c4ce-f70b-4eae-8146-e646a691763f",
+    "component_id": "comp-012",
+    "measured_at": "2024-03-15",
+    "line_coverage": 87.7,
+    "branch_coverage": 74.0,
+    "test_count": 462
+  },
+  {
+    "id": "c8054cdf-fa63-4b1c-9891-4a45942db90b",
+    "component_id": "comp-012",
+    "measured_at": "2024-04-21",
+    "line_coverage": 90.1,
+    "branch_coverage": 77.8,
+    "test_count": 460
+  },
+  {
+    "id": "486dd9c7-9f76-4344-af81-f209192cb40a",
+    "component_id": "comp-012",
+    "measured_at": "2024-05-28",
+    "line_coverage": 88.9,
+    "branch_coverage": 71.2,
+    "test_count": 463
+  },
+  {
+    "id": "fed77cfb-4fc0-4c13-9db8-18684636ba83",
+    "component_id": "comp-012",
+    "measured_at": "2024-07-04",
+    "line_coverage": 86.4,
+    "branch_coverage": 71.2,
+    "test_count": 417
+  },
+  {
+    "id": "409e3f73-47c0-476a-9afd-b17b013a08da",
+    "component_id": "comp-012",
+    "measured_at": "2024-08-10",
+    "line_coverage": 82.0,
+    "branch_coverage": 72.2,
+    "test_count": 474
+  },
+  {
+    "id": "738b97c4-4d83-4144-805c-86733dcd058d",
+    "component_id": "comp-012",
+    "measured_at": "2024-09-16",
+    "line_coverage": 75.0,
+    "branch_coverage": 66.0,
+    "test_count": 474
+  },
+  {
+    "id": "1c488f3b-806b-4544-8e26-7ef1fee0ea71",
+    "component_id": "comp-012",
+    "measured_at": "2024-10-23",
+    "line_coverage": 68.0,
+    "branch_coverage": 59.8,
+    "test_count": 417
+  },
+  {
+    "id": "322178ec-47e0-44cd-a08f-7a24b5ec723b",
+    "component_id": "comp-012",
+    "measured_at": "2024-11-29",
+    "line_coverage": 61.0,
+    "branch_coverage": 53.7,
+    "test_count": 419
+  },
+  {
+    "id": "b81856da-73b0-4e97-a873-85b8dc4964bd",
+    "component_id": "comp-013",
+    "measured_at": "2024-01-01",
+    "line_coverage": 89.7,
+    "branch_coverage": 73.7,
+    "test_count": 200
+  },
+  {
+    "id": "27cc980a-da02-468d-b86e-fd63c2a56eb7",
+    "component_id": "comp-013",
+    "measured_at": "2024-02-07",
+    "line_coverage": 89.0,
+    "branch_coverage": 78.0,
+    "test_count": 214
+  },
+  {
+    "id": "f7fe331b-176b-40ce-9315-971211e23401",
+    "component_id": "comp-013",
+    "measured_at": "2024-03-15",
+    "line_coverage": 88.7,
+    "branch_coverage": 79.3,
+    "test_count": 210
+  },
+  {
+    "id": "360b22be-6f54-4a2c-9435-388478907bcb",
+    "component_id": "comp-013",
+    "measured_at": "2024-04-21",
+    "line_coverage": 90.6,
+    "branch_coverage": 73.3,
+    "test_count": 212
+  },
+  {
+    "id": "0394a6b9-b8cd-48d0-a24b-67bf5baeef7f",
+    "component_id": "comp-013",
+    "measured_at": "2024-05-28",
+    "line_coverage": 88.2,
+    "branch_coverage": 81.7,
+    "test_count": 184
+  },
+  {
+    "id": "82ff4fed-5f3d-45b2-9bbf-2942b7659ac5",
+    "component_id": "comp-013",
+    "measured_at": "2024-07-04",
+    "line_coverage": 86.7,
+    "branch_coverage": 73.3,
+    "test_count": 218
+  },
+  {
+    "id": "57f75b9d-f55e-4052-996a-2d2501cdbe86",
+    "component_id": "comp-013",
+    "measured_at": "2024-08-10",
+    "line_coverage": 88.6,
+    "branch_coverage": 76.0,
+    "test_count": 238
+  },
+  {
+    "id": "9ff560b8-b7fa-42e5-9d75-aa94076cd907",
+    "component_id": "comp-013",
+    "measured_at": "2024-09-16",
+    "line_coverage": 90.0,
+    "branch_coverage": 75.5,
+    "test_count": 222
+  },
+  {
+    "id": "7e673b92-a82e-40a9-85e4-6049f685cfe3",
+    "component_id": "comp-013",
+    "measured_at": "2024-10-23",
+    "line_coverage": 85.4,
+    "branch_coverage": 71.9,
+    "test_count": 223
+  },
+  {
+    "id": "e11daa79-441a-4d72-ab80-24d08300ab28",
+    "component_id": "comp-013",
+    "measured_at": "2024-11-29",
+    "line_coverage": 86.0,
+    "branch_coverage": 70.7,
+    "test_count": 204
+  },
+  {
+    "id": "013d693d-bdd0-405e-a452-f6492efb0f01",
+    "component_id": "comp-014",
+    "measured_at": "2024-01-01",
+    "line_coverage": 91.2,
+    "branch_coverage": 81.4,
+    "test_count": 105
+  },
+  {
+    "id": "bde3b103-ccae-4ecf-8428-7ec3ae49ab88",
+    "component_id": "comp-014",
+    "measured_at": "2024-02-07",
+    "line_coverage": 93.4,
+    "branch_coverage": 77.3,
+    "test_count": 136
+  },
+  {
+    "id": "a8da1d0f-4473-477b-bc0f-f9f495a64671",
+    "component_id": "comp-014",
+    "measured_at": "2024-03-15",
+    "line_coverage": 89.4,
+    "branch_coverage": 81.1,
+    "test_count": 137
+  },
+  {
+    "id": "2e29a43e-2fcf-4120-a06d-57087e3b2e64",
+    "component_id": "comp-014",
+    "measured_at": "2024-04-21",
+    "line_coverage": 93.3,
+    "branch_coverage": 79.0,
+    "test_count": 99
+  },
+  {
+    "id": "661270df-9725-41f9-bbeb-a755b951e829",
+    "component_id": "comp-014",
+    "measured_at": "2024-05-28",
+    "line_coverage": 92.8,
+    "branch_coverage": 82.0,
+    "test_count": 117
+  },
+  {
+    "id": "19dde297-a1ee-4570-8637-1abc990c3ca1",
+    "component_id": "comp-014",
+    "measured_at": "2024-07-04",
+    "line_coverage": 91.4,
+    "branch_coverage": 84.8,
+    "test_count": 103
+  },
+  {
+    "id": "7282b404-d7bf-404b-bc9c-401988f20b6b",
+    "component_id": "comp-014",
+    "measured_at": "2024-08-10",
+    "line_coverage": 93.5,
+    "branch_coverage": 84.1,
+    "test_count": 116
+  },
+  {
+    "id": "a3af55ad-c483-4815-a5ca-c022737dbaff",
+    "component_id": "comp-014",
+    "measured_at": "2024-09-16",
+    "line_coverage": 91.60000000000001,
+    "branch_coverage": 79.2,
+    "test_count": 119
+  },
+  {
+    "id": "10fd7cdd-32f2-4213-b180-fa9158eb7fc9",
+    "component_id": "comp-014",
+    "measured_at": "2024-10-23",
+    "line_coverage": 91.2,
+    "branch_coverage": 78.0,
+    "test_count": 108
+  },
+  {
+    "id": "2527386b-3344-401e-b249-906e17c9fd47",
+    "component_id": "comp-014",
+    "measured_at": "2024-11-29",
+    "line_coverage": 92.8,
+    "branch_coverage": 82.0,
+    "test_count": 104
+  },
+  {
+    "id": "0496d3f1-e1be-4687-ae04-6ddee95c93a6",
+    "component_id": "comp-015",
+    "measured_at": "2024-01-01",
+    "line_coverage": 73.5,
+    "branch_coverage": 66.1,
+    "test_count": 535
+  },
+  {
+    "id": "8a147877-d62a-4a0b-9bd3-c77289233307",
+    "component_id": "comp-015",
+    "measured_at": "2024-02-07",
+    "line_coverage": 70.6,
+    "branch_coverage": 64.1,
+    "test_count": 572
+  },
+  {
+    "id": "955bdad0-677a-4fa6-98dd-77e6ba821c1f",
+    "component_id": "comp-015",
+    "measured_at": "2024-03-15",
+    "line_coverage": 69.3,
+    "branch_coverage": 63.9,
+    "test_count": 518
+  },
+  {
+    "id": "d65b9aa9-628e-41a2-ae31-8b1bf6c570e3",
+    "component_id": "comp-015",
+    "measured_at": "2024-04-21",
+    "line_coverage": 73.19999999999999,
+    "branch_coverage": 65.4,
+    "test_count": 543
+  },
+  {
+    "id": "82c2f7e6-2dd3-457b-8754-8c8ed06e9160",
+    "component_id": "comp-015",
+    "measured_at": "2024-05-28",
+    "line_coverage": 72.8,
+    "branch_coverage": 61.3,
+    "test_count": 546
+  },
+  {
+    "id": "31aec3d2-d3fa-4ce5-a7ff-41c0bd7e72cd",
+    "component_id": "comp-015",
+    "measured_at": "2024-07-04",
+    "line_coverage": 74.0,
+    "branch_coverage": 65.1,
+    "test_count": 541
+  },
+  {
+    "id": "4edb9c5a-cd05-460a-94ea-0ee01313cb0b",
+    "component_id": "comp-015",
+    "measured_at": "2024-08-10",
+    "line_coverage": 68.69999999999999,
+    "branch_coverage": 59.4,
+    "test_count": 526
+  },
+  {
+    "id": "da6d6216-8f94-4ffe-a979-5f6dbba2c269",
+    "component_id": "comp-015",
+    "measured_at": "2024-09-16",
+    "line_coverage": 71.5,
+    "branch_coverage": 63.0,
+    "test_count": 542
+  },
+  {
+    "id": "78a23182-12f2-4814-a9c5-5c78f90664ce",
+    "component_id": "comp-015",
+    "measured_at": "2024-10-23",
+    "line_coverage": 70.19999999999999,
+    "branch_coverage": 60.8,
+    "test_count": 558
+  },
+  {
+    "id": "1b8931ee-416f-428d-81a8-88b0406180d1",
+    "component_id": "comp-015",
+    "measured_at": "2024-11-29",
+    "line_coverage": 71.1,
+    "branch_coverage": 65.1,
+    "test_count": 559
+  },
+  {
+    "id": "45a794c4-cf8c-407d-af65-6aaaf98472fe",
+    "component_id": "comp-016",
+    "measured_at": "2024-01-01",
+    "line_coverage": 64.3,
+    "branch_coverage": 52.5,
+    "test_count": 450
+  },
+  {
+    "id": "8b0c033b-882d-4511-9329-226756eaf8bc",
+    "component_id": "comp-016",
+    "measured_at": "2024-02-07",
+    "line_coverage": 60.199999999999996,
+    "branch_coverage": 56.8,
+    "test_count": 470
+  },
+  {
+    "id": "f8271b07-50b9-4aad-a2b0-e6113b0490f0",
+    "component_id": "comp-016",
+    "measured_at": "2024-03-15",
+    "line_coverage": 63.5,
+    "branch_coverage": 54.6,
+    "test_count": 427
+  },
+  {
+    "id": "c0a6df25-a7be-4f83-b129-c68dc3896776",
+    "component_id": "comp-016",
+    "measured_at": "2024-04-21",
+    "line_coverage": 62.699999999999996,
+    "branch_coverage": 53.8,
+    "test_count": 426
+  },
+  {
+    "id": "1eecfac2-86cf-49f9-8d2f-7e61816c4fca",
+    "component_id": "comp-016",
+    "measured_at": "2024-05-28",
+    "line_coverage": 64.0,
+    "branch_coverage": 57.2,
+    "test_count": 435
+  },
+  {
+    "id": "0b74e730-e5a2-41bb-9c95-2bb3df750a51",
+    "component_id": "comp-016",
+    "measured_at": "2024-07-04",
+    "line_coverage": 65.5,
+    "branch_coverage": 57.7,
+    "test_count": 484
+  },
+  {
+    "id": "81f18986-0641-4656-be70-80eadb73e49c",
+    "component_id": "comp-016",
+    "measured_at": "2024-08-10",
+    "line_coverage": 64.8,
+    "branch_coverage": 52.1,
+    "test_count": 443
+  },
+  {
+    "id": "c790c67f-4e77-4735-bbae-6062f9a78c14",
+    "component_id": "comp-016",
+    "measured_at": "2024-09-16",
+    "line_coverage": 63.599999999999994,
+    "branch_coverage": 56.5,
+    "test_count": 480
+  },
+  {
+    "id": "c402fcfa-c752-425b-9169-e868e282d4fc",
+    "component_id": "comp-016",
+    "measured_at": "2024-10-23",
+    "line_coverage": 61.699999999999996,
+    "branch_coverage": 55.1,
+    "test_count": 435
+  },
+  {
+    "id": "dc236d36-8699-4b6a-bd67-ac3174fe9b23",
+    "component_id": "comp-016",
+    "measured_at": "2024-11-29",
+    "line_coverage": 64.2,
+    "branch_coverage": 54.0,
+    "test_count": 465
+  },
+  {
+    "id": "efc92748-d683-4913-877e-9874c7bfb51a",
+    "component_id": "comp-017",
+    "measured_at": "2024-01-01",
+    "line_coverage": 62.8,
+    "branch_coverage": 55.9,
+    "test_count": 222
+  },
+  {
+    "id": "fd9a7e3d-1f5b-4642-b4cc-d710912eebe7",
+    "component_id": "comp-017",
+    "measured_at": "2024-02-07",
+    "line_coverage": 61.8,
+    "branch_coverage": 50.6,
+    "test_count": 219
+  },
+  {
+    "id": "3a1eedea-f786-4969-99a7-e4c320118255",
+    "component_id": "comp-017",
+    "measured_at": "2024-03-15",
+    "line_coverage": 66.0,
+    "branch_coverage": 55.6,
+    "test_count": 219
+  },
+  {
+    "id": "1ab0bed4-0257-47c1-8671-bf0168d711de",
+    "component_id": "comp-017",
+    "measured_at": "2024-04-21",
+    "line_coverage": 61.599999999999994,
+    "branch_coverage": 50.8,
+    "test_count": 227
+  },
+  {
+    "id": "2e9351e4-ded5-461b-9e5e-1da255acad3f",
+    "component_id": "comp-017",
+    "measured_at": "2024-05-28",
+    "line_coverage": 63.199999999999996,
+    "branch_coverage": 52.0,
+    "test_count": 230
+  },
+  {
+    "id": "68d39001-d246-4871-9d16-bbf664895d5c",
+    "component_id": "comp-017",
+    "measured_at": "2024-07-04",
+    "line_coverage": 66.19999999999999,
+    "branch_coverage": 62.5,
+    "test_count": 197
+  },
+  {
+    "id": "089babf2-771b-4215-91fa-db8acae7f850",
+    "component_id": "comp-017",
+    "measured_at": "2024-08-10",
+    "line_coverage": 65.5,
+    "branch_coverage": 59.1,
+    "test_count": 183
+  },
+  {
+    "id": "d63ae201-2cbf-4bb5-a361-5a1b0507d6f4",
+    "component_id": "comp-017",
+    "measured_at": "2024-09-16",
+    "line_coverage": 62.599999999999994,
+    "branch_coverage": 53.0,
+    "test_count": 210
+  },
+  {
+    "id": "43a5f20f-0859-467f-92fa-072a189148da",
+    "component_id": "comp-017",
+    "measured_at": "2024-10-23",
+    "line_coverage": 66.69999999999999,
+    "branch_coverage": 56.8,
+    "test_count": 179
+  },
+  {
+    "id": "e2b2839e-8b56-45aa-b73c-3238a49cb462",
+    "component_id": "comp-017",
+    "measured_at": "2024-11-29",
+    "line_coverage": 64.3,
+    "branch_coverage": 58.5,
+    "test_count": 236
+  },
+  {
+    "id": "df757ebe-25ea-4bda-9ff6-0ae9920bc957",
+    "component_id": "comp-018",
+    "measured_at": "2024-01-01",
+    "line_coverage": 77.7,
+    "branch_coverage": 62.6,
+    "test_count": 636
+  },
+  {
+    "id": "0b1b04b2-a9d1-4db8-9242-b835dde3177d",
+    "component_id": "comp-018",
+    "measured_at": "2024-02-07",
+    "line_coverage": 77.30000000000001,
+    "branch_coverage": 64.8,
+    "test_count": 681
+  },
+  {
+    "id": "f889ccb9-7543-490f-886c-e78c9f93299d",
+    "component_id": "comp-018",
+    "measured_at": "2024-03-15",
+    "line_coverage": 77.30000000000001,
+    "branch_coverage": 68.7,
+    "test_count": 680
+  },
+  {
+    "id": "7aeb9342-ff2b-40ce-9896-cad6f50bf8d8",
+    "component_id": "comp-018",
+    "measured_at": "2024-04-21",
+    "line_coverage": 82.9,
+    "branch_coverage": 76.0,
+    "test_count": 674
+  },
+  {
+    "id": "ed075075-2120-4db7-a048-1839fe124c7a",
+    "component_id": "comp-018",
+    "measured_at": "2024-05-28",
+    "line_coverage": 81.5,
+    "branch_coverage": 74.0,
+    "test_count": 666
+  },
+  {
+    "id": "a3c69005-067c-4ae6-b3b8-e2b7abb8b3d3",
+    "component_id": "comp-018",
+    "measured_at": "2024-07-04",
+    "line_coverage": 78.0,
+    "branch_coverage": 69.2,
+    "test_count": 641
+  },
+  {
+    "id": "341341bd-d0fa-4f01-a0a0-5ed877708d39",
+    "component_id": "comp-018",
+    "measured_at": "2024-08-10",
+    "line_coverage": 80.0,
+    "branch_coverage": 68.2,
+    "test_count": 687
+  },
+  {
+    "id": "4ae152d0-4838-45be-ad68-cc3fd50f4f29",
+    "component_id": "comp-018",
+    "measured_at": "2024-09-16",
+    "line_coverage": 82.7,
+    "branch_coverage": 78.3,
+    "test_count": 660
+  },
+  {
+    "id": "78b81014-c402-43e4-8e18-d1379aca977b",
+    "component_id": "comp-018",
+    "measured_at": "2024-10-23",
+    "line_coverage": 77.30000000000001,
+    "branch_coverage": 62.0,
+    "test_count": 662
+  },
+  {
+    "id": "d16a61cb-7334-4c5f-bc6e-b4c1fcc444cb",
+    "component_id": "comp-018",
+    "measured_at": "2024-11-29",
+    "line_coverage": 80.80000000000001,
+    "branch_coverage": 72.5,
+    "test_count": 649
+  },
+  {
+    "id": "6a6c9e86-1d0c-46fc-979f-c135aa6914ca",
+    "component_id": "comp-019",
+    "measured_at": "2024-01-01",
+    "line_coverage": 76.60000000000001,
+    "branch_coverage": 62.9,
+    "test_count": 545
+  },
+  {
+    "id": "c9ddfb79-671b-4164-8c0b-2770b80745fb",
+    "component_id": "comp-019",
+    "measured_at": "2024-02-07",
+    "line_coverage": 80.2,
+    "branch_coverage": 65.4,
+    "test_count": 576
+  },
+  {
+    "id": "6d6bc7b2-b1c9-48d2-9c52-01d1c85f4b45",
+    "component_id": "comp-019",
+    "measured_at": "2024-03-15",
+    "line_coverage": 79.2,
+    "branch_coverage": 63.9,
+    "test_count": 569
+  },
+  {
+    "id": "36b9e74a-17e0-442d-b784-49487577fba9",
+    "component_id": "comp-019",
+    "measured_at": "2024-04-21",
+    "line_coverage": 79.4,
+    "branch_coverage": 67.2,
+    "test_count": 531
+  },
+  {
+    "id": "2fa98582-8e9a-41c6-b4ca-f65792c6ddc0",
+    "component_id": "comp-019",
+    "measured_at": "2024-05-28",
+    "line_coverage": 75.60000000000001,
+    "branch_coverage": 61.3,
+    "test_count": 549
+  },
+  {
+    "id": "6dbf083a-fb38-4b38-ba4b-ba5c1cc32c50",
+    "component_id": "comp-019",
+    "measured_at": "2024-07-04",
+    "line_coverage": 79.9,
+    "branch_coverage": 69.4,
+    "test_count": 565
+  },
+  {
+    "id": "23c89506-6c4d-4d86-88aa-352ecd0f7def",
+    "component_id": "comp-019",
+    "measured_at": "2024-08-10",
+    "line_coverage": 80.10000000000001,
+    "branch_coverage": 65.9,
+    "test_count": 564
+  },
+  {
+    "id": "00ba02c5-e357-4f91-afcd-3c8f9d1e214b",
+    "component_id": "comp-019",
+    "measured_at": "2024-09-16",
+    "line_coverage": 78.7,
+    "branch_coverage": 74.3,
+    "test_count": 526
+  },
+  {
+    "id": "1f6f6f4e-2c11-4110-a676-3f11dc20070a",
+    "component_id": "comp-019",
+    "measured_at": "2024-10-23",
+    "line_coverage": 76.9,
+    "branch_coverage": 61.9,
+    "test_count": 530
+  },
+  {
+    "id": "0f064e59-5564-40f4-9fdf-b9d5cc79732d",
+    "component_id": "comp-019",
+    "measured_at": "2024-11-29",
+    "line_coverage": 75.9,
+    "branch_coverage": 70.5,
+    "test_count": 545
+  },
+  {
+    "id": "ea5f4d49-7680-4611-a569-76725690eb17",
+    "component_id": "comp-020",
+    "measured_at": "2024-01-01",
+    "line_coverage": 53.1,
+    "branch_coverage": 48.5,
+    "test_count": 108
+  },
+  {
+    "id": "ab52de0d-e5f3-44db-9ec8-bad12c9e707c",
+    "component_id": "comp-020",
+    "measured_at": "2024-02-07",
+    "line_coverage": 53.2,
+    "branch_coverage": 43.9,
+    "test_count": 56
+  },
+  {
+    "id": "58944e63-5172-465f-aad0-979182f04a22",
+    "component_id": "comp-020",
+    "measured_at": "2024-03-15",
+    "line_coverage": 55.9,
+    "branch_coverage": 49.2,
+    "test_count": 112
+  },
+  {
+    "id": "2909d6a8-f386-4e87-b7a4-625dd923b7cf",
+    "component_id": "comp-020",
+    "measured_at": "2024-04-21",
+    "line_coverage": 52.6,
+    "branch_coverage": 45.6,
+    "test_count": 56
+  },
+  {
+    "id": "d325d214-c086-4394-98d9-f11c831015fb",
+    "component_id": "comp-020",
+    "measured_at": "2024-05-28",
+    "line_coverage": 56.4,
+    "branch_coverage": 50.0,
+    "test_count": 66
+  },
+  {
+    "id": "c23f510f-1d4c-453c-872e-2b4bf531240d",
+    "component_id": "comp-020",
+    "measured_at": "2024-07-04",
+    "line_coverage": 58.5,
+    "branch_coverage": 49.9,
+    "test_count": 61
+  },
+  {
+    "id": "ca0c1e1a-360d-47b1-8bd8-95a343202b73",
+    "component_id": "comp-020",
+    "measured_at": "2024-08-10",
+    "line_coverage": 53.1,
+    "branch_coverage": 48.8,
+    "test_count": 106
+  },
+  {
+    "id": "c22a2c14-8dac-4ece-9636-11e42fafa121",
+    "component_id": "comp-020",
+    "measured_at": "2024-09-16",
+    "line_coverage": 57.0,
+    "branch_coverage": 52.7,
+    "test_count": 61
+  },
+  {
+    "id": "34404428-d3f5-4d84-9392-63aae417ba3a",
+    "component_id": "comp-020",
+    "measured_at": "2024-10-23",
+    "line_coverage": 55.3,
+    "branch_coverage": 48.6,
+    "test_count": 80
+  },
+  {
+    "id": "acec0cce-1c91-4daf-9a61-79d7aba96a7e",
+    "component_id": "comp-020",
+    "measured_at": "2024-11-29",
+    "line_coverage": 56.8,
+    "branch_coverage": 48.4,
+    "test_count": 95
+  },
+  {
+    "id": "c83a646c-96f2-470c-a97d-e75594c4691a",
+    "component_id": "comp-021",
+    "measured_at": "2024-01-01",
+    "line_coverage": 93.1,
+    "branch_coverage": 79.6,
+    "test_count": 756
+  },
+  {
+    "id": "8b59a671-1db7-4d70-b030-2f47bdcfbf80",
+    "component_id": "comp-021",
+    "measured_at": "2024-02-07",
+    "line_coverage": 90.5,
+    "branch_coverage": 79.8,
+    "test_count": 766
+  },
+  {
+    "id": "3fdefb47-5f00-4b10-9b56-c8588dee6b96",
+    "component_id": "comp-021",
+    "measured_at": "2024-03-15",
+    "line_coverage": 89.6,
+    "branch_coverage": 80.7,
+    "test_count": 781
+  },
+  {
+    "id": "c3c146fd-ef29-4038-98d7-90b1a3f0c549",
+    "component_id": "comp-021",
+    "measured_at": "2024-04-21",
+    "line_coverage": 92.0,
+    "branch_coverage": 82.5,
+    "test_count": 759
+  },
+  {
+    "id": "206eae0a-d663-4654-9a14-ac5cd3594474",
+    "component_id": "comp-021",
+    "measured_at": "2024-05-28",
+    "line_coverage": 92.6,
+    "branch_coverage": 79.3,
+    "test_count": 765
+  },
+  {
+    "id": "01f05583-deb4-4dea-abfe-8e19ef079597",
+    "component_id": "comp-021",
+    "measured_at": "2024-07-04",
+    "line_coverage": 88.0,
+    "branch_coverage": 80.3,
+    "test_count": 800
+  },
+  {
+    "id": "de3829ac-ee40-49e5-a84c-91833136fb04",
+    "component_id": "comp-021",
+    "measured_at": "2024-08-10",
+    "line_coverage": 93.7,
+    "branch_coverage": 82.2,
+    "test_count": 755
+  },
+  {
+    "id": "9dabe6e7-5091-4713-b1d2-7cfa8c326606",
+    "component_id": "comp-021",
+    "measured_at": "2024-09-16",
+    "line_coverage": 90.3,
+    "branch_coverage": 83.3,
+    "test_count": 781
+  },
+  {
+    "id": "c52bdee1-ebe0-41f6-9a9b-f3d950c09dc9",
+    "component_id": "comp-021",
+    "measured_at": "2024-10-23",
+    "line_coverage": 92.0,
+    "branch_coverage": 80.3,
+    "test_count": 760
+  },
+  {
+    "id": "63ef9f4a-c5a2-4ad0-98c5-6e91035ee4fb",
+    "component_id": "comp-021",
+    "measured_at": "2024-11-29",
+    "line_coverage": 91.6,
+    "branch_coverage": 81.0,
+    "test_count": 792
+  },
+  {
+    "id": "c80e07b4-3eb2-425c-8f36-5c615350795e",
+    "component_id": "comp-022",
+    "measured_at": "2024-01-01",
+    "line_coverage": 60.3,
+    "branch_coverage": 55.6,
+    "test_count": 515
+  },
+  {
+    "id": "1f0f4302-c40d-4aaa-bf81-b2b1f5e6dcf0",
+    "component_id": "comp-022",
+    "measured_at": "2024-02-07",
+    "line_coverage": 59.4,
+    "branch_coverage": 49.3,
+    "test_count": 556
+  },
+  {
+    "id": "6f846433-7314-41d4-af99-57e09700686f",
+    "component_id": "comp-022",
+    "measured_at": "2024-03-15",
+    "line_coverage": 57.0,
+    "branch_coverage": 48.6,
+    "test_count": 529
+  },
+  {
+    "id": "28fa9f93-9455-4735-ad65-11111a008628",
+    "component_id": "comp-022",
+    "measured_at": "2024-04-21",
+    "line_coverage": 55.6,
+    "branch_coverage": 45.5,
+    "test_count": 526
+  },
+  {
+    "id": "4df0b5ca-87f4-4b04-83cf-635f86f8e9be",
+    "component_id": "comp-022",
+    "measured_at": "2024-05-28",
+    "line_coverage": 60.2,
+    "branch_coverage": 49.0,
+    "test_count": 520
+  },
+  {
+    "id": "2ab3ae99-914e-4b46-91de-ac85fca9c4b9",
+    "component_id": "comp-022",
+    "measured_at": "2024-07-04",
+    "line_coverage": 58.6,
+    "branch_coverage": 51.2,
+    "test_count": 514
+  },
+  {
+    "id": "0f8d47db-3ea2-4bc6-b0d9-12bde17fb667",
+    "component_id": "comp-022",
+    "measured_at": "2024-08-10",
+    "line_coverage": 57.1,
+    "branch_coverage": 52.4,
+    "test_count": 531
+  },
+  {
+    "id": "da613cb4-c102-4059-af14-1fbd270dd1d0",
+    "component_id": "comp-022",
+    "measured_at": "2024-09-16",
+    "line_coverage": 56.4,
+    "branch_coverage": 52.6,
+    "test_count": 544
+  },
+  {
+    "id": "f9f538ae-0daf-4e2c-b539-5f22c9fd2b6c",
+    "component_id": "comp-022",
+    "measured_at": "2024-10-23",
+    "line_coverage": 59.2,
+    "branch_coverage": 49.2,
+    "test_count": 562
+  },
+  {
+    "id": "3a4a899e-ffa4-47d8-914a-b7710177c460",
+    "component_id": "comp-022",
+    "measured_at": "2024-11-29",
+    "line_coverage": 57.9,
+    "branch_coverage": 52.0,
+    "test_count": 564
+  },
+  {
+    "id": "bd3e150f-e0b6-450c-ad1b-31cf42dffcbe",
+    "component_id": "comp-023",
+    "measured_at": "2024-01-01",
+    "line_coverage": 55.5,
+    "branch_coverage": 50.3,
+    "test_count": 623
+  },
+  {
+    "id": "d97ad81a-4a6b-4bc0-9ad2-d1f74e721143",
+    "component_id": "comp-023",
+    "measured_at": "2024-02-07",
+    "line_coverage": 54.1,
+    "branch_coverage": 49.2,
+    "test_count": 636
+  },
+  {
+    "id": "c7fdbda4-0fac-430e-aa33-a1e47c94d5b1",
+    "component_id": "comp-023",
+    "measured_at": "2024-03-15",
+    "line_coverage": 57.7,
+    "branch_coverage": 51.2,
+    "test_count": 629
+  },
+  {
+    "id": "f2a38ef1-bf3d-4ff2-85da-4e20f5827129",
+    "component_id": "comp-023",
+    "measured_at": "2024-04-21",
+    "line_coverage": 55.1,
+    "branch_coverage": 52.1,
+    "test_count": 643
+  },
+  {
+    "id": "7a098c36-b400-4fa6-9ef8-fa7ffa8a3514",
+    "component_id": "comp-023",
+    "measured_at": "2024-05-28",
+    "line_coverage": 57.0,
+    "branch_coverage": 47.0,
+    "test_count": 651
+  },
+  {
+    "id": "1f23c18a-2733-472e-9ae2-057f50429b9f",
+    "component_id": "comp-023",
+    "measured_at": "2024-07-04",
+    "line_coverage": 55.1,
+    "branch_coverage": 44.5,
+    "test_count": 649
+  },
+  {
+    "id": "fba1ec55-75ee-41ae-811a-13a20c50bc38",
+    "component_id": "comp-023",
+    "measured_at": "2024-08-10",
+    "line_coverage": 54.2,
+    "branch_coverage": 50.2,
+    "test_count": 660
+  },
+  {
+    "id": "46e161f3-e089-4a58-bb28-f727427af628",
+    "component_id": "comp-023",
+    "measured_at": "2024-09-16",
+    "line_coverage": 54.0,
+    "branch_coverage": 43.4,
+    "test_count": 670
+  },
+  {
+    "id": "5610433b-aced-4aa1-815f-e276f6918406",
+    "component_id": "comp-023",
+    "measured_at": "2024-10-23",
+    "line_coverage": 54.6,
+    "branch_coverage": 47.3,
+    "test_count": 675
+  },
+  {
+    "id": "ed08865c-fcd4-4519-9c63-5c54c58eee5a",
+    "component_id": "comp-023",
+    "measured_at": "2024-11-29",
+    "line_coverage": 57.0,
+    "branch_coverage": 46.3,
+    "test_count": 622
+  },
+  {
+    "id": "5e73442b-8704-41fe-bc87-95b7e0e55601",
+    "component_id": "comp-024",
+    "measured_at": "2024-01-01",
+    "line_coverage": 68.60000000000001,
+    "branch_coverage": 55.3,
+    "test_count": 205
+  },
+  {
+    "id": "6e891f07-78da-4d91-a1f9-95e77aced5ff",
+    "component_id": "comp-024",
+    "measured_at": "2024-02-07",
+    "line_coverage": 67.10000000000001,
+    "branch_coverage": 57.8,
+    "test_count": 209
+  },
+  {
+    "id": "64c0f47b-03c4-4b8c-9034-7d13fbab1e82",
+    "component_id": "comp-024",
+    "measured_at": "2024-03-15",
+    "line_coverage": 72.10000000000001,
+    "branch_coverage": 60.7,
+    "test_count": 239
+  },
+  {
+    "id": "9bfb5519-b510-4d74-bd82-7c77f7fd9f8c",
+    "component_id": "comp-024",
+    "measured_at": "2024-04-21",
+    "line_coverage": 69.5,
+    "branch_coverage": 64.6,
+    "test_count": 208
+  },
+  {
+    "id": "72a5b4db-d59e-451b-90d9-9d85d335ef0d",
+    "component_id": "comp-024",
+    "measured_at": "2024-05-28",
+    "line_coverage": 66.8,
+    "branch_coverage": 56.5,
+    "test_count": 206
+  },
+  {
+    "id": "cb8f2f8b-43bf-48cb-bc0e-9b9ee41fe209",
+    "component_id": "comp-024",
+    "measured_at": "2024-07-04",
+    "line_coverage": 67.9,
+    "branch_coverage": 55.1,
+    "test_count": 235
+  },
+  {
+    "id": "c1d79f0a-6b3c-49e1-8532-484c3839e28e",
+    "component_id": "comp-024",
+    "measured_at": "2024-08-10",
+    "line_coverage": 69.4,
+    "branch_coverage": 61.2,
+    "test_count": 195
+  },
+  {
+    "id": "5caf0dbd-5e72-484d-9f50-86fd53f65e2c",
+    "component_id": "comp-024",
+    "measured_at": "2024-09-16",
+    "line_coverage": 68.10000000000001,
+    "branch_coverage": 61.1,
+    "test_count": 233
+  },
+  {
+    "id": "32386ed4-ddd1-485c-bd43-5f64e557434b",
+    "component_id": "comp-024",
+    "measured_at": "2024-10-23",
+    "line_coverage": 67.7,
+    "branch_coverage": 60.9,
+    "test_count": 208
+  },
+  {
+    "id": "b88e30c3-c7ad-45cb-ac25-b36f9e8df372",
+    "component_id": "comp-024",
+    "measured_at": "2024-11-29",
+    "line_coverage": 67.10000000000001,
+    "branch_coverage": 56.0,
+    "test_count": 200
+  },
+  {
+    "id": "3d4a299b-a8c6-43b2-99ff-b50540c6a440",
+    "component_id": "comp-025",
+    "measured_at": "2024-01-01",
+    "line_coverage": 67.0,
+    "branch_coverage": 57.5,
+    "test_count": 96
+  },
+  {
+    "id": "48be8928-d52a-4d8a-be3b-c26191fc6acb",
+    "component_id": "comp-025",
+    "measured_at": "2024-02-07",
+    "line_coverage": 64.1,
+    "branch_coverage": 57.2,
+    "test_count": 122
+  },
+  {
+    "id": "6843b916-2990-4316-a31b-5407b057a341",
+    "component_id": "comp-025",
+    "measured_at": "2024-03-15",
+    "line_coverage": 64.5,
+    "branch_coverage": 54.3,
+    "test_count": 138
+  },
+  {
+    "id": "81436511-054a-4f76-95c4-ba437f822b68",
+    "component_id": "comp-025",
+    "measured_at": "2024-04-21",
+    "line_coverage": 62.39999999999999,
+    "branch_coverage": 56.4,
+    "test_count": 148
+  },
+  {
+    "id": "ba3777f4-8760-4980-b634-84cbc100c3b6",
+    "component_id": "comp-025",
+    "measured_at": "2024-05-28",
+    "line_coverage": 61.39999999999999,
+    "branch_coverage": 52.8,
+    "test_count": 96
+  },
+  {
+    "id": "7c914264-492c-4823-99d1-5de0ac326c35",
+    "component_id": "comp-025",
+    "measured_at": "2024-07-04",
+    "line_coverage": 61.099999999999994,
+    "branch_coverage": 57.5,
+    "test_count": 130
+  },
+  {
+    "id": "706fda08-5238-4eca-b528-d0325b6ab444",
+    "component_id": "comp-025",
+    "measured_at": "2024-08-10",
+    "line_coverage": 65.5,
+    "branch_coverage": 59.9,
+    "test_count": 91
+  },
+  {
+    "id": "4a7caf8e-eb9d-4c4e-b0b4-e25d8bdb3e2c",
+    "component_id": "comp-025",
+    "measured_at": "2024-09-16",
+    "line_coverage": 63.89999999999999,
+    "branch_coverage": 55.0,
+    "test_count": 106
+  },
+  {
+    "id": "49ce6ea6-6971-40f3-9246-ee6e1d51a9d6",
+    "component_id": "comp-025",
+    "measured_at": "2024-10-23",
+    "line_coverage": 61.099999999999994,
+    "branch_coverage": 51.3,
+    "test_count": 117
+  },
+  {
+    "id": "834d694b-b3ab-4fc3-b826-89efce18912d",
+    "component_id": "comp-025",
+    "measured_at": "2024-11-29",
+    "line_coverage": 64.1,
+    "branch_coverage": 52.4,
+    "test_count": 132
+  },
+  {
+    "id": "0822b126-c223-48c6-9fe6-e6d764140f14",
+    "component_id": "comp-026",
+    "measured_at": "2024-01-01",
+    "line_coverage": 70.9,
+    "branch_coverage": 65.1,
+    "test_count": 144
+  },
+  {
+    "id": "d357609f-da62-4c4f-9700-0d218de5edbf",
+    "component_id": "comp-026",
+    "measured_at": "2024-02-07",
+    "line_coverage": 69.4,
+    "branch_coverage": 57.0,
+    "test_count": 96
+  },
+  {
+    "id": "6c6bb32f-896d-4766-bea7-61ad0a496553",
+    "component_id": "comp-026",
+    "measured_at": "2024-03-15",
+    "line_coverage": 68.3,
+    "branch_coverage": 56.5,
+    "test_count": 92
+  },
+  {
+    "id": "bc39e978-55db-4099-9d09-05ed0ba1b78f",
+    "component_id": "comp-026",
+    "measured_at": "2024-04-21",
+    "line_coverage": 71.7,
+    "branch_coverage": 58.6,
+    "test_count": 128
+  },
+  {
+    "id": "5fe7a05c-1107-4571-9560-d84fb56d1238",
+    "component_id": "comp-026",
+    "measured_at": "2024-05-28",
+    "line_coverage": 72.3,
+    "branch_coverage": 64.4,
+    "test_count": 97
+  },
+  {
+    "id": "d0cd5671-ff98-44ed-8f11-024831e5b9c0",
+    "component_id": "comp-026",
+    "measured_at": "2024-07-04",
+    "line_coverage": 72.1,
+    "branch_coverage": 63.7,
+    "test_count": 146
+  },
+  {
+    "id": "2001e3c6-244d-49fc-a88f-1e6724e939f4",
+    "component_id": "comp-026",
+    "measured_at": "2024-08-10",
+    "line_coverage": 68.1,
+    "branch_coverage": 64.4,
+    "test_count": 122
+  },
+  {
+    "id": "b3603802-cbb8-4764-9c5e-b8f4d9b4c0b3",
+    "component_id": "comp-026",
+    "measured_at": "2024-09-16",
+    "line_coverage": 73.0,
+    "branch_coverage": 61.5,
+    "test_count": 129
+  },
+  {
+    "id": "bf0ae8ed-bcb7-41d3-816c-ef27b1c23db2",
+    "component_id": "comp-026",
+    "measured_at": "2024-10-23",
+    "line_coverage": 69.2,
+    "branch_coverage": 60.8,
+    "test_count": 131
+  },
+  {
+    "id": "380dd833-eb0b-4f8e-b5f5-36ae89978df6",
+    "component_id": "comp-026",
+    "measured_at": "2024-11-29",
+    "line_coverage": 69.3,
+    "branch_coverage": 59.4,
+    "test_count": 106
+  },
+  {
+    "id": "e6c83e52-b172-4bde-9fd8-9c2ab03b04b7",
+    "component_id": "comp-027",
+    "measured_at": "2024-01-01",
+    "line_coverage": 85.6,
+    "branch_coverage": 81.3,
+    "test_count": 686
+  },
+  {
+    "id": "b0e3df35-3cd4-40e7-9536-f5d90a8ec88a",
+    "component_id": "comp-027",
+    "measured_at": "2024-02-07",
+    "line_coverage": 86.2,
+    "branch_coverage": 76.9,
+    "test_count": 648
+  },
+  {
+    "id": "de3d0de1-daae-438b-ad52-807db7a8b7fd",
+    "component_id": "comp-027",
+    "measured_at": "2024-03-15",
+    "line_coverage": 86.8,
+    "branch_coverage": 72.5,
+    "test_count": 692
+  },
+  {
+    "id": "04f1316f-a8d5-4c71-8372-f96781baa322",
+    "component_id": "comp-027",
+    "measured_at": "2024-04-21",
+    "line_coverage": 86.4,
+    "branch_coverage": 79.1,
+    "test_count": 655
+  },
+  {
+    "id": "d1d9a7a1-b8fe-48b6-8597-5de2a16f2c66",
+    "component_id": "comp-027",
+    "measured_at": "2024-05-28",
+    "line_coverage": 89.6,
+    "branch_coverage": 74.5,
+    "test_count": 686
+  },
+  {
+    "id": "34a79946-70b6-4c37-a5d1-ae75b3045288",
+    "component_id": "comp-027",
+    "measured_at": "2024-07-04",
+    "line_coverage": 89.7,
+    "branch_coverage": 74.2,
+    "test_count": 669
+  },
+  {
+    "id": "d2a9230e-e867-413c-88d2-8e3a7f90048b",
+    "component_id": "comp-027",
+    "measured_at": "2024-08-10",
+    "line_coverage": 86.8,
+    "branch_coverage": 73.6,
+    "test_count": 689
+  },
+  {
+    "id": "dc2a7c3a-0a88-43aa-b10e-ee13abbd3050",
+    "component_id": "comp-027",
+    "measured_at": "2024-09-16",
+    "line_coverage": 88.5,
+    "branch_coverage": 72.6,
+    "test_count": 690
+  },
+  {
+    "id": "74fe3baa-f8b2-46a1-9720-e90360823268",
+    "component_id": "comp-027",
+    "measured_at": "2024-10-23",
+    "line_coverage": 85.7,
+    "branch_coverage": 76.4,
+    "test_count": 694
+  },
+  {
+    "id": "f7793fb9-dd73-4b0b-ac88-504acc62e824",
+    "component_id": "comp-027",
+    "measured_at": "2024-11-29",
+    "line_coverage": 89.3,
+    "branch_coverage": 71.8,
+    "test_count": 650
+  },
+  {
+    "id": "ce38f0d8-f61a-4dca-a188-4d96623abcea",
+    "component_id": "comp-028",
+    "measured_at": "2024-01-01",
+    "line_coverage": 92.1,
+    "branch_coverage": 79.8,
+    "test_count": 676
+  },
+  {
+    "id": "bebfffc0-8349-4cae-8bc0-86f67071d82e",
+    "component_id": "comp-028",
+    "measured_at": "2024-02-07",
+    "line_coverage": 89.6,
+    "branch_coverage": 77.1,
+    "test_count": 729
+  },
+  {
+    "id": "4c0fbc1a-b805-4c91-93a3-a90748800e51",
+    "component_id": "comp-028",
+    "measured_at": "2024-03-15",
+    "line_coverage": 91.69999999999999,
+    "branch_coverage": 84.2,
+    "test_count": 705
+  },
+  {
+    "id": "364a7f32-ccaa-4703-b0f7-ccec3a2e5846",
+    "component_id": "comp-028",
+    "measured_at": "2024-04-21",
+    "line_coverage": 89.5,
+    "branch_coverage": 84.3,
+    "test_count": 723
+  },
+  {
+    "id": "f6d9e032-50ba-4374-bb44-a3d5834db27e",
+    "component_id": "comp-028",
+    "measured_at": "2024-05-28",
+    "line_coverage": 92.39999999999999,
+    "branch_coverage": 81.5,
+    "test_count": 724
+  },
+  {
+    "id": "908d5ef4-b94e-4770-a17a-893a09cc61ec",
+    "component_id": "comp-028",
+    "measured_at": "2024-07-04",
+    "line_coverage": 90.1,
+    "branch_coverage": 73.7,
+    "test_count": 728
+  },
+  {
+    "id": "11a1f6bd-3e17-4c6c-a0a1-5a214354c583",
+    "component_id": "comp-028",
+    "measured_at": "2024-08-10",
+    "line_coverage": 87.19999999999999,
+    "branch_coverage": 78.0,
+    "test_count": 726
+  },
+  {
+    "id": "edf8b69a-b728-4d75-b1ea-daed82905b41",
+    "component_id": "comp-028",
+    "measured_at": "2024-09-16",
+    "line_coverage": 92.8,
+    "branch_coverage": 77.2,
+    "test_count": 705
+  },
+  {
+    "id": "84eaf3e8-7a9a-46af-b15b-a94768ceaa4e",
+    "component_id": "comp-028",
+    "measured_at": "2024-10-23",
+    "line_coverage": 87.89999999999999,
+    "branch_coverage": 82.4,
+    "test_count": 699
+  },
+  {
+    "id": "057c19f3-9ee6-43bf-9c0d-dbbfc2e6d6ff",
+    "component_id": "comp-028",
+    "measured_at": "2024-11-29",
+    "line_coverage": 91.3,
+    "branch_coverage": 76.0,
+    "test_count": 713
+  },
+  {
+    "id": "9d5d3a7f-6fd3-453c-8f42-36451b3ae6aa",
+    "component_id": "comp-029",
+    "measured_at": "2024-01-01",
+    "line_coverage": 67.80000000000001,
+    "branch_coverage": 64.4,
+    "test_count": 572
+  },
+  {
+    "id": "f88b71b7-998b-455d-856f-407d3d0c5a28",
+    "component_id": "comp-029",
+    "measured_at": "2024-02-07",
+    "line_coverage": 67.0,
+    "branch_coverage": 58.6,
+    "test_count": 599
+  },
+  {
+    "id": "0dc0ef58-eb8c-48e4-a817-f461c2962939",
+    "component_id": "comp-029",
+    "measured_at": "2024-03-15",
+    "line_coverage": 67.9,
+    "branch_coverage": 62.3,
+    "test_count": 565
+  },
+  {
+    "id": "4528d395-765a-47eb-b896-7793ae6b8642",
+    "component_id": "comp-029",
+    "measured_at": "2024-04-21",
+    "line_coverage": 66.80000000000001,
+    "branch_coverage": 62.0,
+    "test_count": 590
+  },
+  {
+    "id": "2b376972-f142-4494-a85b-2101df798791",
+    "component_id": "comp-029",
+    "measured_at": "2024-05-28",
+    "line_coverage": 64.5,
+    "branch_coverage": 58.8,
+    "test_count": 586
+  },
+  {
+    "id": "a41316e8-b23f-4aa1-b7be-e9cc68191df0",
+    "component_id": "comp-029",
+    "measured_at": "2024-07-04",
+    "line_coverage": 68.60000000000001,
+    "branch_coverage": 62.6,
+    "test_count": 608
+  },
+  {
+    "id": "5ead561f-5625-404f-a75c-b365740b01db",
+    "component_id": "comp-029",
+    "measured_at": "2024-08-10",
+    "line_coverage": 66.5,
+    "branch_coverage": 53.2,
+    "test_count": 583
+  },
+  {
+    "id": "528baa36-fb8c-482f-b967-3dc3d7d48c9b",
+    "component_id": "comp-029",
+    "measured_at": "2024-09-16",
+    "line_coverage": 64.9,
+    "branch_coverage": 58.9,
+    "test_count": 569
+  },
+  {
+    "id": "ac55abe7-6c8b-4ce2-ae7b-579846bd70d6",
+    "component_id": "comp-029",
+    "measured_at": "2024-10-23",
+    "line_coverage": 68.30000000000001,
+    "branch_coverage": 57.3,
+    "test_count": 606
+  },
+  {
+    "id": "cb20396a-5c5c-4e50-8de2-0f85ace15bc4",
+    "component_id": "comp-029",
+    "measured_at": "2024-11-29",
+    "line_coverage": 67.80000000000001,
+    "branch_coverage": 54.3,
+    "test_count": 572
+  },
+  {
+    "id": "9cc43264-9c00-4063-b6fc-02719ea92e6b",
+    "component_id": "comp-030",
+    "measured_at": "2024-01-01",
+    "line_coverage": 85.6,
+    "branch_coverage": 80.3,
+    "test_count": 101
+  },
+  {
+    "id": "b508798a-13b1-4b82-a02b-9941ec57f16f",
+    "component_id": "comp-030",
+    "measured_at": "2024-02-07",
+    "line_coverage": 88.0,
+    "branch_coverage": 79.6,
+    "test_count": 114
+  },
+  {
+    "id": "79d45e92-705c-49c5-bef8-473454e40a09",
+    "component_id": "comp-030",
+    "measured_at": "2024-03-15",
+    "line_coverage": 85.7,
+    "branch_coverage": 71.0,
+    "test_count": 145
+  },
+  {
+    "id": "41792e8e-947c-49bb-a23a-1d572af21b54",
+    "component_id": "comp-030",
+    "measured_at": "2024-04-21",
+    "line_coverage": 86.8,
+    "branch_coverage": 77.9,
+    "test_count": 136
+  },
+  {
+    "id": "8b884c47-552e-4303-81d6-b1a3b7ec163a",
+    "component_id": "comp-030",
+    "measured_at": "2024-05-28",
+    "line_coverage": 85.3,
+    "branch_coverage": 70.6,
+    "test_count": 122
+  },
+  {
+    "id": "59385cfc-1a1a-493d-92e6-7c4e788148e9",
+    "component_id": "comp-030",
+    "measured_at": "2024-07-04",
+    "line_coverage": 85.9,
+    "branch_coverage": 72.3,
+    "test_count": 159
+  },
+  {
+    "id": "43f2df6d-2482-4c2c-bbd1-7df2af8890ac",
+    "component_id": "comp-030",
+    "measured_at": "2024-08-10",
+    "line_coverage": 89.0,
+    "branch_coverage": 84.5,
+    "test_count": 129
+  },
+  {
+    "id": "8be90ad2-b917-4a49-a083-44a3df4eba1c",
+    "component_id": "comp-030",
+    "measured_at": "2024-09-16",
+    "line_coverage": 89.2,
+    "branch_coverage": 75.4,
+    "test_count": 157
+  },
+  {
+    "id": "8cfa8878-137d-47a2-a714-be2b6f325ab5",
+    "component_id": "comp-030",
+    "measured_at": "2024-10-23",
+    "line_coverage": 89.3,
+    "branch_coverage": 82.1,
+    "test_count": 125
+  },
+  {
+    "id": "af05d902-b74e-413c-8c22-e84d4298d1b6",
+    "component_id": "comp-030",
+    "measured_at": "2024-11-29",
+    "line_coverage": 83.7,
+    "branch_coverage": 76.7,
+    "test_count": 148
+  },
+  {
+    "id": "2bf40045-1d19-4720-a61a-74e636aeed4d",
+    "component_id": "comp-031",
+    "measured_at": "2024-01-01",
+    "line_coverage": 92.8,
+    "branch_coverage": 80.9,
+    "test_count": 257
+  },
+  {
+    "id": "964de66b-5902-4819-9266-c28622eaf824",
+    "component_id": "comp-031",
+    "measured_at": "2024-02-07",
+    "line_coverage": 91.19999999999999,
+    "branch_coverage": 74.6,
+    "test_count": 265
+  },
+  {
+    "id": "dd6987f0-0dfa-4255-9f80-69a9d66cd4fb",
+    "component_id": "comp-031",
+    "measured_at": "2024-03-15",
+    "line_coverage": 90.39999999999999,
+    "branch_coverage": 77.1,
+    "test_count": 263
+  },
+  {
+    "id": "4eb023ce-4384-4b79-9432-9ff5d5de0dba",
+    "component_id": "comp-031",
+    "measured_at": "2024-04-21",
+    "line_coverage": 92.6,
+    "branch_coverage": 83.0,
+    "test_count": 244
+  },
+  {
+    "id": "6245255c-c0b1-42db-88ea-803a1f30f430",
+    "component_id": "comp-031",
+    "measured_at": "2024-05-28",
+    "line_coverage": 89.0,
+    "branch_coverage": 80.2,
+    "test_count": 247
+  },
+  {
+    "id": "47ede73d-d232-4b3c-a84c-7ae49f8e901d",
+    "component_id": "comp-031",
+    "measured_at": "2024-07-04",
+    "line_coverage": 92.69999999999999,
+    "branch_coverage": 82.4,
+    "test_count": 269
+  },
+  {
+    "id": "b22284dc-e6e1-49b1-a774-eab1faa87648",
+    "component_id": "comp-031",
+    "measured_at": "2024-08-10",
+    "line_coverage": 82.0,
+    "branch_coverage": 72.2,
+    "test_count": 269
+  },
+  {
+    "id": "413d18b7-f1da-425f-9769-9c7e52e9e2a7",
+    "component_id": "comp-031",
+    "measured_at": "2024-09-16",
+    "line_coverage": 75.0,
+    "branch_coverage": 66.0,
+    "test_count": 280
+  },
+  {
+    "id": "45f79e92-93fa-4fbd-b3cb-f6a024bfe93b",
+    "component_id": "comp-031",
+    "measured_at": "2024-10-23",
+    "line_coverage": 68.0,
+    "branch_coverage": 59.8,
+    "test_count": 272
+  },
+  {
+    "id": "fb3f602d-c6ab-49ac-a212-cca333ca31f5",
+    "component_id": "comp-031",
+    "measured_at": "2024-11-29",
+    "line_coverage": 61.0,
+    "branch_coverage": 53.7,
+    "test_count": 225
+  },
+  {
+    "id": "ed4bdbe5-cb66-49e7-be89-b30fdf949833",
+    "component_id": "comp-032",
+    "measured_at": "2024-01-01",
+    "line_coverage": 80.2,
+    "branch_coverage": 73.7,
+    "test_count": 323
+  },
+  {
+    "id": "3ba91cc8-bb96-49fb-a37d-67ff651e5174",
+    "component_id": "comp-032",
+    "measured_at": "2024-02-07",
+    "line_coverage": 79.5,
+    "branch_coverage": 70.5,
+    "test_count": 282
+  },
+  {
+    "id": "b5263066-a1cf-485a-aa48-0c248638ec54",
+    "component_id": "comp-032",
+    "measured_at": "2024-03-15",
+    "line_coverage": 78.9,
+    "branch_coverage": 69.1,
+    "test_count": 295
+  },
+  {
+    "id": "d7ecea2d-bed2-4caa-a73d-136efa9d41d3",
+    "component_id": "comp-032",
+    "measured_at": "2024-04-21",
+    "line_coverage": 76.10000000000001,
+    "branch_coverage": 63.0,
+    "test_count": 329
+  },
+  {
+    "id": "df677787-2d71-40b6-a68c-dc9370e0b820",
+    "component_id": "comp-032",
+    "measured_at": "2024-05-28",
+    "line_coverage": 80.60000000000001,
+    "branch_coverage": 75.2,
+    "test_count": 300
+  },
+  {
+    "id": "a0ab8c07-9fa0-44cb-bec4-3834257c6c30",
+    "component_id": "comp-032",
+    "measured_at": "2024-07-04",
+    "line_coverage": 77.7,
+    "branch_coverage": 65.8,
+    "test_count": 291
+  },
+  {
+    "id": "b24acc6c-349a-4891-a836-cd3b5e26ebe4",
+    "component_id": "comp-032",
+    "measured_at": "2024-08-10",
+    "line_coverage": 76.60000000000001,
+    "branch_coverage": 63.4,
+    "test_count": 314
+  },
+  {
+    "id": "e5bc38aa-063b-4ab2-a729-04dc9c237b3c",
+    "component_id": "comp-032",
+    "measured_at": "2024-09-16",
+    "line_coverage": 76.8,
+    "branch_coverage": 62.3,
+    "test_count": 337
+  },
+  {
+    "id": "c9b35a7d-b01e-4956-b403-6ab46d262d49",
+    "component_id": "comp-032",
+    "measured_at": "2024-10-23",
+    "line_coverage": 75.60000000000001,
+    "branch_coverage": 65.0,
+    "test_count": 314
+  },
+  {
+    "id": "903fac69-5872-4a6d-ba11-cd5d5e63e450",
+    "component_id": "comp-032",
+    "measured_at": "2024-11-29",
+    "line_coverage": 76.7,
+    "branch_coverage": 68.1,
+    "test_count": 322
+  },
+  {
+    "id": "07517f59-ef1d-448a-84fc-633749bc9639",
+    "component_id": "comp-033",
+    "measured_at": "2024-01-01",
+    "line_coverage": 65.60000000000001,
+    "branch_coverage": 58.7,
+    "test_count": 783
+  },
+  {
+    "id": "dbc0ff06-82c8-4416-9d43-442d0dd37985",
+    "component_id": "comp-033",
+    "measured_at": "2024-02-07",
+    "line_coverage": 60.800000000000004,
+    "branch_coverage": 49.1,
+    "test_count": 782
+  },
+  {
+    "id": "8e0e45ac-18f0-44dc-92b5-cfa704ab7056",
+    "component_id": "comp-033",
+    "measured_at": "2024-03-15",
+    "line_coverage": 63.400000000000006,
+    "branch_coverage": 56.0,
+    "test_count": 795
+  },
+  {
+    "id": "cd4301a1-1751-4ff1-9023-c5d4eb9a30ea",
+    "component_id": "comp-033",
+    "measured_at": "2024-04-21",
+    "line_coverage": 61.0,
+    "branch_coverage": 55.1,
+    "test_count": 775
+  },
+  {
+    "id": "84ce25c3-3ecb-46ac-94cb-5687944b8190",
+    "component_id": "comp-033",
+    "measured_at": "2024-05-28",
+    "line_coverage": 64.4,
+    "branch_coverage": 53.7,
+    "test_count": 811
+  },
+  {
+    "id": "025d5354-4ae8-4a91-bf2e-9ead3a817594",
+    "component_id": "comp-033",
+    "measured_at": "2024-07-04",
+    "line_coverage": 60.400000000000006,
+    "branch_coverage": 50.2,
+    "test_count": 819
+  },
+  {
+    "id": "ed9ac380-5000-4915-be16-2c3d2d67a80e",
+    "component_id": "comp-033",
+    "measured_at": "2024-08-10",
+    "line_coverage": 65.10000000000001,
+    "branch_coverage": 55.5,
+    "test_count": 830
+  },
+  {
+    "id": "50c9d3df-00c5-4a28-b884-4a09b0341f0e",
+    "component_id": "comp-033",
+    "measured_at": "2024-09-16",
+    "line_coverage": 63.0,
+    "branch_coverage": 56.5,
+    "test_count": 792
+  },
+  {
+    "id": "a0af7038-2cad-47d1-9e4c-9b9864579f1b",
+    "component_id": "comp-033",
+    "measured_at": "2024-10-23",
+    "line_coverage": 61.900000000000006,
+    "branch_coverage": 57.5,
+    "test_count": 823
+  },
+  {
+    "id": "07a55733-ffd8-4ba2-b3d7-37097ac04fb0",
+    "component_id": "comp-033",
+    "measured_at": "2024-11-29",
+    "line_coverage": 61.800000000000004,
+    "branch_coverage": 50.8,
+    "test_count": 790
+  },
+  {
+    "id": "085451b6-73e0-4c0c-8854-6fd5716aa430",
+    "component_id": "comp-034",
+    "measured_at": "2024-01-01",
+    "line_coverage": 81.1,
+    "branch_coverage": 69.0,
+    "test_count": 68
+  },
+  {
+    "id": "f3207d52-db10-467f-a32b-523f9c592114",
+    "component_id": "comp-034",
+    "measured_at": "2024-02-07",
+    "line_coverage": 83.0,
+    "branch_coverage": 73.3,
+    "test_count": 104
+  },
+  {
+    "id": "c7315cdc-5aff-410a-b4dd-0252bd68a566",
+    "component_id": "comp-034",
+    "measured_at": "2024-03-15",
+    "line_coverage": 85.5,
+    "branch_coverage": 72.6,
+    "test_count": 76
+  },
+  {
+    "id": "74259ab4-ad8a-46b1-8720-c9a467109a3a",
+    "component_id": "comp-034",
+    "measured_at": "2024-04-21",
+    "line_coverage": 81.3,
+    "branch_coverage": 75.4,
+    "test_count": 86
+  },
+  {
+    "id": "9088cceb-9980-45f6-bed8-3b82f133fe51",
+    "component_id": "comp-034",
+    "measured_at": "2024-05-28",
+    "line_coverage": 82.9,
+    "branch_coverage": 68.4,
+    "test_count": 73
+  },
+  {
+    "id": "fbee6cb7-452a-4f73-b9f1-26d6c6f86c60",
+    "component_id": "comp-034",
+    "measured_at": "2024-07-04",
+    "line_coverage": 80.0,
+    "branch_coverage": 68.3,
+    "test_count": 50
+  },
+  {
+    "id": "fccc19f2-467c-4284-80f9-0e0f9dff9a34",
+    "component_id": "comp-034",
+    "measured_at": "2024-08-10",
+    "line_coverage": 80.8,
+    "branch_coverage": 72.7,
+    "test_count": 58
+  },
+  {
+    "id": "6d6f9f1b-8d37-4f1b-89c4-a2d3314a5da5",
+    "component_id": "comp-034",
+    "measured_at": "2024-09-16",
+    "line_coverage": 84.6,
+    "branch_coverage": 72.4,
+    "test_count": 102
+  },
+  {
+    "id": "3d056569-790f-4c55-a77e-835b78f737c2",
+    "component_id": "comp-034",
+    "measured_at": "2024-10-23",
+    "line_coverage": 83.5,
+    "branch_coverage": 68.2,
+    "test_count": 96
+  },
+  {
+    "id": "15d13fdd-3cab-48fd-95e6-66945bb37bfd",
+    "component_id": "comp-034",
+    "measured_at": "2024-11-29",
+    "line_coverage": 84.1,
+    "branch_coverage": 76.9,
+    "test_count": 63
+  },
+  {
+    "id": "085c98cd-1935-4352-b096-295c90cee8c1",
+    "component_id": "comp-035",
+    "measured_at": "2024-01-01",
+    "line_coverage": 84.5,
+    "branch_coverage": 74.8,
+    "test_count": 377
+  },
+  {
+    "id": "e1d36f83-7589-4f47-a658-b32bb667e9d3",
+    "component_id": "comp-035",
+    "measured_at": "2024-02-07",
+    "line_coverage": 88.9,
+    "branch_coverage": 81.8,
+    "test_count": 380
+  },
+  {
+    "id": "b027ffa7-3367-4841-877f-c5da64bfa2ad",
+    "component_id": "comp-035",
+    "measured_at": "2024-03-15",
+    "line_coverage": 86.8,
+    "branch_coverage": 71.0,
+    "test_count": 364
+  },
+  {
+    "id": "1ffa2f5a-7186-4943-9ed2-78b890b25487",
+    "component_id": "comp-035",
+    "measured_at": "2024-04-21",
+    "line_coverage": 88.9,
+    "branch_coverage": 77.4,
+    "test_count": 369
+  },
+  {
+    "id": "336723b1-a66a-4fd0-b68a-555d1ae17ebe",
+    "component_id": "comp-035",
+    "measured_at": "2024-05-28",
+    "line_coverage": 85.8,
+    "branch_coverage": 74.9,
+    "test_count": 389
+  },
+  {
+    "id": "65381a29-ef11-4ec9-bc81-1368bcf96b51",
+    "component_id": "comp-035",
+    "measured_at": "2024-07-04",
+    "line_coverage": 88.10000000000001,
+    "branch_coverage": 77.1,
+    "test_count": 404
+  },
+  {
+    "id": "0614c024-85e0-4b4d-8ab8-ee5edf523b17",
+    "component_id": "comp-035",
+    "measured_at": "2024-08-10",
+    "line_coverage": 84.4,
+    "branch_coverage": 70.0,
+    "test_count": 368
+  },
+  {
+    "id": "bb342b17-7ec2-418b-9e65-eec96326f176",
+    "component_id": "comp-035",
+    "measured_at": "2024-09-16",
+    "line_coverage": 88.60000000000001,
+    "branch_coverage": 71.5,
+    "test_count": 376
+  },
+  {
+    "id": "44455f55-1cdd-435b-9f34-6b559638b0bc",
+    "component_id": "comp-035",
+    "measured_at": "2024-10-23",
+    "line_coverage": 88.60000000000001,
+    "branch_coverage": 73.3,
+    "test_count": 412
+  },
+  {
+    "id": "954c27fb-f0f9-4a99-949d-b3a11c8581e2",
+    "component_id": "comp-035",
+    "measured_at": "2024-11-29",
+    "line_coverage": 86.10000000000001,
+    "branch_coverage": 71.5,
+    "test_count": 372
+  },
+  {
+    "id": "c2f9a05b-fb04-4cc6-a35d-d68e7e9fc60b",
+    "component_id": "comp-036",
+    "measured_at": "2024-01-01",
+    "line_coverage": 79.3,
+    "branch_coverage": 67.0,
+    "test_count": 159
+  },
+  {
+    "id": "f46e5612-1726-4a86-a196-0ed5908bccb1",
+    "component_id": "comp-036",
+    "measured_at": "2024-02-07",
+    "line_coverage": 81.6,
+    "branch_coverage": 72.4,
+    "test_count": 126
+  },
+  {
+    "id": "bebfedb3-cb8e-498f-8179-509cd29401e6",
+    "component_id": "comp-036",
+    "measured_at": "2024-03-15",
+    "line_coverage": 80.69999999999999,
+    "branch_coverage": 71.5,
+    "test_count": 159
+  },
+  {
+    "id": "50ae1a2c-516e-484a-a336-e51ec97c9b4b",
+    "component_id": "comp-036",
+    "measured_at": "2024-04-21",
+    "line_coverage": 83.69999999999999,
+    "branch_coverage": 70.6,
+    "test_count": 161
+  },
+  {
+    "id": "9367664f-3178-48c7-b483-b5740d2317e7",
+    "component_id": "comp-036",
+    "measured_at": "2024-05-28",
+    "line_coverage": 78.69999999999999,
+    "branch_coverage": 73.0,
+    "test_count": 135
+  },
+  {
+    "id": "8c8e3d19-d49d-4dce-ba6d-4c77b4d3e692",
+    "component_id": "comp-036",
+    "measured_at": "2024-07-04",
+    "line_coverage": 80.69999999999999,
+    "branch_coverage": 68.5,
+    "test_count": 158
+  },
+  {
+    "id": "31eafb76-3d5a-4de3-90b2-3584618a203c",
+    "component_id": "comp-036",
+    "measured_at": "2024-08-10",
+    "line_coverage": 81.3,
+    "branch_coverage": 66.9,
+    "test_count": 180
+  },
+  {
+    "id": "388a7f11-da7c-4ac0-9c95-4e58d4221ce7",
+    "component_id": "comp-036",
+    "measured_at": "2024-09-16",
+    "line_coverage": 81.39999999999999,
+    "branch_coverage": 77.0,
+    "test_count": 138
+  },
+  {
+    "id": "f5b68c62-44f4-46f9-afea-f0f2b2e792ea",
+    "component_id": "comp-036",
+    "measured_at": "2024-10-23",
+    "line_coverage": 78.69999999999999,
+    "branch_coverage": 64.8,
+    "test_count": 176
+  },
+  {
+    "id": "537171bc-66b7-42e3-ae3d-f5ccd7d88af4",
+    "component_id": "comp-036",
+    "measured_at": "2024-11-29",
+    "line_coverage": 78.8,
+    "branch_coverage": 65.8,
+    "test_count": 173
+  },
+  {
+    "id": "ebc22b14-c17d-4bf7-9215-b25ae7d20074",
+    "component_id": "comp-037",
+    "measured_at": "2024-01-01",
+    "line_coverage": 84.69999999999999,
+    "branch_coverage": 68.3,
+    "test_count": 724
+  },
+  {
+    "id": "e5f7b5b9-523c-4c39-8c42-307a568c01d5",
+    "component_id": "comp-037",
+    "measured_at": "2024-02-07",
+    "line_coverage": 84.8,
+    "branch_coverage": 70.8,
+    "test_count": 717
+  },
+  {
+    "id": "90ccf7d5-bb44-4359-97af-461fe654bd1d",
+    "component_id": "comp-037",
+    "measured_at": "2024-03-15",
+    "line_coverage": 86.69999999999999,
+    "branch_coverage": 79.5,
+    "test_count": 674
+  },
+  {
+    "id": "f87790e5-34da-48d9-8305-f96d512dd93a",
+    "component_id": "comp-037",
+    "measured_at": "2024-04-21",
+    "line_coverage": 87.39999999999999,
+    "branch_coverage": 71.2,
+    "test_count": 691
+  },
+  {
+    "id": "30185d9f-3460-4dd5-ae4e-474bc396f60e",
+    "component_id": "comp-037",
+    "measured_at": "2024-05-28",
+    "line_coverage": 88.39999999999999,
+    "branch_coverage": 81.8,
+    "test_count": 717
+  },
+  {
+    "id": "d68c5b9a-351d-4ee3-8d24-bf7b99194576",
+    "component_id": "comp-037",
+    "measured_at": "2024-07-04",
+    "line_coverage": 85.39999999999999,
+    "branch_coverage": 77.7,
+    "test_count": 716
+  },
+  {
+    "id": "9983bccc-e7d5-4a8f-8242-b6508446e103",
+    "component_id": "comp-037",
+    "measured_at": "2024-08-10",
+    "line_coverage": 83.0,
+    "branch_coverage": 75.2,
+    "test_count": 733
+  },
+  {
+    "id": "c90a45d3-3e8f-4f5f-a2ce-7987cac75a5d",
+    "component_id": "comp-037",
+    "measured_at": "2024-09-16",
+    "line_coverage": 82.8,
+    "branch_coverage": 77.3,
+    "test_count": 688
+  },
+  {
+    "id": "9281693d-20e6-47cc-8681-f1520b8d72e7",
+    "component_id": "comp-037",
+    "measured_at": "2024-10-23",
+    "line_coverage": 83.8,
+    "branch_coverage": 67.9,
+    "test_count": 708
+  },
+  {
+    "id": "b69b2eae-5bd7-4c21-bc74-b21323e632ac",
+    "component_id": "comp-037",
+    "measured_at": "2024-11-29",
+    "line_coverage": 84.89999999999999,
+    "branch_coverage": 74.4,
+    "test_count": 694
+  },
+  {
+    "id": "adfa66a9-0929-471c-89f3-38fa6c66d4cf",
+    "component_id": "comp-038",
+    "measured_at": "2024-01-01",
+    "line_coverage": 58.9,
+    "branch_coverage": 53.3,
+    "test_count": 223
+  },
+  {
+    "id": "9e0476f5-9fe9-4346-88c3-b0322cf09fc6",
+    "component_id": "comp-038",
+    "measured_at": "2024-02-07",
+    "line_coverage": 59.1,
+    "branch_coverage": 54.5,
+    "test_count": 181
+  },
+  {
+    "id": "03a718a5-4a91-4518-9665-ccdc17ddf075",
+    "component_id": "comp-038",
+    "measured_at": "2024-03-15",
+    "line_coverage": 57.0,
+    "branch_coverage": 47.8,
+    "test_count": 220
+  },
+  {
+    "id": "4a5faab6-8aa5-4c67-8117-6256ec8e7cf7",
+    "component_id": "comp-038",
+    "measured_at": "2024-04-21",
+    "line_coverage": 55.2,
+    "branch_coverage": 50.9,
+    "test_count": 205
+  },
+  {
+    "id": "f367cfba-beaa-412a-8c15-8a571200f790",
+    "component_id": "comp-038",
+    "measured_at": "2024-05-28",
+    "line_coverage": 55.800000000000004,
+    "branch_coverage": 52.7,
+    "test_count": 173
+  },
+  {
+    "id": "c47fafff-e4b4-42ce-bc4c-5b2617124f05",
+    "component_id": "comp-038",
+    "measured_at": "2024-07-04",
+    "line_coverage": 59.800000000000004,
+    "branch_coverage": 48.0,
+    "test_count": 214
+  },
+  {
+    "id": "d3c38ee3-2a04-4328-95eb-ff2362a68a32",
+    "component_id": "comp-038",
+    "measured_at": "2024-08-10",
+    "line_coverage": 56.9,
+    "branch_coverage": 53.7,
+    "test_count": 185
+  },
+  {
+    "id": "a8bf1640-97b7-4d58-877d-3d3186c71d07",
+    "component_id": "comp-038",
+    "measured_at": "2024-09-16",
+    "line_coverage": 55.6,
+    "branch_coverage": 47.1,
+    "test_count": 164
+  },
+  {
+    "id": "d3eadf07-8887-4c4d-9d98-d73118a2694e",
+    "component_id": "comp-038",
+    "measured_at": "2024-10-23",
+    "line_coverage": 55.1,
+    "branch_coverage": 50.8,
+    "test_count": 191
+  },
+  {
+    "id": "9f901e88-6002-4249-9cbb-a1dea24a9de6",
+    "component_id": "comp-038",
+    "measured_at": "2024-11-29",
+    "line_coverage": 57.5,
+    "branch_coverage": 54.0,
+    "test_count": 208
+  },
+  {
+    "id": "38a7c56a-310b-4a21-b2d5-601839864b0e",
+    "component_id": "comp-039",
+    "measured_at": "2024-01-01",
+    "line_coverage": 68.5,
+    "branch_coverage": 64.7,
+    "test_count": 380
+  },
+  {
+    "id": "32e62452-7a19-401d-870f-da893dc68755",
+    "component_id": "comp-039",
+    "measured_at": "2024-02-07",
+    "line_coverage": 72.2,
+    "branch_coverage": 58.1,
+    "test_count": 406
+  },
+  {
+    "id": "9467f63b-2d43-4926-bec2-18a53529fec6",
+    "component_id": "comp-039",
+    "measured_at": "2024-03-15",
+    "line_coverage": 74.4,
+    "branch_coverage": 61.6,
+    "test_count": 371
+  },
+  {
+    "id": "849c277e-038e-4b1f-a09f-58c8f8c7ab46",
+    "component_id": "comp-039",
+    "measured_at": "2024-04-21",
+    "line_coverage": 73.30000000000001,
+    "branch_coverage": 68.7,
+    "test_count": 355
+  },
+  {
+    "id": "e71d45a0-fd7d-405e-ac62-3b301a1cb009",
+    "component_id": "comp-039",
+    "measured_at": "2024-05-28",
+    "line_coverage": 74.0,
+    "branch_coverage": 68.2,
+    "test_count": 372
+  },
+  {
+    "id": "f7677bc6-f19d-414c-b7c7-a17657972833",
+    "component_id": "comp-039",
+    "measured_at": "2024-07-04",
+    "line_coverage": 72.10000000000001,
+    "branch_coverage": 62.7,
+    "test_count": 369
+  },
+  {
+    "id": "bcce8747-0750-488b-84c2-e8adb08e3245",
+    "component_id": "comp-039",
+    "measured_at": "2024-08-10",
+    "line_coverage": 73.2,
+    "branch_coverage": 65.6,
+    "test_count": 353
+  },
+  {
+    "id": "0f264056-8520-4970-ad9a-e71bd94a750e",
+    "component_id": "comp-039",
+    "measured_at": "2024-09-16",
+    "line_coverage": 74.30000000000001,
+    "branch_coverage": 69.8,
+    "test_count": 363
+  },
+  {
+    "id": "841bcb65-646c-431b-b045-0b82dc63b01d",
+    "component_id": "comp-039",
+    "measured_at": "2024-10-23",
+    "line_coverage": 73.5,
+    "branch_coverage": 67.5,
+    "test_count": 365
+  },
+  {
+    "id": "ac1b594c-74fb-4bf9-b1a8-167140918760",
+    "component_id": "comp-039",
+    "measured_at": "2024-11-29",
+    "line_coverage": 70.9,
+    "branch_coverage": 56.9,
+    "test_count": 370
+  },
+  {
+    "id": "352bb30e-10ef-4af9-837c-5ed3439b92e4",
+    "component_id": "comp-040",
+    "measured_at": "2024-01-01",
+    "line_coverage": 75.8,
+    "branch_coverage": 71.7,
+    "test_count": 574
+  },
+  {
+    "id": "9008e8d3-7ba7-49ff-98ad-f03b0a0b5319",
+    "component_id": "comp-040",
+    "measured_at": "2024-02-07",
+    "line_coverage": 79.5,
+    "branch_coverage": 68.6,
+    "test_count": 529
+  },
+  {
+    "id": "557e4100-57f6-49f5-b99a-94d24b30386f",
+    "component_id": "comp-040",
+    "measured_at": "2024-03-15",
+    "line_coverage": 80.10000000000001,
+    "branch_coverage": 70.0,
+    "test_count": 550
+  },
+  {
+    "id": "a7160ce2-417c-47de-9c44-55c1ad343ec9",
+    "component_id": "comp-040",
+    "measured_at": "2024-04-21",
+    "line_coverage": 81.10000000000001,
+    "branch_coverage": 66.4,
+    "test_count": 539
+  },
+  {
+    "id": "51e18827-029e-4aa1-8b5f-da38e048aad3",
+    "component_id": "comp-040",
+    "measured_at": "2024-05-28",
+    "line_coverage": 79.2,
+    "branch_coverage": 72.7,
+    "test_count": 581
+  },
+  {
+    "id": "22e0d92b-623b-4d0c-a7e9-798686877a1d",
+    "component_id": "comp-040",
+    "measured_at": "2024-07-04",
+    "line_coverage": 80.9,
+    "branch_coverage": 67.7,
+    "test_count": 530
+  },
+  {
+    "id": "df21b42c-dc83-45cf-82cb-bec11ce04918",
+    "component_id": "comp-040",
+    "measured_at": "2024-08-10",
+    "line_coverage": 80.10000000000001,
+    "branch_coverage": 66.0,
+    "test_count": 580
+  },
+  {
+    "id": "643a1c52-0e18-4453-a04a-fcdfb33af4b1",
+    "component_id": "comp-040",
+    "measured_at": "2024-09-16",
+    "line_coverage": 77.7,
+    "branch_coverage": 68.0,
+    "test_count": 536
+  },
+  {
+    "id": "0586467f-d01a-46d5-8bbb-7f1eeb062542",
+    "component_id": "comp-040",
+    "measured_at": "2024-10-23",
+    "line_coverage": 76.5,
+    "branch_coverage": 70.6,
+    "test_count": 558
+  },
+  {
+    "id": "112a90a6-304e-4ee3-8246-258d5a3117b1",
+    "component_id": "comp-040",
+    "measured_at": "2024-11-29",
+    "line_coverage": 79.9,
+    "branch_coverage": 70.3,
+    "test_count": 576
+  },
+  {
+    "id": "7a3cda13-7698-496c-8d7d-7e2dc7c75bd8",
+    "component_id": "comp-041",
+    "measured_at": "2024-01-01",
+    "line_coverage": 58.0,
+    "branch_coverage": 52.3,
+    "test_count": 515
+  },
+  {
+    "id": "23e88e1f-20b5-433a-8689-2da943d46adf",
+    "component_id": "comp-041",
+    "measured_at": "2024-02-07",
+    "line_coverage": 53.8,
+    "branch_coverage": 45.8,
+    "test_count": 497
+  },
+  {
+    "id": "dab15c37-b0ed-4b00-aced-8733606079f6",
+    "component_id": "comp-041",
+    "measured_at": "2024-03-15",
+    "line_coverage": 55.9,
+    "branch_coverage": 48.2,
+    "test_count": 485
+  },
+  {
+    "id": "0f7b9d5e-c6b0-4e29-9d9e-c6294b2eb4d3",
+    "component_id": "comp-041",
+    "measured_at": "2024-04-21",
+    "line_coverage": 55.199999999999996,
+    "branch_coverage": 46.2,
+    "test_count": 473
+  },
+  {
+    "id": "bfb91e3e-7abc-4103-91e2-463c36de97fa",
+    "component_id": "comp-041",
+    "measured_at": "2024-05-28",
+    "line_coverage": 57.3,
+    "branch_coverage": 51.6,
+    "test_count": 510
+  },
+  {
+    "id": "1e681f88-b0d7-4dad-80b9-3a374b320d19",
+    "component_id": "comp-041",
+    "measured_at": "2024-07-04",
+    "line_coverage": 55.099999999999994,
+    "branch_coverage": 46.8,
+    "test_count": 479
+  },
+  {
+    "id": "3fd2e68b-6419-4fc3-8177-725e9c23f827",
+    "component_id": "comp-041",
+    "measured_at": "2024-08-10",
+    "line_coverage": 54.199999999999996,
+    "branch_coverage": 43.7,
+    "test_count": 527
+  },
+  {
+    "id": "7f022c60-3824-439c-9665-bff218ff1a0d",
+    "component_id": "comp-041",
+    "measured_at": "2024-09-16",
+    "line_coverage": 53.099999999999994,
+    "branch_coverage": 50.2,
+    "test_count": 501
+  },
+  {
+    "id": "9a5e8d45-1d25-4eef-99e2-bdd6c360bd4e",
+    "component_id": "comp-041",
+    "measured_at": "2024-10-23",
+    "line_coverage": 56.099999999999994,
+    "branch_coverage": 46.9,
+    "test_count": 487
+  },
+  {
+    "id": "e6deaed0-1c2a-4509-99d9-45b20f432fcc",
+    "component_id": "comp-041",
+    "measured_at": "2024-11-29",
+    "line_coverage": 57.9,
+    "branch_coverage": 52.5,
+    "test_count": 479
+  },
+  {
+    "id": "5f513c6e-842a-49e2-b84b-fc2e66e1ded5",
+    "component_id": "comp-042",
+    "measured_at": "2024-01-01",
+    "line_coverage": 87.8,
+    "branch_coverage": 75.2,
+    "test_count": 150
+  },
+  {
+    "id": "3149dd2b-070b-48d3-b0d2-8fc27666e5fb",
+    "component_id": "comp-042",
+    "measured_at": "2024-02-07",
+    "line_coverage": 85.60000000000001,
+    "branch_coverage": 72.1,
+    "test_count": 167
+  },
+  {
+    "id": "bd4edd0c-b5a1-41e7-a490-bef4beb872b6",
+    "component_id": "comp-042",
+    "measured_at": "2024-03-15",
+    "line_coverage": 83.8,
+    "branch_coverage": 68.7,
+    "test_count": 169
+  },
+  {
+    "id": "2d8afcca-8f6f-468d-92e9-e84b54a91f2f",
+    "component_id": "comp-042",
+    "measured_at": "2024-04-21",
+    "line_coverage": 87.7,
+    "branch_coverage": 80.7,
+    "test_count": 180
+  },
+  {
+    "id": "74815378-46db-4b18-92e8-13ba6cb55e01",
+    "component_id": "comp-042",
+    "measured_at": "2024-05-28",
+    "line_coverage": 88.2,
+    "branch_coverage": 78.7,
+    "test_count": 165
+  },
+  {
+    "id": "a521e1c3-81e7-4337-a102-6e62ad0a516d",
+    "component_id": "comp-042",
+    "measured_at": "2024-07-04",
+    "line_coverage": 89.3,
+    "branch_coverage": 82.4,
+    "test_count": 136
+  },
+  {
+    "id": "9bf91bb2-62e3-4975-a62a-7dcfc5c464e8",
+    "component_id": "comp-042",
+    "measured_at": "2024-08-10",
+    "line_coverage": 86.4,
+    "branch_coverage": 73.7,
+    "test_count": 186
+  },
+  {
+    "id": "0e122818-5d1e-49d5-9043-07e906f315be",
+    "component_id": "comp-042",
+    "measured_at": "2024-09-16",
+    "line_coverage": 88.9,
+    "branch_coverage": 79.1,
+    "test_count": 145
+  },
+  {
+    "id": "8d1249ab-e600-466a-bd08-07b833b8e7c0",
+    "component_id": "comp-042",
+    "measured_at": "2024-10-23",
+    "line_coverage": 87.5,
+    "branch_coverage": 78.7,
+    "test_count": 147
+  },
+  {
+    "id": "f4628124-b6cc-404a-badd-bf27bd895a21",
+    "component_id": "comp-042",
+    "measured_at": "2024-11-29",
+    "line_coverage": 88.4,
+    "branch_coverage": 71.0,
+    "test_count": 136
+  },
+  {
+    "id": "dce59fd3-d18f-4c96-923e-bdc4c0af623d",
+    "component_id": "comp-043",
+    "measured_at": "2024-01-01",
+    "line_coverage": 83.1,
+    "branch_coverage": 68.3,
+    "test_count": 610
+  },
+  {
+    "id": "14109fad-cacd-44f4-890f-b35d9f231e31",
+    "component_id": "comp-043",
+    "measured_at": "2024-02-07",
+    "line_coverage": 83.3,
+    "branch_coverage": 76.8,
+    "test_count": 622
+  },
+  {
+    "id": "54247c42-3a28-43ff-8b97-b1203b4c0a4a",
+    "component_id": "comp-043",
+    "measured_at": "2024-03-15",
+    "line_coverage": 83.7,
+    "branch_coverage": 76.9,
+    "test_count": 625
+  },
+  {
+    "id": "dc32e5b1-c1d2-469a-bd67-4bacfa1e3e96",
+    "component_id": "comp-043",
+    "measured_at": "2024-04-21",
+    "line_coverage": 82.7,
+    "branch_coverage": 69.3,
+    "test_count": 619
+  },
+  {
+    "id": "edc524cc-915a-467b-a74c-baf82e8c7a64",
+    "component_id": "comp-043",
+    "measured_at": "2024-05-28",
+    "line_coverage": 85.1,
+    "branch_coverage": 78.6,
+    "test_count": 618
+  },
+  {
+    "id": "1d415653-4e0a-4551-8000-02baf27463f9",
+    "component_id": "comp-043",
+    "measured_at": "2024-07-04",
+    "line_coverage": 87.6,
+    "branch_coverage": 81.5,
+    "test_count": 643
+  },
+  {
+    "id": "2aac4846-8465-44c6-b28e-e17b9f082e21",
+    "component_id": "comp-043",
+    "measured_at": "2024-08-10",
+    "line_coverage": 87.1,
+    "branch_coverage": 72.6,
+    "test_count": 614
+  },
+  {
+    "id": "922aae82-d733-40ed-812c-0f66b87c9d61",
+    "component_id": "comp-043",
+    "measured_at": "2024-09-16",
+    "line_coverage": 84.3,
+    "branch_coverage": 79.8,
+    "test_count": 603
+  },
+  {
+    "id": "7a642e4c-dd8f-4714-93f3-2011793f414c",
+    "component_id": "comp-043",
+    "measured_at": "2024-10-23",
+    "line_coverage": 85.3,
+    "branch_coverage": 69.7,
+    "test_count": 623
+  },
+  {
+    "id": "9eaac5f2-16ac-4aae-9201-e4a02f7277d8",
+    "component_id": "comp-043",
+    "measured_at": "2024-11-29",
+    "line_coverage": 84.5,
+    "branch_coverage": 67.7,
+    "test_count": 610
+  },
+  {
+    "id": "52642ec4-0227-4e99-9bca-770af91a64b6",
+    "component_id": "comp-044",
+    "measured_at": "2024-01-01",
+    "line_coverage": 85.4,
+    "branch_coverage": 73.1,
+    "test_count": 128
+  },
+  {
+    "id": "1633415a-c4f4-438a-8faa-52893d2abdcc",
+    "component_id": "comp-044",
+    "measured_at": "2024-02-07",
+    "line_coverage": 83.30000000000001,
+    "branch_coverage": 69.7,
+    "test_count": 130
+  },
+  {
+    "id": "c6f04727-a5e2-497c-a5e0-37fbb832ea0e",
+    "component_id": "comp-044",
+    "measured_at": "2024-03-15",
+    "line_coverage": 84.80000000000001,
+    "branch_coverage": 75.8,
+    "test_count": 113
+  },
+  {
+    "id": "b2d21bfd-830f-4eb6-8e6c-80654c23ff4b",
+    "component_id": "comp-044",
+    "measured_at": "2024-04-21",
+    "line_coverage": 83.80000000000001,
+    "branch_coverage": 69.2,
+    "test_count": 93
+  },
+  {
+    "id": "888f0242-d4e9-46bd-97cf-a86b9e120fd9",
+    "component_id": "comp-044",
+    "measured_at": "2024-05-28",
+    "line_coverage": 82.5,
+    "branch_coverage": 75.8,
+    "test_count": 100
+  },
+  {
+    "id": "9e117b7d-c482-49d6-84fe-8377c1c387fb",
+    "component_id": "comp-044",
+    "measured_at": "2024-07-04",
+    "line_coverage": 83.10000000000001,
+    "branch_coverage": 74.1,
+    "test_count": 122
+  },
+  {
+    "id": "52ba7a2a-28c6-4cf9-ab3b-d2387de42984",
+    "component_id": "comp-044",
+    "measured_at": "2024-08-10",
+    "line_coverage": 84.30000000000001,
+    "branch_coverage": 73.4,
+    "test_count": 87
+  },
+  {
+    "id": "25c08c9e-f8d7-492c-b3da-fc51f1168fa4",
+    "component_id": "comp-044",
+    "measured_at": "2024-09-16",
+    "line_coverage": 83.10000000000001,
+    "branch_coverage": 71.2,
+    "test_count": 78
+  },
+  {
+    "id": "0ae3e96b-a9b2-4024-afb5-285fd7c6f62c",
+    "component_id": "comp-044",
+    "measured_at": "2024-10-23",
+    "line_coverage": 83.5,
+    "branch_coverage": 70.9,
+    "test_count": 105
+  },
+  {
+    "id": "62e40834-44b3-4847-bb18-56ae12769ce0",
+    "component_id": "comp-044",
+    "measured_at": "2024-11-29",
+    "line_coverage": 86.80000000000001,
+    "branch_coverage": 71.4,
+    "test_count": 128
+  },
+  {
+    "id": "6896c029-9b9b-4d05-a775-2d5f4d4bfb7a",
+    "component_id": "comp-045",
+    "measured_at": "2024-01-01",
+    "line_coverage": 61.6,
+    "branch_coverage": 54.7,
+    "test_count": 635
+  },
+  {
+    "id": "382926f2-ce24-41b0-bddf-be0a7f6cdc50",
+    "component_id": "comp-045",
+    "measured_at": "2024-02-07",
+    "line_coverage": 60.7,
+    "branch_coverage": 51.8,
+    "test_count": 649
+  },
+  {
+    "id": "4e892b76-cd72-4b1a-bcb5-5db65c73f33f",
+    "component_id": "comp-045",
+    "measured_at": "2024-03-15",
+    "line_coverage": 60.800000000000004,
+    "branch_coverage": 51.4,
+    "test_count": 655
+  },
+  {
+    "id": "b9045512-6c39-4fe8-83ae-2b72e3fc0462",
+    "component_id": "comp-045",
+    "measured_at": "2024-04-21",
+    "line_coverage": 59.5,
+    "branch_coverage": 47.7,
+    "test_count": 633
+  },
+  {
+    "id": "f39ec5d0-4f43-4cdd-996b-b5941b98aec4",
+    "component_id": "comp-045",
+    "measured_at": "2024-05-28",
+    "line_coverage": 57.7,
+    "branch_coverage": 51.1,
+    "test_count": 640
+  },
+  {
+    "id": "dcdf5016-a9f7-462e-9dde-a6d5b4b2c38e",
+    "component_id": "comp-045",
+    "measured_at": "2024-07-04",
+    "line_coverage": 58.0,
+    "branch_coverage": 52.7,
+    "test_count": 644
+  },
+  {
+    "id": "25aeed53-cbf4-4d0a-89e0-369587decd18",
+    "component_id": "comp-045",
+    "measured_at": "2024-08-10",
+    "line_coverage": 59.300000000000004,
+    "branch_coverage": 54.8,
+    "test_count": 651
+  },
+  {
+    "id": "9804c90c-10f6-41e0-a83a-51cda0da143e",
+    "component_id": "comp-045",
+    "measured_at": "2024-09-16",
+    "line_coverage": 57.0,
+    "branch_coverage": 46.1,
+    "test_count": 652
+  },
+  {
+    "id": "02677900-650b-4f13-8288-18013da83250",
+    "component_id": "comp-045",
+    "measured_at": "2024-10-23",
+    "line_coverage": 59.1,
+    "branch_coverage": 50.7,
+    "test_count": 640
+  },
+  {
+    "id": "d9a17ba8-2095-4125-8d22-b787ff3eb0cd",
+    "component_id": "comp-045",
+    "measured_at": "2024-11-29",
+    "line_coverage": 58.5,
+    "branch_coverage": 54.9,
+    "test_count": 655
+  },
+  {
+    "id": "91e7d577-f27b-4504-9d50-fa9b4558a6c3",
+    "component_id": "comp-046",
+    "measured_at": "2024-01-01",
+    "line_coverage": 61.2,
+    "branch_coverage": 53.0,
+    "test_count": 573
+  },
+  {
+    "id": "0a25c0b3-b6f6-4d24-a2fd-c1f7fa424ec1",
+    "component_id": "comp-046",
+    "measured_at": "2024-02-07",
+    "line_coverage": 61.1,
+    "branch_coverage": 52.9,
+    "test_count": 609
+  },
+  {
+    "id": "a0e86a38-f19c-4716-bd8e-239d9744f017",
+    "component_id": "comp-046",
+    "measured_at": "2024-03-15",
+    "line_coverage": 60.6,
+    "branch_coverage": 53.5,
+    "test_count": 621
+  },
+  {
+    "id": "e2f82543-67f4-4cbb-8910-56cd24a4583a",
+    "component_id": "comp-046",
+    "measured_at": "2024-04-21",
+    "line_coverage": 56.1,
+    "branch_coverage": 48.4,
+    "test_count": 605
+  },
+  {
+    "id": "e8c8e1b1-ebd3-49fb-854f-6ef182b90fe2",
+    "component_id": "comp-046",
+    "measured_at": "2024-05-28",
+    "line_coverage": 56.2,
+    "branch_coverage": 52.3,
+    "test_count": 628
+  },
+  {
+    "id": "d7505cc8-d35d-4a4b-8ac7-761fc44e7485",
+    "component_id": "comp-046",
+    "measured_at": "2024-07-04",
+    "line_coverage": 57.1,
+    "branch_coverage": 48.9,
+    "test_count": 597
+  },
+  {
+    "id": "d6d0f505-1e5e-40af-a0e6-7e7bddba6c0f",
+    "component_id": "comp-046",
+    "measured_at": "2024-08-10",
+    "line_coverage": 61.4,
+    "branch_coverage": 53.4,
+    "test_count": 621
+  },
+  {
+    "id": "4efb85f0-3d36-4b4d-a1a7-73ceda14b99e",
+    "component_id": "comp-046",
+    "measured_at": "2024-09-16",
+    "line_coverage": 57.9,
+    "branch_coverage": 47.3,
+    "test_count": 626
+  },
+  {
+    "id": "2b4b1b69-8530-4778-bfcb-544a21de0524",
+    "component_id": "comp-046",
+    "measured_at": "2024-10-23",
+    "line_coverage": 58.5,
+    "branch_coverage": 50.0,
+    "test_count": 621
+  },
+  {
+    "id": "c29ee139-4082-48f6-ac8e-9942040902b9",
+    "component_id": "comp-046",
+    "measured_at": "2024-11-29",
+    "line_coverage": 61.5,
+    "branch_coverage": 55.0,
+    "test_count": 616
+  },
+  {
+    "id": "0bd1358b-19e6-467d-8eb2-577ebcdd52c9",
+    "component_id": "comp-047",
+    "measured_at": "2024-01-01",
+    "line_coverage": 67.80000000000001,
+    "branch_coverage": 54.5,
+    "test_count": 420
+  },
+  {
+    "id": "1ab238f6-0c25-4feb-b330-cffe4e769c58",
+    "component_id": "comp-047",
+    "measured_at": "2024-02-07",
+    "line_coverage": 68.30000000000001,
+    "branch_coverage": 57.8,
+    "test_count": 426
+  },
+  {
+    "id": "98affe88-354f-45ef-ae81-b4885715754a",
+    "component_id": "comp-047",
+    "measured_at": "2024-03-15",
+    "line_coverage": 68.4,
+    "branch_coverage": 60.0,
+    "test_count": 399
+  },
+  {
+    "id": "7ef9d2f9-cb87-41ed-ab6e-80477f51edb2",
+    "component_id": "comp-047",
+    "measured_at": "2024-04-21",
+    "line_coverage": 67.2,
+    "branch_coverage": 61.8,
+    "test_count": 432
+  },
+  {
+    "id": "f8fbfb2e-bb2f-42bf-8ebb-cddacfde3658",
+    "component_id": "comp-047",
+    "measured_at": "2024-05-28",
+    "line_coverage": 63.800000000000004,
+    "branch_coverage": 56.2,
+    "test_count": 422
+  },
+  {
+    "id": "2b22c13e-4a5f-429b-8bc9-11ece73a52f4",
+    "component_id": "comp-047",
+    "measured_at": "2024-07-04",
+    "line_coverage": 65.30000000000001,
+    "branch_coverage": 55.8,
+    "test_count": 436
+  },
+  {
+    "id": "6b16843c-a071-4c2f-8a95-321993a3c163",
+    "component_id": "comp-047",
+    "measured_at": "2024-08-10",
+    "line_coverage": 67.80000000000001,
+    "branch_coverage": 55.4,
+    "test_count": 412
+  },
+  {
+    "id": "984a44d3-3240-4b05-bbdd-4101a0900d1f",
+    "component_id": "comp-047",
+    "measured_at": "2024-09-16",
+    "line_coverage": 63.2,
+    "branch_coverage": 59.4,
+    "test_count": 425
+  },
+  {
+    "id": "c14fa66f-cfd7-4630-aade-ffcfac3b3406",
+    "component_id": "comp-047",
+    "measured_at": "2024-10-23",
+    "line_coverage": 62.50000000000001,
+    "branch_coverage": 57.0,
+    "test_count": 402
+  },
+  {
+    "id": "a0391159-e11e-4769-b871-b0469d8dba47",
+    "component_id": "comp-047",
+    "measured_at": "2024-11-29",
+    "line_coverage": 63.400000000000006,
+    "branch_coverage": 52.3,
+    "test_count": 442
+  },
+  {
+    "id": "46bfdf0a-c393-48fb-8959-302a47492295",
+    "component_id": "comp-048",
+    "measured_at": "2024-01-01",
+    "line_coverage": 63.6,
+    "branch_coverage": 58.5,
+    "test_count": 510
+  },
+  {
+    "id": "7a63e913-69e5-40b3-9dd8-ef87ffd82d9f",
+    "component_id": "comp-048",
+    "measured_at": "2024-02-07",
+    "line_coverage": 59.2,
+    "branch_coverage": 50.0,
+    "test_count": 521
+  },
+  {
+    "id": "2f9b2ecd-eace-4f5a-a2e3-99bc4bff1226",
+    "component_id": "comp-048",
+    "measured_at": "2024-03-15",
+    "line_coverage": 64.7,
+    "branch_coverage": 53.5,
+    "test_count": 518
+  },
+  {
+    "id": "9b2a04f0-52a6-4672-b2de-0f17f2282ed9",
+    "component_id": "comp-048",
+    "measured_at": "2024-04-21",
+    "line_coverage": 63.7,
+    "branch_coverage": 52.0,
+    "test_count": 528
+  },
+  {
+    "id": "2d331840-6b34-4e69-afb4-5bebab1499fc",
+    "component_id": "comp-048",
+    "measured_at": "2024-05-28",
+    "line_coverage": 59.9,
+    "branch_coverage": 56.1,
+    "test_count": 526
+  },
+  {
+    "id": "8d215ca6-db54-4fff-918b-506e88d2b1de",
+    "component_id": "comp-048",
+    "measured_at": "2024-07-04",
+    "line_coverage": 63.6,
+    "branch_coverage": 55.5,
+    "test_count": 523
+  },
+  {
+    "id": "1d33d5dd-b21b-4503-adfd-21ba92c6ac61",
+    "component_id": "comp-048",
+    "measured_at": "2024-08-10",
+    "line_coverage": 63.4,
+    "branch_coverage": 53.8,
+    "test_count": 542
+  },
+  {
+    "id": "89827d72-69f2-4ab8-a39c-24e46bd9f3b1",
+    "component_id": "comp-048",
+    "measured_at": "2024-09-16",
+    "line_coverage": 60.9,
+    "branch_coverage": 48.9,
+    "test_count": 540
+  },
+  {
+    "id": "62c7e944-9bbc-4538-85bd-c0e468b849b4",
+    "component_id": "comp-048",
+    "measured_at": "2024-10-23",
+    "line_coverage": 59.5,
+    "branch_coverage": 52.2,
+    "test_count": 536
+  },
+  {
+    "id": "032a2d9b-56f2-4167-b70a-c161d93a9346",
+    "component_id": "comp-048",
+    "measured_at": "2024-11-29",
+    "line_coverage": 61.7,
+    "branch_coverage": 55.0,
+    "test_count": 525
+  },
+  {
+    "id": "76405f2a-ec91-44c1-ae9e-3386374e3b4d",
+    "component_id": "comp-049",
+    "measured_at": "2024-01-01",
+    "line_coverage": 82.4,
+    "branch_coverage": 73.3,
+    "test_count": 183
+  },
+  {
+    "id": "32d37e54-a9c8-4d7e-b995-44d519fa3781",
+    "component_id": "comp-049",
+    "measured_at": "2024-02-07",
+    "line_coverage": 79.7,
+    "branch_coverage": 74.8,
+    "test_count": 148
+  },
+  {
+    "id": "0e6767d5-5c3b-46f3-be16-8ca1ed49d900",
+    "component_id": "comp-049",
+    "measured_at": "2024-03-15",
+    "line_coverage": 80.0,
+    "branch_coverage": 66.3,
+    "test_count": 166
+  },
+  {
+    "id": "5cf23c3a-6415-4a0d-96ec-b19bbd149ff4",
+    "component_id": "comp-049",
+    "measured_at": "2024-04-21",
+    "line_coverage": 82.9,
+    "branch_coverage": 77.6,
+    "test_count": 164
+  },
+  {
+    "id": "59f5bab8-77c8-43a3-a473-761adb7a0fe7",
+    "component_id": "comp-049",
+    "measured_at": "2024-05-28",
+    "line_coverage": 82.7,
+    "branch_coverage": 68.0,
+    "test_count": 190
+  },
+  {
+    "id": "a8b63e71-5661-4938-be63-2f4c9fc6a511",
+    "component_id": "comp-049",
+    "measured_at": "2024-07-04",
+    "line_coverage": 78.8,
+    "branch_coverage": 68.4,
+    "test_count": 147
+  },
+  {
+    "id": "ffc6e332-864d-4377-a961-b51229bb4c1b",
+    "component_id": "comp-049",
+    "measured_at": "2024-08-10",
+    "line_coverage": 78.9,
+    "branch_coverage": 73.0,
+    "test_count": 190
+  },
+  {
+    "id": "45efd0f1-223f-4bc9-9d5f-60206508ecdf",
+    "component_id": "comp-049",
+    "measured_at": "2024-09-16",
+    "line_coverage": 82.8,
+    "branch_coverage": 72.3,
+    "test_count": 168
+  },
+  {
+    "id": "19073167-585e-49b1-863d-adf6f730e25e",
+    "component_id": "comp-049",
+    "measured_at": "2024-10-23",
+    "line_coverage": 82.6,
+    "branch_coverage": 77.6,
+    "test_count": 174
+  },
+  {
+    "id": "846eb751-5ea5-4b11-9f1b-4271c9b1d023",
+    "component_id": "comp-049",
+    "measured_at": "2024-11-29",
+    "line_coverage": 83.6,
+    "branch_coverage": 71.4,
+    "test_count": 150
+  },
+  {
+    "id": "4675ede1-05b1-4f72-874e-e4afddbf5b40",
+    "component_id": "comp-050",
+    "measured_at": "2024-01-01",
+    "line_coverage": 71.7,
+    "branch_coverage": 65.0,
+    "test_count": 111
+  },
+  {
+    "id": "80f54a19-2d91-41d1-a022-109c472653b2",
+    "component_id": "comp-050",
+    "measured_at": "2024-02-07",
+    "line_coverage": 67.5,
+    "branch_coverage": 54.6,
+    "test_count": 58
+  },
+  {
+    "id": "52b7137b-d719-4e7e-9d23-b783a20e27e8",
+    "component_id": "comp-050",
+    "measured_at": "2024-03-15",
+    "line_coverage": 72.9,
+    "branch_coverage": 65.7,
+    "test_count": 89
+  },
+  {
+    "id": "5e7dc0d2-4fe4-42ae-8407-661ac36b82c1",
+    "component_id": "comp-050",
+    "measured_at": "2024-04-21",
+    "line_coverage": 69.6,
+    "branch_coverage": 61.7,
+    "test_count": 104
+  },
+  {
+    "id": "433feace-1052-497a-9da1-d0483319a3d9",
+    "component_id": "comp-050",
+    "measured_at": "2024-05-28",
+    "line_coverage": 68.6,
+    "branch_coverage": 59.0,
+    "test_count": 99
+  },
+  {
+    "id": "e7892de6-2b5b-411d-84bb-e9dee7024395",
+    "component_id": "comp-050",
+    "measured_at": "2024-07-04",
+    "line_coverage": 72.6,
+    "branch_coverage": 58.2,
+    "test_count": 78
+  },
+  {
+    "id": "13e0098f-b362-4d46-ab1c-fe711c5601e6",
+    "component_id": "comp-050",
+    "measured_at": "2024-08-10",
+    "line_coverage": 68.8,
+    "branch_coverage": 60.1,
+    "test_count": 79
+  },
+  {
+    "id": "9c91c9cf-5304-4694-b862-e7e78c62c47f",
+    "component_id": "comp-050",
+    "measured_at": "2024-09-16",
+    "line_coverage": 67.4,
+    "branch_coverage": 62.4,
+    "test_count": 98
+  },
+  {
+    "id": "b67d3321-4360-4e6a-9abd-d4027ea2a3d0",
+    "component_id": "comp-050",
+    "measured_at": "2024-10-23",
+    "line_coverage": 69.4,
+    "branch_coverage": 60.9,
+    "test_count": 115
+  },
+  {
+    "id": "da028252-2881-445f-aed6-3fa1d69fa976",
+    "component_id": "comp-050",
+    "measured_at": "2024-11-29",
+    "line_coverage": 67.9,
+    "branch_coverage": 60.5,
+    "test_count": 93
+  },
+  {
+    "id": "f84fa20e-c99c-4826-9c75-5f5e876238eb",
+    "component_id": "comp-051",
+    "measured_at": "2024-01-01",
+    "line_coverage": 60.1,
+    "branch_coverage": 49.5,
+    "test_count": 646
+  },
+  {
+    "id": "c40001ae-66c2-40af-a8b6-96d7f625a6c4",
+    "component_id": "comp-051",
+    "measured_at": "2024-02-07",
+    "line_coverage": 58.5,
+    "branch_coverage": 52.1,
+    "test_count": 594
+  },
+  {
+    "id": "3d194885-8d09-4cb6-80a8-b40692a6f85d",
+    "component_id": "comp-051",
+    "measured_at": "2024-03-15",
+    "line_coverage": 59.6,
+    "branch_coverage": 52.7,
+    "test_count": 595
+  },
+  {
+    "id": "df430aa6-cf70-4658-9aa7-227db8bc953c",
+    "component_id": "comp-051",
+    "measured_at": "2024-04-21",
+    "line_coverage": 57.5,
+    "branch_coverage": 52.0,
+    "test_count": 595
+  },
+  {
+    "id": "a1de0e0f-7f06-4ce4-aff0-8f9f9532ab20",
+    "component_id": "comp-051",
+    "measured_at": "2024-05-28",
+    "line_coverage": 58.2,
+    "branch_coverage": 52.6,
+    "test_count": 601
+  },
+  {
+    "id": "b6fd26ee-931d-4d69-b25a-51c01d833034",
+    "component_id": "comp-051",
+    "measured_at": "2024-07-04",
+    "line_coverage": 59.7,
+    "branch_coverage": 51.9,
+    "test_count": 640
+  },
+  {
+    "id": "441819ba-20f2-459c-b137-2d773c1ff476",
+    "component_id": "comp-051",
+    "measured_at": "2024-08-10",
+    "line_coverage": 55.400000000000006,
+    "branch_coverage": 49.2,
+    "test_count": 615
+  },
+  {
+    "id": "eb1113c0-def9-4157-9861-c859f3c900c9",
+    "component_id": "comp-051",
+    "measured_at": "2024-09-16",
+    "line_coverage": 57.7,
+    "branch_coverage": 49.0,
+    "test_count": 630
+  },
+  {
+    "id": "870c91b8-c013-45fd-b423-c4e78387d633",
+    "component_id": "comp-051",
+    "measured_at": "2024-10-23",
+    "line_coverage": 58.1,
+    "branch_coverage": 53.6,
+    "test_count": 617
+  },
+  {
+    "id": "0ca0526d-b783-492d-a06d-df538b817529",
+    "component_id": "comp-051",
+    "measured_at": "2024-11-29",
+    "line_coverage": 55.400000000000006,
+    "branch_coverage": 45.0,
+    "test_count": 618
+  },
+  {
+    "id": "0bf30f7d-3c1d-4df2-93b4-4b2d6b480b7c",
+    "component_id": "comp-052",
+    "measured_at": "2024-01-01",
+    "line_coverage": 76.1,
+    "branch_coverage": 63.8,
+    "test_count": 325
+  },
+  {
+    "id": "3c6e2f37-a4a3-47d6-b667-9d1b52bddf4a",
+    "component_id": "comp-052",
+    "measured_at": "2024-02-07",
+    "line_coverage": 72.19999999999999,
+    "branch_coverage": 61.8,
+    "test_count": 347
+  },
+  {
+    "id": "e8c94c7b-6e16-4c23-bbf5-cf24e29e9ef6",
+    "component_id": "comp-052",
+    "measured_at": "2024-03-15",
+    "line_coverage": 71.8,
+    "branch_coverage": 67.6,
+    "test_count": 373
+  },
+  {
+    "id": "f6839d5e-4a1d-41b9-8c02-d2c5712d3276",
+    "component_id": "comp-052",
+    "measured_at": "2024-04-21",
+    "line_coverage": 74.89999999999999,
+    "branch_coverage": 65.3,
+    "test_count": 376
+  },
+  {
+    "id": "ed947d89-1b60-4e0d-b476-b20eba86fa63",
+    "component_id": "comp-052",
+    "measured_at": "2024-05-28",
+    "line_coverage": 72.1,
+    "branch_coverage": 68.2,
+    "test_count": 357
+  },
+  {
+    "id": "6ee79f22-bef7-4597-a9ba-7fbacf66a12d",
+    "component_id": "comp-052",
+    "measured_at": "2024-07-04",
+    "line_coverage": 73.3,
+    "branch_coverage": 61.9,
+    "test_count": 353
+  },
+  {
+    "id": "145d93d0-b97b-4e33-8484-5bb2a2fe9fdc",
+    "component_id": "comp-052",
+    "measured_at": "2024-08-10",
+    "line_coverage": 70.5,
+    "branch_coverage": 57.9,
+    "test_count": 353
+  },
+  {
+    "id": "067d6cf7-4ce3-4396-b388-2f57e1e0bf8d",
+    "component_id": "comp-052",
+    "measured_at": "2024-09-16",
+    "line_coverage": 74.8,
+    "branch_coverage": 61.1,
+    "test_count": 319
+  },
+  {
+    "id": "fc58372d-90cf-43d0-bc5d-08070f025789",
+    "component_id": "comp-052",
+    "measured_at": "2024-10-23",
+    "line_coverage": 74.8,
+    "branch_coverage": 70.6,
+    "test_count": 358
+  },
+  {
+    "id": "69818142-ece2-4294-aa7b-8c7c539450e5",
+    "component_id": "comp-052",
+    "measured_at": "2024-11-29",
+    "line_coverage": 74.19999999999999,
+    "branch_coverage": 63.3,
+    "test_count": 336
+  },
+  {
+    "id": "e5ad0147-0a81-4574-9eb5-c41702207006",
+    "component_id": "comp-053",
+    "measured_at": "2024-01-01",
+    "line_coverage": 79.4,
+    "branch_coverage": 65.8,
+    "test_count": 364
+  },
+  {
+    "id": "d310c0cb-8816-4b53-8223-d7d9384779d3",
+    "component_id": "comp-053",
+    "measured_at": "2024-02-07",
+    "line_coverage": 79.0,
+    "branch_coverage": 63.6,
+    "test_count": 382
+  },
+  {
+    "id": "74c742ab-3e71-4e44-a9f3-de4fddabea6d",
+    "component_id": "comp-053",
+    "measured_at": "2024-03-15",
+    "line_coverage": 77.3,
+    "branch_coverage": 70.2,
+    "test_count": 373
+  },
+  {
+    "id": "7e07eca4-36e4-4c0d-8ddc-05ff26a2f034",
+    "component_id": "comp-053",
+    "measured_at": "2024-04-21",
+    "line_coverage": 81.8,
+    "branch_coverage": 76.8,
+    "test_count": 359
+  },
+  {
+    "id": "a335a965-9170-4606-bf5c-82d858b7eebf",
+    "component_id": "comp-053",
+    "measured_at": "2024-05-28",
+    "line_coverage": 77.9,
+    "branch_coverage": 62.8,
+    "test_count": 381
+  },
+  {
+    "id": "9ddb4615-3be2-4143-bcc1-e4b034f08a9a",
+    "component_id": "comp-053",
+    "measured_at": "2024-07-04",
+    "line_coverage": 82.2,
+    "branch_coverage": 70.3,
+    "test_count": 385
+  },
+  {
+    "id": "700357ec-3e75-4c56-a058-40542522baa4",
+    "component_id": "comp-053",
+    "measured_at": "2024-08-10",
+    "line_coverage": 78.60000000000001,
+    "branch_coverage": 74.3,
+    "test_count": 370
+  },
+  {
+    "id": "b73fac0a-48d5-41bf-8911-da8e6d15809f",
+    "component_id": "comp-053",
+    "measured_at": "2024-09-16",
+    "line_coverage": 78.8,
+    "branch_coverage": 66.0,
+    "test_count": 371
+  },
+  {
+    "id": "76414f16-9dca-471e-bdcf-9d6b5bf750b3",
+    "component_id": "comp-053",
+    "measured_at": "2024-10-23",
+    "line_coverage": 81.5,
+    "branch_coverage": 66.0,
+    "test_count": 365
+  },
+  {
+    "id": "e12ef5d5-8270-4de5-aebf-b12d112e221b",
+    "component_id": "comp-053",
+    "measured_at": "2024-11-29",
+    "line_coverage": 80.10000000000001,
+    "branch_coverage": 66.9,
+    "test_count": 406
+  },
+  {
+    "id": "9f1890c0-71c3-4a03-a523-4da21636a10f",
+    "component_id": "comp-054",
+    "measured_at": "2024-01-01",
+    "line_coverage": 59.1,
+    "branch_coverage": 54.0,
+    "test_count": 372
+  },
+  {
+    "id": "6f37e2a5-6344-4eb0-86a9-4b151bcefd15",
+    "component_id": "comp-054",
+    "measured_at": "2024-02-07",
+    "line_coverage": 61.2,
+    "branch_coverage": 54.2,
+    "test_count": 364
+  },
+  {
+    "id": "66a8ad02-8f20-4077-81c9-def50f434ec5",
+    "component_id": "comp-054",
+    "measured_at": "2024-03-15",
+    "line_coverage": 60.9,
+    "branch_coverage": 50.8,
+    "test_count": 384
+  },
+  {
+    "id": "d721e281-9154-4cf5-8953-358efa1ae8c1",
+    "component_id": "comp-054",
+    "measured_at": "2024-04-21",
+    "line_coverage": 58.7,
+    "branch_coverage": 52.7,
+    "test_count": 415
+  },
+  {
+    "id": "6f4c8405-eab8-42df-a565-f2b224599188",
+    "component_id": "comp-054",
+    "measured_at": "2024-05-28",
+    "line_coverage": 58.7,
+    "branch_coverage": 50.0,
+    "test_count": 360
+  },
+  {
+    "id": "3bdbeae9-c814-44e2-8b49-38803b7cd52c",
+    "component_id": "comp-054",
+    "measured_at": "2024-07-04",
+    "line_coverage": 59.8,
+    "branch_coverage": 54.0,
+    "test_count": 411
+  },
+  {
+    "id": "726744f1-229d-490c-81ae-856b0b47f448",
+    "component_id": "comp-054",
+    "measured_at": "2024-08-10",
+    "line_coverage": 63.4,
+    "branch_coverage": 58.5,
+    "test_count": 399
+  },
+  {
+    "id": "06d5af47-4977-4cd8-93b7-1837f3df81c3",
+    "component_id": "comp-054",
+    "measured_at": "2024-09-16",
+    "line_coverage": 63.3,
+    "branch_coverage": 58.6,
+    "test_count": 365
+  },
+  {
+    "id": "44ceccdf-9555-477b-8146-c9dd65e1e1c0",
+    "component_id": "comp-054",
+    "measured_at": "2024-10-23",
+    "line_coverage": 61.1,
+    "branch_coverage": 57.6,
+    "test_count": 383
+  },
+  {
+    "id": "7075a6d4-b73e-488b-8b9a-ccce213874b2",
+    "component_id": "comp-054",
+    "measured_at": "2024-11-29",
+    "line_coverage": 59.1,
+    "branch_coverage": 52.2,
+    "test_count": 405
+  },
+  {
+    "id": "4ee536de-4632-46fb-a43a-8e49478dc077",
+    "component_id": "comp-055",
+    "measured_at": "2024-01-01",
+    "line_coverage": 58.1,
+    "branch_coverage": 54.4,
+    "test_count": 778
+  },
+  {
+    "id": "e2b24a0b-eb98-4a2b-b635-afab0b29e0d4",
+    "component_id": "comp-055",
+    "measured_at": "2024-02-07",
+    "line_coverage": 62.1,
+    "branch_coverage": 54.1,
+    "test_count": 762
+  },
+  {
+    "id": "905b740f-af41-4ace-8859-b3f279a5e659",
+    "component_id": "comp-055",
+    "measured_at": "2024-03-15",
+    "line_coverage": 63.2,
+    "branch_coverage": 52.1,
+    "test_count": 751
+  },
+  {
+    "id": "3bb22a98-ff00-466c-9c7f-a9d7d4f4375d",
+    "component_id": "comp-055",
+    "measured_at": "2024-04-21",
+    "line_coverage": 61.0,
+    "branch_coverage": 53.4,
+    "test_count": 749
+  },
+  {
+    "id": "407a52c3-a104-4f81-9420-5a830077bf1a",
+    "component_id": "comp-055",
+    "measured_at": "2024-05-28",
+    "line_coverage": 63.300000000000004,
+    "branch_coverage": 57.8,
+    "test_count": 754
+  },
+  {
+    "id": "7d3dcbc3-5210-4e91-a375-55fa7edb8ae4",
+    "component_id": "comp-055",
+    "measured_at": "2024-07-04",
+    "line_coverage": 61.300000000000004,
+    "branch_coverage": 52.3,
+    "test_count": 745
+  },
+  {
+    "id": "eb66f14b-ff10-463f-bfcd-fb80a315287e",
+    "component_id": "comp-055",
+    "measured_at": "2024-08-10",
+    "line_coverage": 58.800000000000004,
+    "branch_coverage": 55.2,
+    "test_count": 745
+  },
+  {
+    "id": "4fe6a4cd-21cb-4741-ba8d-a5e9f2db0b32",
+    "component_id": "comp-055",
+    "measured_at": "2024-09-16",
+    "line_coverage": 61.300000000000004,
+    "branch_coverage": 56.9,
+    "test_count": 790
+  },
+  {
+    "id": "ae57ec27-76df-47f4-9f88-67d18c0e5199",
+    "component_id": "comp-055",
+    "measured_at": "2024-10-23",
+    "line_coverage": 63.300000000000004,
+    "branch_coverage": 55.7,
+    "test_count": 761
+  },
+  {
+    "id": "c805cbf2-86e7-431c-bf53-ec8dad1d8a79",
+    "component_id": "comp-055",
+    "measured_at": "2024-11-29",
+    "line_coverage": 62.6,
+    "branch_coverage": 53.5,
+    "test_count": 758
+  },
+  {
+    "id": "26bbd9a4-dd6a-46c8-86b6-b35544e2e56d",
+    "component_id": "comp-056",
+    "measured_at": "2024-01-01",
+    "line_coverage": 90.89999999999999,
+    "branch_coverage": 78.7,
+    "test_count": 219
+  },
+  {
+    "id": "d572f500-2563-484f-9c65-682e013a9028",
+    "component_id": "comp-056",
+    "measured_at": "2024-02-07",
+    "line_coverage": 88.69999999999999,
+    "branch_coverage": 82.2,
+    "test_count": 224
+  },
+  {
+    "id": "74fe85ae-f7e8-4238-8ea2-4a7e742668b7",
+    "component_id": "comp-056",
+    "measured_at": "2024-03-15",
+    "line_coverage": 87.69999999999999,
+    "branch_coverage": 76.3,
+    "test_count": 185
+  },
+  {
+    "id": "9ba336ad-f53a-4fe0-b7ad-867790cd92e7",
+    "component_id": "comp-056",
+    "measured_at": "2024-04-21",
+    "line_coverage": 90.0,
+    "branch_coverage": 79.5,
+    "test_count": 227
+  },
+  {
+    "id": "023ed096-80f9-49b3-808c-4f8473aa6093",
+    "component_id": "comp-056",
+    "measured_at": "2024-05-28",
+    "line_coverage": 89.0,
+    "branch_coverage": 79.1,
+    "test_count": 205
+  },
+  {
+    "id": "d690d062-f8a8-44b5-ab8e-46adf5564a65",
+    "component_id": "comp-056",
+    "measured_at": "2024-07-04",
+    "line_coverage": 88.8,
+    "branch_coverage": 81.9,
+    "test_count": 210
+  },
+  {
+    "id": "25ac3dfd-3391-4ca9-99f1-54a18b0133d4",
+    "component_id": "comp-056",
+    "measured_at": "2024-08-10",
+    "line_coverage": 88.6,
+    "branch_coverage": 82.3,
+    "test_count": 202
+  },
+  {
+    "id": "0f64e26e-bec0-409b-91b4-b0e7f29f4e57",
+    "component_id": "comp-056",
+    "measured_at": "2024-09-16",
+    "line_coverage": 90.39999999999999,
+    "branch_coverage": 74.0,
+    "test_count": 187
+  },
+  {
+    "id": "8dd4fb7e-95dd-43e1-8f2b-ee2d004b8c3d",
+    "component_id": "comp-056",
+    "measured_at": "2024-10-23",
+    "line_coverage": 89.5,
+    "branch_coverage": 78.1,
+    "test_count": 237
+  },
+  {
+    "id": "ff9ab576-5a73-454e-9635-8ee23a3ed444",
+    "component_id": "comp-056",
+    "measured_at": "2024-11-29",
+    "line_coverage": 91.1,
+    "branch_coverage": 77.7,
+    "test_count": 212
+  },
+  {
+    "id": "6b476e03-fbcd-48d9-8813-5d1aea17e766",
+    "component_id": "comp-057",
+    "measured_at": "2024-01-01",
+    "line_coverage": 87.1,
+    "branch_coverage": 71.6,
+    "test_count": 482
+  },
+  {
+    "id": "f3b59bd2-4935-48ff-9939-f7e7547a5e24",
+    "component_id": "comp-057",
+    "measured_at": "2024-02-07",
+    "line_coverage": 86.39999999999999,
+    "branch_coverage": 71.2,
+    "test_count": 477
+  },
+  {
+    "id": "8c448734-56ab-41cd-9002-25d832f64323",
+    "component_id": "comp-057",
+    "measured_at": "2024-03-15",
+    "line_coverage": 82.39999999999999,
+    "branch_coverage": 73.9,
+    "test_count": 452
+  },
+  {
+    "id": "0d525e21-a619-4bd8-97e0-c8d42b7efa43",
+    "component_id": "comp-057",
+    "measured_at": "2024-04-21",
+    "line_coverage": 85.8,
+    "branch_coverage": 70.2,
+    "test_count": 445
+  },
+  {
+    "id": "ad3eeb7a-92b7-4585-ac3e-a9c996236caa",
+    "component_id": "comp-057",
+    "measured_at": "2024-05-28",
+    "line_coverage": 82.3,
+    "branch_coverage": 72.2,
+    "test_count": 444
+  },
+  {
+    "id": "23d2ca62-b43a-46e6-aeb9-2b21648e16ef",
+    "component_id": "comp-057",
+    "measured_at": "2024-07-04",
+    "line_coverage": 87.5,
+    "branch_coverage": 82.4,
+    "test_count": 469
+  },
+  {
+    "id": "0104216a-7900-43ca-8c77-f3c7013492be",
+    "component_id": "comp-057",
+    "measured_at": "2024-08-10",
+    "line_coverage": 82.3,
+    "branch_coverage": 66.1,
+    "test_count": 483
+  },
+  {
+    "id": "465c5f96-c896-4f70-a10b-6b76b0d7a200",
+    "component_id": "comp-057",
+    "measured_at": "2024-09-16",
+    "line_coverage": 87.5,
+    "branch_coverage": 77.1,
+    "test_count": 480
+  },
+  {
+    "id": "d541bdc2-4066-45c9-827c-177eac19920b",
+    "component_id": "comp-057",
+    "measured_at": "2024-10-23",
+    "line_coverage": 88.1,
+    "branch_coverage": 76.7,
+    "test_count": 468
+  },
+  {
+    "id": "596f6776-392b-475a-99e2-70ba2c744e29",
+    "component_id": "comp-057",
+    "measured_at": "2024-11-29",
+    "line_coverage": 83.89999999999999,
+    "branch_coverage": 67.7,
+    "test_count": 446
+  },
+  {
+    "id": "be65a255-a471-408a-b558-0a0841e21f2f",
+    "component_id": "comp-058",
+    "measured_at": "2024-01-01",
+    "line_coverage": 59.199999999999996,
+    "branch_coverage": 47.4,
+    "test_count": 735
+  },
+  {
+    "id": "c3af3763-562a-4622-98dc-0bdc1928eb82",
+    "component_id": "comp-058",
+    "measured_at": "2024-02-07",
+    "line_coverage": 59.4,
+    "branch_coverage": 49.7,
+    "test_count": 787
+  },
+  {
+    "id": "4756b3b4-3bd1-416c-a648-fca22a6c4e2d",
+    "component_id": "comp-058",
+    "measured_at": "2024-03-15",
+    "line_coverage": 59.3,
+    "branch_coverage": 55.9,
+    "test_count": 773
+  },
+  {
+    "id": "ccd85ba5-f132-48e7-b3ac-088c6f95407e",
+    "component_id": "comp-058",
+    "measured_at": "2024-04-21",
+    "line_coverage": 56.9,
+    "branch_coverage": 51.3,
+    "test_count": 740
+  },
+  {
+    "id": "fd4e1b81-369e-4b81-95d9-97d7eb7e6d80",
+    "component_id": "comp-058",
+    "measured_at": "2024-05-28",
+    "line_coverage": 58.9,
+    "branch_coverage": 52.2,
+    "test_count": 765
+  },
+  {
+    "id": "52277c5a-cb23-4d76-b15e-a6c39afdd461",
+    "component_id": "comp-058",
+    "measured_at": "2024-07-04",
+    "line_coverage": 62.1,
+    "branch_coverage": 58.2,
+    "test_count": 786
+  },
+  {
+    "id": "a501a59a-9ef3-45f3-9924-7939926ec9f8",
+    "component_id": "comp-058",
+    "measured_at": "2024-08-10",
+    "line_coverage": 61.8,
+    "branch_coverage": 53.9,
+    "test_count": 770
+  },
+  {
+    "id": "3d65b59f-5cf6-48da-860c-8f79c7f3c3a7",
+    "component_id": "comp-058",
+    "measured_at": "2024-09-16",
+    "line_coverage": 58.8,
+    "branch_coverage": 55.1,
+    "test_count": 760
+  },
+  {
+    "id": "cf12d1d0-fd0a-4c25-9763-844608b5a6b6",
+    "component_id": "comp-058",
+    "measured_at": "2024-10-23",
+    "line_coverage": 59.3,
+    "branch_coverage": 54.1,
+    "test_count": 749
+  },
+  {
+    "id": "3fab4c92-2fbf-4c98-84f3-21d750688204",
+    "component_id": "comp-058",
+    "measured_at": "2024-11-29",
+    "line_coverage": 56.8,
+    "branch_coverage": 48.9,
+    "test_count": 786
+  },
+  {
+    "id": "3de1d149-d636-4bbc-a0a6-d09ff5d4ae06",
+    "component_id": "comp-059",
+    "measured_at": "2024-01-01",
+    "line_coverage": 57.199999999999996,
+    "branch_coverage": 53.3,
+    "test_count": 345
+  },
+  {
+    "id": "19575cd6-0c41-4ae9-bee5-a733a475bae8",
+    "component_id": "comp-059",
+    "measured_at": "2024-02-07",
+    "line_coverage": 58.8,
+    "branch_coverage": 53.8,
+    "test_count": 336
+  },
+  {
+    "id": "e26b59a0-4f8f-4d5c-8bc8-665aa11b7b39",
+    "component_id": "comp-059",
+    "measured_at": "2024-03-15",
+    "line_coverage": 57.8,
+    "branch_coverage": 53.1,
+    "test_count": 353
+  },
+  {
+    "id": "d6707e86-30b8-4947-84ae-37e74bcc5aa4",
+    "component_id": "comp-059",
+    "measured_at": "2024-04-21",
+    "line_coverage": 55.8,
+    "branch_coverage": 50.2,
+    "test_count": 320
+  },
+  {
+    "id": "47c21968-dab3-4657-97c1-996608f8f4ec",
+    "component_id": "comp-059",
+    "measured_at": "2024-05-28",
+    "line_coverage": 55.9,
+    "branch_coverage": 52.3,
+    "test_count": 348
+  },
+  {
+    "id": "eb783e31-e59e-45c7-9332-c8edc0cf86e2",
+    "component_id": "comp-059",
+    "measured_at": "2024-07-04",
+    "line_coverage": 57.6,
+    "branch_coverage": 50.5,
+    "test_count": 327
+  },
+  {
+    "id": "a947718c-4655-46ba-bfa6-d2bd64e5f98e",
+    "component_id": "comp-059",
+    "measured_at": "2024-08-10",
+    "line_coverage": 55.6,
+    "branch_coverage": 47.4,
+    "test_count": 334
+  },
+  {
+    "id": "cbc8fd47-90dc-4acf-a28e-44b1e3c92995",
+    "component_id": "comp-059",
+    "measured_at": "2024-09-16",
+    "line_coverage": 56.4,
+    "branch_coverage": 53.5,
+    "test_count": 349
+  },
+  {
+    "id": "9bceb57d-e167-4d39-b99d-f8429310f884",
+    "component_id": "comp-059",
+    "measured_at": "2024-10-23",
+    "line_coverage": 55.699999999999996,
+    "branch_coverage": 45.5,
+    "test_count": 328
+  },
+  {
+    "id": "85831297-ce3e-4530-b9ee-3f7385507ae1",
+    "component_id": "comp-059",
+    "measured_at": "2024-11-29",
+    "line_coverage": 55.9,
+    "branch_coverage": 46.2,
+    "test_count": 359
+  },
+  {
+    "id": "21ab3a14-187e-4455-bf2f-ab3b9c818c4b",
+    "component_id": "comp-060",
+    "measured_at": "2024-01-01",
+    "line_coverage": 73.0,
+    "branch_coverage": 61.0,
+    "test_count": 491
+  },
+  {
+    "id": "9c9462ef-2904-4cd6-ad77-8a1b2f5de9c1",
+    "component_id": "comp-060",
+    "measured_at": "2024-02-07",
+    "line_coverage": 69.5,
+    "branch_coverage": 57.4,
+    "test_count": 538
+  },
+  {
+    "id": "62a9397a-9a98-44ac-9882-e722a03de1f0",
+    "component_id": "comp-060",
+    "measured_at": "2024-03-15",
+    "line_coverage": 69.0,
+    "branch_coverage": 62.4,
+    "test_count": 538
+  },
+  {
+    "id": "986b7614-fb30-47af-8e32-50dfde26d319",
+    "component_id": "comp-060",
+    "measured_at": "2024-04-21",
+    "line_coverage": 70.60000000000001,
+    "branch_coverage": 58.7,
+    "test_count": 496
+  },
+  {
+    "id": "d30aa2e0-1301-4e94-a6f3-32fdf898ba42",
+    "component_id": "comp-060",
+    "measured_at": "2024-05-28",
+    "line_coverage": 67.9,
+    "branch_coverage": 55.9,
+    "test_count": 545
+  },
+  {
+    "id": "95aed31f-9b71-4ead-9446-af50b591f8fb",
+    "component_id": "comp-060",
+    "measured_at": "2024-07-04",
+    "line_coverage": 70.60000000000001,
+    "branch_coverage": 57.6,
+    "test_count": 511
+  },
+  {
+    "id": "0da660dd-8022-4a6d-a03e-756232592a5b",
+    "component_id": "comp-060",
+    "measured_at": "2024-08-10",
+    "line_coverage": 70.5,
+    "branch_coverage": 56.7,
+    "test_count": 510
+  },
+  {
+    "id": "5ebfc592-be6c-4c3a-ac28-016bf4ef2b37",
+    "component_id": "comp-060",
+    "measured_at": "2024-09-16",
+    "line_coverage": 68.7,
+    "branch_coverage": 58.3,
+    "test_count": 518
+  },
+  {
+    "id": "4dd8a776-6029-44ca-a43c-fc7e87c6ec46",
+    "component_id": "comp-060",
+    "measured_at": "2024-10-23",
+    "line_coverage": 71.5,
+    "branch_coverage": 61.7,
+    "test_count": 529
+  },
+  {
+    "id": "6f38c2b0-75de-4b00-ac03-9aeb731d82b5",
+    "component_id": "comp-060",
+    "measured_at": "2024-11-29",
+    "line_coverage": 70.9,
+    "branch_coverage": 66.5,
+    "test_count": 489
+  },
+  {
+    "id": "53b79aae-b10c-432e-a2dd-c49051a07dea",
+    "component_id": "comp-061",
+    "measured_at": "2024-01-01",
+    "line_coverage": 55.9,
+    "branch_coverage": 47.9,
+    "test_count": 459
+  },
+  {
+    "id": "c6fffc70-fbf5-4622-9e4c-c51afc0e9c05",
+    "component_id": "comp-061",
+    "measured_at": "2024-02-07",
+    "line_coverage": 56.5,
+    "branch_coverage": 49.9,
+    "test_count": 433
+  },
+  {
+    "id": "14ee238d-7f04-4986-a771-bfe6a4d2ae8b",
+    "component_id": "comp-061",
+    "measured_at": "2024-03-15",
+    "line_coverage": 57.5,
+    "branch_coverage": 48.0,
+    "test_count": 417
+  },
+  {
+    "id": "def0510f-db36-4ccb-a957-b27261530910",
+    "component_id": "comp-061",
+    "measured_at": "2024-04-21",
+    "line_coverage": 56.9,
+    "branch_coverage": 47.1,
+    "test_count": 429
+  },
+  {
+    "id": "e45d1bdb-99f0-4622-bfa6-b8181c2c2e4e",
+    "component_id": "comp-061",
+    "measured_at": "2024-05-28",
+    "line_coverage": 55.7,
+    "branch_coverage": 49.0,
+    "test_count": 439
+  },
+  {
+    "id": "6cf7cbf8-43db-47a3-8119-66b130252aba",
+    "component_id": "comp-061",
+    "measured_at": "2024-07-04",
+    "line_coverage": 55.8,
+    "branch_coverage": 44.7,
+    "test_count": 407
+  },
+  {
+    "id": "6bb9bfcc-7803-45bf-a9c3-2508837d020e",
+    "component_id": "comp-061",
+    "measured_at": "2024-08-10",
+    "line_coverage": 54.0,
+    "branch_coverage": 46.0,
+    "test_count": 456
+  },
+  {
+    "id": "893fc900-3827-4343-a7e9-661c2d1c3ce9",
+    "component_id": "comp-061",
+    "measured_at": "2024-09-16",
+    "line_coverage": 53.3,
+    "branch_coverage": 44.1,
+    "test_count": 464
+  },
+  {
+    "id": "a2f9be78-0fbb-4372-ad1c-6a483b87999d",
+    "component_id": "comp-061",
+    "measured_at": "2024-10-23",
+    "line_coverage": 57.8,
+    "branch_coverage": 47.8,
+    "test_count": 440
+  },
+  {
+    "id": "4abdc0ac-0918-447e-96b4-ba7c4ab84c48",
+    "component_id": "comp-061",
+    "measured_at": "2024-11-29",
+    "line_coverage": 57.7,
+    "branch_coverage": 49.6,
+    "test_count": 438
+  },
+  {
+    "id": "2a43f478-df08-41f7-81ae-ba34c5680d83",
+    "component_id": "comp-062",
+    "measured_at": "2024-01-01",
+    "line_coverage": 62.599999999999994,
+    "branch_coverage": 50.2,
+    "test_count": 131
+  },
+  {
+    "id": "f0ddc78f-dd41-4f23-9045-745285472661",
+    "component_id": "comp-062",
+    "measured_at": "2024-02-07",
+    "line_coverage": 60.4,
+    "branch_coverage": 56.9,
+    "test_count": 128
+  },
+  {
+    "id": "18196f45-ca29-491c-8707-78611c83520e",
+    "component_id": "comp-062",
+    "measured_at": "2024-03-15",
+    "line_coverage": 61.599999999999994,
+    "branch_coverage": 50.7,
+    "test_count": 103
+  },
+  {
+    "id": "cfc49794-e2e8-4481-ba4c-7180844710ee",
+    "component_id": "comp-062",
+    "measured_at": "2024-04-21",
+    "line_coverage": 60.9,
+    "branch_coverage": 55.9,
+    "test_count": 125
+  },
+  {
+    "id": "03af4ec4-e08a-4345-9eec-57cd3f3d1a1c",
+    "component_id": "comp-062",
+    "measured_at": "2024-05-28",
+    "line_coverage": 59.5,
+    "branch_coverage": 49.1,
+    "test_count": 145
+  },
+  {
+    "id": "a459531b-edc9-4ca2-ae91-efbf3c5e7429",
+    "component_id": "comp-062",
+    "measured_at": "2024-07-04",
+    "line_coverage": 63.199999999999996,
+    "branch_coverage": 59.5,
+    "test_count": 126
+  },
+  {
+    "id": "3dd99f9d-f7df-4f53-a300-2963edd361c9",
+    "component_id": "comp-062",
+    "measured_at": "2024-08-10",
+    "line_coverage": 61.0,
+    "branch_coverage": 54.6,
+    "test_count": 111
+  },
+  {
+    "id": "498245f4-8b2f-4761-93e5-385b4f8f830c",
+    "component_id": "comp-062",
+    "measured_at": "2024-09-16",
+    "line_coverage": 64.2,
+    "branch_coverage": 53.1,
+    "test_count": 98
+  },
+  {
+    "id": "5b0e2853-02e8-441f-ad5a-1e1167ebd90c",
+    "component_id": "comp-062",
+    "measured_at": "2024-10-23",
+    "line_coverage": 58.9,
+    "branch_coverage": 48.0,
+    "test_count": 151
+  },
+  {
+    "id": "66dfd293-2e9d-41d3-bed8-9e979653ba18",
+    "component_id": "comp-062",
+    "measured_at": "2024-11-29",
+    "line_coverage": 62.699999999999996,
+    "branch_coverage": 55.9,
+    "test_count": 110
+  },
+  {
+    "id": "f5fa6cb1-efc0-4678-a1f3-bb572cca8333",
+    "component_id": "comp-063",
+    "measured_at": "2024-01-01",
+    "line_coverage": 70.19999999999999,
+    "branch_coverage": 57.8,
+    "test_count": 698
+  },
+  {
+    "id": "0b02ec4e-1a27-4b0f-bf82-beac55f1b008",
+    "component_id": "comp-063",
+    "measured_at": "2024-02-07",
+    "line_coverage": 72.1,
+    "branch_coverage": 62.8,
+    "test_count": 672
+  },
+  {
+    "id": "0a7b1b99-7aaa-4ffc-be54-8687751874d7",
+    "component_id": "comp-063",
+    "measured_at": "2024-03-15",
+    "line_coverage": 74.0,
+    "branch_coverage": 67.8,
+    "test_count": 654
+  },
+  {
+    "id": "29113b07-37d2-4d68-9bdb-6fb466a4a869",
+    "component_id": "comp-063",
+    "measured_at": "2024-04-21",
+    "line_coverage": 69.1,
+    "branch_coverage": 62.7,
+    "test_count": 668
+  },
+  {
+    "id": "fc16872d-adf4-4389-83f6-2678aff1b90b",
+    "component_id": "comp-063",
+    "measured_at": "2024-05-28",
+    "line_coverage": 71.89999999999999,
+    "branch_coverage": 61.4,
+    "test_count": 669
+  },
+  {
+    "id": "07e32bae-68b5-4fab-b70a-f3a2a60c86b4",
+    "component_id": "comp-063",
+    "measured_at": "2024-07-04",
+    "line_coverage": 70.0,
+    "branch_coverage": 61.4,
+    "test_count": 670
+  },
+  {
+    "id": "62f7f17c-528f-45ca-a032-fd6581364b4b",
+    "component_id": "comp-063",
+    "measured_at": "2024-08-10",
+    "line_coverage": 72.19999999999999,
+    "branch_coverage": 64.2,
+    "test_count": 669
+  },
+  {
+    "id": "e9511b2e-e69c-42c4-9f8b-d3fe91a79b19",
+    "component_id": "comp-063",
+    "measured_at": "2024-09-16",
+    "line_coverage": 72.89999999999999,
+    "branch_coverage": 60.7,
+    "test_count": 696
+  },
+  {
+    "id": "f84dcb4c-69e0-4cfa-a59f-e96a13f825bb",
+    "component_id": "comp-063",
+    "measured_at": "2024-10-23",
+    "line_coverage": 72.0,
+    "branch_coverage": 60.9,
+    "test_count": 657
+  },
+  {
+    "id": "516c14b6-6325-4e06-beec-017cbaa94805",
+    "component_id": "comp-063",
+    "measured_at": "2024-11-29",
+    "line_coverage": 70.8,
+    "branch_coverage": 62.8,
+    "test_count": 658
+  },
+  {
+    "id": "8af2cfe3-c65c-435f-9785-aa14d36ef1b7",
+    "component_id": "comp-064",
+    "measured_at": "2024-01-01",
+    "line_coverage": 69.6,
+    "branch_coverage": 57.0,
+    "test_count": 675
+  },
+  {
+    "id": "0b9c80da-a966-4133-bf84-f4c09cb2744c",
+    "component_id": "comp-064",
+    "measured_at": "2024-02-07",
+    "line_coverage": 68.4,
+    "branch_coverage": 55.8,
+    "test_count": 705
+  },
+  {
+    "id": "2150e1ca-b35d-4726-a4ca-6792874c77d2",
+    "component_id": "comp-064",
+    "measured_at": "2024-03-15",
+    "line_coverage": 70.2,
+    "branch_coverage": 64.1,
+    "test_count": 658
+  },
+  {
+    "id": "202a8f5a-f642-4bc7-9ac5-2cb2e2013e5a",
+    "component_id": "comp-064",
+    "measured_at": "2024-04-21",
+    "line_coverage": 71.3,
+    "branch_coverage": 60.4,
+    "test_count": 696
+  },
+  {
+    "id": "29f7e3e5-01df-4b80-9ca5-ff54d794367e",
+    "component_id": "comp-064",
+    "measured_at": "2024-05-28",
+    "line_coverage": 68.4,
+    "branch_coverage": 62.6,
+    "test_count": 709
+  },
+  {
+    "id": "e9bf6988-d25a-42ac-842a-70edd31b2f6b",
+    "component_id": "comp-064",
+    "measured_at": "2024-07-04",
+    "line_coverage": 70.3,
+    "branch_coverage": 59.3,
+    "test_count": 672
+  },
+  {
+    "id": "5f4a90e4-b96f-4aa6-be66-ca7e66e2e5a8",
+    "component_id": "comp-064",
+    "measured_at": "2024-08-10",
+    "line_coverage": 71.3,
+    "branch_coverage": 60.5,
+    "test_count": 690
+  },
+  {
+    "id": "78803895-32c8-46c2-9136-7023666db08f",
+    "component_id": "comp-064",
+    "measured_at": "2024-09-16",
+    "line_coverage": 68.1,
+    "branch_coverage": 58.3,
+    "test_count": 715
+  },
+  {
+    "id": "31d2b555-822a-41b4-b565-8e74a736fbde",
+    "component_id": "comp-064",
+    "measured_at": "2024-10-23",
+    "line_coverage": 70.1,
+    "branch_coverage": 58.3,
+    "test_count": 670
+  },
+  {
+    "id": "594e386f-7ff2-44b5-9d78-2a56eebb2ac5",
+    "component_id": "comp-064",
+    "measured_at": "2024-11-29",
+    "line_coverage": 71.3,
+    "branch_coverage": 60.7,
+    "test_count": 660
+  },
+  {
+    "id": "43567002-ef1e-4c67-80da-08c8913710a8",
+    "component_id": "comp-065",
+    "measured_at": "2024-01-01",
+    "line_coverage": 71.89999999999999,
+    "branch_coverage": 65.2,
+    "test_count": 485
+  },
+  {
+    "id": "5c1995a9-aa8d-4a81-990b-bb5ae95b4e36",
+    "component_id": "comp-065",
+    "measured_at": "2024-02-07",
+    "line_coverage": 71.6,
+    "branch_coverage": 66.7,
+    "test_count": 490
+  },
+  {
+    "id": "dec71ef6-76c2-40a5-a90a-729e1fc32f55",
+    "component_id": "comp-065",
+    "measured_at": "2024-03-15",
+    "line_coverage": 72.1,
+    "branch_coverage": 66.3,
+    "test_count": 474
+  },
+  {
+    "id": "0c32c814-bf66-45db-99e8-5e8e518c5b5b",
+    "component_id": "comp-065",
+    "measured_at": "2024-04-21",
+    "line_coverage": 71.69999999999999,
+    "branch_coverage": 66.6,
+    "test_count": 520
+  },
+  {
+    "id": "d8050eef-066b-4342-bf32-8da9c04d3428",
+    "component_id": "comp-065",
+    "measured_at": "2024-05-28",
+    "line_coverage": 71.3,
+    "branch_coverage": 67.4,
+    "test_count": 503
+  },
+  {
+    "id": "1c3c447f-edb7-4f2f-b9fa-2a7f558c9201",
+    "component_id": "comp-065",
+    "measured_at": "2024-07-04",
+    "line_coverage": 72.3,
+    "branch_coverage": 62.8,
+    "test_count": 505
+  },
+  {
+    "id": "4917c68c-a2e4-4b71-99be-8a2364ead6d1",
+    "component_id": "comp-065",
+    "measured_at": "2024-08-10",
+    "line_coverage": 68.69999999999999,
+    "branch_coverage": 63.9,
+    "test_count": 504
+  },
+  {
+    "id": "ebe27a3d-facc-4c86-97fd-44105c11632a",
+    "component_id": "comp-065",
+    "measured_at": "2024-09-16",
+    "line_coverage": 74.5,
+    "branch_coverage": 67.9,
+    "test_count": 477
+  },
+  {
+    "id": "ed9c4370-835a-4691-a65b-a968b5d901d2",
+    "component_id": "comp-065",
+    "measured_at": "2024-10-23",
+    "line_coverage": 70.39999999999999,
+    "branch_coverage": 66.8,
+    "test_count": 533
+  },
+  {
+    "id": "7df8df80-36ec-4752-a174-79228242fc46",
+    "component_id": "comp-065",
+    "measured_at": "2024-11-29",
+    "line_coverage": 73.8,
+    "branch_coverage": 62.2,
+    "test_count": 497
+  },
+  {
+    "id": "45e079ff-bb5a-49c8-a6a7-5afd033173d9",
+    "component_id": "comp-066",
+    "measured_at": "2024-01-01",
+    "line_coverage": 89.4,
+    "branch_coverage": 79.6,
+    "test_count": 89
+  },
+  {
+    "id": "e906a670-63a7-458b-aa6c-35294057423a",
+    "component_id": "comp-066",
+    "measured_at": "2024-02-07",
+    "line_coverage": 91.9,
+    "branch_coverage": 76.8,
+    "test_count": 90
+  },
+  {
+    "id": "bbba0437-86f9-49e0-8c49-122c2c390773",
+    "component_id": "comp-066",
+    "measured_at": "2024-03-15",
+    "line_coverage": 89.3,
+    "branch_coverage": 84.5,
+    "test_count": 104
+  },
+  {
+    "id": "5f96abf2-04b6-40aa-8159-10b7947280e9",
+    "component_id": "comp-066",
+    "measured_at": "2024-04-21",
+    "line_coverage": 88.9,
+    "branch_coverage": 75.7,
+    "test_count": 100
+  },
+  {
+    "id": "781bffa3-49d5-48aa-b78f-6479023ce652",
+    "component_id": "comp-066",
+    "measured_at": "2024-05-28",
+    "line_coverage": 91.5,
+    "branch_coverage": 75.4,
+    "test_count": 90
+  },
+  {
+    "id": "71824f84-bca2-430b-b573-3a660af194d7",
+    "component_id": "comp-066",
+    "measured_at": "2024-07-04",
+    "line_coverage": 88.5,
+    "branch_coverage": 82.7,
+    "test_count": 124
+  },
+  {
+    "id": "d761e20d-f0cb-4ce6-8646-b1cf9ee0ec82",
+    "component_id": "comp-066",
+    "measured_at": "2024-08-10",
+    "line_coverage": 86.4,
+    "branch_coverage": 81.7,
+    "test_count": 88
+  },
+  {
+    "id": "b101b277-5f49-47eb-9d97-a1e0c21ac2fa",
+    "component_id": "comp-066",
+    "measured_at": "2024-09-16",
+    "line_coverage": 86.9,
+    "branch_coverage": 76.3,
+    "test_count": 116
+  },
+  {
+    "id": "c85d48e8-1466-4ee5-94be-66f88cafe249",
+    "component_id": "comp-066",
+    "measured_at": "2024-10-23",
+    "line_coverage": 87.2,
+    "branch_coverage": 78.7,
+    "test_count": 124
+  },
+  {
+    "id": "a223e135-0c3e-4f2d-9670-394f420d5034",
+    "component_id": "comp-066",
+    "measured_at": "2024-11-29",
+    "line_coverage": 89.8,
+    "branch_coverage": 75.2,
+    "test_count": 118
+  },
+  {
+    "id": "a3070443-c877-477f-8e16-8f1c4699bbfb",
+    "component_id": "comp-067",
+    "measured_at": "2024-01-01",
+    "line_coverage": 87.6,
+    "branch_coverage": 79.7,
+    "test_count": 414
+  },
+  {
+    "id": "6035a2c6-744f-47d6-92a1-d993f8973acf",
+    "component_id": "comp-067",
+    "measured_at": "2024-02-07",
+    "line_coverage": 87.3,
+    "branch_coverage": 71.6,
+    "test_count": 407
+  },
+  {
+    "id": "5a970266-ff20-48c3-b977-63b407c659af",
+    "component_id": "comp-067",
+    "measured_at": "2024-03-15",
+    "line_coverage": 91.0,
+    "branch_coverage": 80.7,
+    "test_count": 375
+  },
+  {
+    "id": "d63dcce4-7e21-4a9b-909e-048802bd01f4",
+    "component_id": "comp-067",
+    "measured_at": "2024-04-21",
+    "line_coverage": 91.5,
+    "branch_coverage": 76.6,
+    "test_count": 371
+  },
+  {
+    "id": "0fac6308-b283-4b6b-8db6-9b9b379fef68",
+    "component_id": "comp-067",
+    "measured_at": "2024-05-28",
+    "line_coverage": 90.2,
+    "branch_coverage": 82.3,
+    "test_count": 403
+  },
+  {
+    "id": "cd1b5510-1db7-4641-9e09-d8520b0a1c47",
+    "component_id": "comp-067",
+    "measured_at": "2024-07-04",
+    "line_coverage": 89.6,
+    "branch_coverage": 79.3,
+    "test_count": 390
+  },
+  {
+    "id": "bdad3df5-9369-4952-8d9e-f03ddcb1efcb",
+    "component_id": "comp-067",
+    "measured_at": "2024-08-10",
+    "line_coverage": 88.3,
+    "branch_coverage": 76.4,
+    "test_count": 382
+  },
+  {
+    "id": "1e4b72b2-5bac-4f1e-918e-e198feadb6dc",
+    "component_id": "comp-067",
+    "measured_at": "2024-09-16",
+    "line_coverage": 92.2,
+    "branch_coverage": 86.3,
+    "test_count": 362
+  },
+  {
+    "id": "ccad14b4-aa75-466d-b909-172d64d9ed1f",
+    "component_id": "comp-067",
+    "measured_at": "2024-10-23",
+    "line_coverage": 89.6,
+    "branch_coverage": 72.0,
+    "test_count": 380
+  },
+  {
+    "id": "397f18f0-a288-4f32-a517-1b2d7014218c",
+    "component_id": "comp-067",
+    "measured_at": "2024-11-29",
+    "line_coverage": 90.5,
+    "branch_coverage": 73.1,
+    "test_count": 407
+  },
+  {
+    "id": "8d68b5a5-b80a-4240-9441-cbb3c70968a4",
+    "component_id": "comp-068",
+    "measured_at": "2024-01-01",
+    "line_coverage": 69.60000000000001,
+    "branch_coverage": 60.6,
+    "test_count": 307
+  },
+  {
+    "id": "70a2718b-25bb-498b-b63e-4b067dd823fa",
+    "component_id": "comp-068",
+    "measured_at": "2024-02-07",
+    "line_coverage": 64.9,
+    "branch_coverage": 58.1,
+    "test_count": 288
+  },
+  {
+    "id": "b9416218-495e-4179-b0c9-cb4051ea52ee",
+    "component_id": "comp-068",
+    "measured_at": "2024-03-15",
+    "line_coverage": 65.60000000000001,
+    "branch_coverage": 60.0,
+    "test_count": 303
+  },
+  {
+    "id": "48c01982-eb31-4b50-81e4-e55063e15c2d",
+    "component_id": "comp-068",
+    "measured_at": "2024-04-21",
+    "line_coverage": 67.3,
+    "branch_coverage": 61.8,
+    "test_count": 290
+  },
+  {
+    "id": "2d7d3f7f-4535-45d6-ab43-68b03fe1f014",
+    "component_id": "comp-068",
+    "measured_at": "2024-05-28",
+    "line_coverage": 68.60000000000001,
+    "branch_coverage": 64.3,
+    "test_count": 321
+  },
+  {
+    "id": "2dbfee0f-b001-47bc-918f-d5119c1a1366",
+    "component_id": "comp-068",
+    "measured_at": "2024-07-04",
+    "line_coverage": 65.8,
+    "branch_coverage": 61.5,
+    "test_count": 323
+  },
+  {
+    "id": "36a82dca-c9e3-4c66-9a3b-b012af972b72",
+    "component_id": "comp-068",
+    "measured_at": "2024-08-10",
+    "line_coverage": 65.5,
+    "branch_coverage": 54.9,
+    "test_count": 275
+  },
+  {
+    "id": "5e1a72bc-5bb2-4523-a21d-f66edf417dbc",
+    "component_id": "comp-068",
+    "measured_at": "2024-09-16",
+    "line_coverage": 67.60000000000001,
+    "branch_coverage": 61.3,
+    "test_count": 300
+  },
+  {
+    "id": "84afc252-54d7-46fe-a5ec-021348a3cd50",
+    "component_id": "comp-068",
+    "measured_at": "2024-10-23",
+    "line_coverage": 64.5,
+    "branch_coverage": 54.6,
+    "test_count": 285
+  },
+  {
+    "id": "c6a1cf43-cfb1-4556-9f42-6115381734d7",
+    "component_id": "comp-068",
+    "measured_at": "2024-11-29",
+    "line_coverage": 65.3,
+    "branch_coverage": 58.0,
+    "test_count": 314
+  },
+  {
+    "id": "51a24e20-17bb-4ac1-a74f-d5015f0a1407",
+    "component_id": "comp-069",
+    "measured_at": "2024-01-01",
+    "line_coverage": 76.39999999999999,
+    "branch_coverage": 63.3,
+    "test_count": 455
+  },
+  {
+    "id": "15687ee5-d4f7-4062-94d3-a04dedc24ec2",
+    "component_id": "comp-069",
+    "measured_at": "2024-02-07",
+    "line_coverage": 76.8,
+    "branch_coverage": 71.1,
+    "test_count": 452
+  },
+  {
+    "id": "f589aa8a-2784-47ce-bfeb-9a500a55d1e7",
+    "component_id": "comp-069",
+    "measured_at": "2024-03-15",
+    "line_coverage": 73.69999999999999,
+    "branch_coverage": 67.8,
+    "test_count": 461
+  },
+  {
+    "id": "04ae5471-7f49-4154-89c0-9d2ebae40423",
+    "component_id": "comp-069",
+    "measured_at": "2024-04-21",
+    "line_coverage": 78.5,
+    "branch_coverage": 68.8,
+    "test_count": 477
+  },
+  {
+    "id": "27ac7fcb-5804-41f9-a648-b72569aaccd9",
+    "component_id": "comp-069",
+    "measured_at": "2024-05-28",
+    "line_coverage": 75.1,
+    "branch_coverage": 68.4,
+    "test_count": 463
+  },
+  {
+    "id": "5e61520b-fcc8-4f63-85c8-2ed4042292dd",
+    "component_id": "comp-069",
+    "measured_at": "2024-07-04",
+    "line_coverage": 75.1,
+    "branch_coverage": 70.3,
+    "test_count": 461
+  },
+  {
+    "id": "090ba50e-f9f9-4867-b183-b8dd7c065dc0",
+    "component_id": "comp-069",
+    "measured_at": "2024-08-10",
+    "line_coverage": 73.89999999999999,
+    "branch_coverage": 67.4,
+    "test_count": 472
+  },
+  {
+    "id": "a44df12c-e2ad-451e-96d0-debe16825bc7",
+    "component_id": "comp-069",
+    "measured_at": "2024-09-16",
+    "line_coverage": 76.39999999999999,
+    "branch_coverage": 64.0,
+    "test_count": 475
+  },
+  {
+    "id": "319d0de4-41b2-4cd7-8a7b-baf15f1e125b",
+    "component_id": "comp-069",
+    "measured_at": "2024-10-23",
+    "line_coverage": 78.8,
+    "branch_coverage": 68.6,
+    "test_count": 487
+  },
+  {
+    "id": "d72531ce-0ceb-48af-b658-01be75ac1e0e",
+    "component_id": "comp-069",
+    "measured_at": "2024-11-29",
+    "line_coverage": 76.19999999999999,
+    "branch_coverage": 65.0,
+    "test_count": 459
+  },
+  {
+    "id": "f8ff7118-ff53-4547-a267-b2bed6b39124",
+    "component_id": "comp-070",
+    "measured_at": "2024-01-01",
+    "line_coverage": 66.1,
+    "branch_coverage": 56.0,
+    "test_count": 659
+  },
+  {
+    "id": "8a7cb004-8acb-4f2d-9275-96210dcedb1b",
+    "component_id": "comp-070",
+    "measured_at": "2024-02-07",
+    "line_coverage": 67.8,
+    "branch_coverage": 56.6,
+    "test_count": 654
+  },
+  {
+    "id": "b927a91f-ee06-4964-beff-0e7acfac9003",
+    "component_id": "comp-070",
+    "measured_at": "2024-03-15",
+    "line_coverage": 65.2,
+    "branch_coverage": 57.1,
+    "test_count": 674
+  },
+  {
+    "id": "5f24689e-b2e9-4d82-84df-c7a3f03ab5f7",
+    "component_id": "comp-070",
+    "measured_at": "2024-04-21",
+    "line_coverage": 63.9,
+    "branch_coverage": 55.0,
+    "test_count": 641
+  },
+  {
+    "id": "b43fda22-3338-4411-864d-ab1c17efb4f1",
+    "component_id": "comp-070",
+    "measured_at": "2024-05-28",
+    "line_coverage": 62.0,
+    "branch_coverage": 51.2,
+    "test_count": 638
+  },
+  {
+    "id": "9a0c19ec-c08e-4a9e-857b-86d3a132e610",
+    "component_id": "comp-070",
+    "measured_at": "2024-07-04",
+    "line_coverage": 66.0,
+    "branch_coverage": 57.2,
+    "test_count": 655
+  },
+  {
+    "id": "26f0564d-cc67-4cc2-8a85-2d616526a3fe",
+    "component_id": "comp-070",
+    "measured_at": "2024-08-10",
+    "line_coverage": 64.3,
+    "branch_coverage": 53.4,
+    "test_count": 683
+  },
+  {
+    "id": "3dae299b-5b22-40f5-a671-05d69c4a5c5e",
+    "component_id": "comp-070",
+    "measured_at": "2024-09-16",
+    "line_coverage": 66.4,
+    "branch_coverage": 62.1,
+    "test_count": 661
+  },
+  {
+    "id": "76f9a569-97e3-4460-919c-731f8a70691f",
+    "component_id": "comp-070",
+    "measured_at": "2024-10-23",
+    "line_coverage": 66.1,
+    "branch_coverage": 59.0,
+    "test_count": 674
+  },
+  {
+    "id": "9077fc3a-797c-4845-846d-11ee22b06ce9",
+    "component_id": "comp-070",
+    "measured_at": "2024-11-29",
+    "line_coverage": 64.5,
+    "branch_coverage": 58.2,
+    "test_count": 678
+  }
+]

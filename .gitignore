@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+*.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Data files (keep sample, ignore downloaded data)
+data/raw/
+data/downloads/
+*.csv
+*.xml
+*.zip
+*.7z
+
+# Logs and telemetry
+logs/
+*.log
+traces/
+
+# Docker volumes
+postgres_data/
+neo4j_data/
+qdrant_data/
+
+# macOS
+.DS_Store
