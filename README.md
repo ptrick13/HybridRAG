@@ -129,7 +129,7 @@ hybridrag/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/patrickvorreiter/HybridRAG.git
+git clone https://github.com/ptrick13/HybridRAG.git
 cd HybridRAG
 pip install -r requirements.txt
 ```
