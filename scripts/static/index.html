@@ -904,7 +904,7 @@
 
     if (es) { es.close(); es = null; }
 
-    const params = new URLSearchParams({ q, variant });
+    const params = new URLSearchParams({ q, variant: `v${variant}` });
     es = new EventSource(`/api/query?${params}`);
 
     es.addEventListener('agent_start', e => {
