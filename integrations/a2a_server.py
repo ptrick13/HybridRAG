@@ -94,10 +94,10 @@ _AGENT_CARD = {
             "inputModes": ["text"],
             "outputModes": ["text"],
             "examples": [
-                "How do I implement an async context manager in Python?",
-                "Which tags are related to machine-learning?",
-                "How many Python questions from 2023 have a score above 100?",
-                "Find the top experts in the pandas tag.",
+                "Which teams own components that depend on the auth-gateway?",
+                "Find postmortems caused by external dependency failures.",
+                "Which components have the most P1 incidents in Q1 2024?",
+                "What architectural decisions mention circuit breaker patterns?",
             ],
         }
     ],
