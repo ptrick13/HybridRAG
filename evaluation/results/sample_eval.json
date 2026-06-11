@@ -1,0 +1,1657 @@
+{
+  "timestamp": "2026-06-11T18:40:55",
+  "configuration": {
+    "variants": [
+      "v1",
+      "v2"
+    ],
+    "category_filter": null,
+    "query_count": 17
+  },
+  "summary": {
+    "by_variant": {
+      "v1": {
+        "faithfulness": 4.65,
+        "relevancy": 5.0,
+        "completeness": 4.71,
+        "citation_accuracy": 4.53,
+        "average": 4.72,
+        "avg_cost_usd": 0.00087,
+        "total_embedding_usd": 1.3e-05,
+        "total_cost_usd": 0.014785,
+        "total_eval_cost_usd": 0.002822,
+        "avg_latency_seconds": 10.386
+      },
+      "v2": {
+        "faithfulness": 4.65,
+        "relevancy": 5.0,
+        "completeness": 4.76,
+        "citation_accuracy": 4.65,
+        "average": 4.76,
+        "avg_cost_usd": 0.002357,
+        "total_embedding_usd": 2.8e-05,
+        "total_cost_usd": 0.040064,
+        "total_eval_cost_usd": 0.00372,
+        "avg_latency_seconds": 20.582
+      }
+    },
+    "by_category": {
+      "SEM": {
+        "v1": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 4.75,
+          "citation_accuracy": 5.0,
+          "average": 4.94
+        },
+        "v2": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 5.0,
+          "citation_accuracy": 5.0,
+          "average": 5.0
+        }
+      },
+      "REL": {
+        "v1": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 5.0,
+          "citation_accuracy": 5.0,
+          "average": 5.0
+        },
+        "v2": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 5.0,
+          "citation_accuracy": 5.0,
+          "average": 5.0
+        }
+      },
+      "STR": {
+        "v1": {
+          "faithfulness": 4.0,
+          "relevancy": 5.0,
+          "completeness": 4.67,
+          "citation_accuracy": 4.33,
+          "average": 4.5
+        },
+        "v2": {
+          "faithfulness": 4.67,
+          "relevancy": 5.0,
+          "completeness": 4.67,
+          "citation_accuracy": 4.67,
+          "average": 4.75
+        }
+      },
+      "MIX": {
+        "v1": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 4.67,
+          "citation_accuracy": 4.67,
+          "average": 4.83
+        },
+        "v2": {
+          "faithfulness": 3.67,
+          "relevancy": 5.0,
+          "completeness": 4.33,
+          "citation_accuracy": 4.67,
+          "average": 4.42
+        }
+      },
+      "CON": {
+        "v1": {
+          "faithfulness": 3.5,
+          "relevancy": 5.0,
+          "completeness": 4.0,
+          "citation_accuracy": 4.5,
+          "average": 4.25
+        },
+        "v2": {
+          "faithfulness": 4.5,
+          "relevancy": 5.0,
+          "completeness": 4.5,
+          "citation_accuracy": 5.0,
+          "average": 4.75
+        }
+      },
+      "EDGE": {
+        "v1": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 5.0,
+          "citation_accuracy": 3.0,
+          "average": 4.5
+        },
+        "v2": {
+          "faithfulness": 5.0,
+          "relevancy": 5.0,
+          "completeness": 5.0,
+          "citation_accuracy": 3.0,
+          "average": 4.5
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "SEM-01",
+      "category": "SEM",
+      "query": "Find tickets related to database connection timeout issues",
+      "variant": "v1",
+      "answer": "Here are the tickets related to database connection timeout issues:\n\n1. **Timeout errors in great-database spike above threshold during API sync**  \n   - This ticket reports that the `great-database` becomes unresponsive when the database connection pool is exhausted during API synchronization.  \n   - `[Ticket | id: f3e25e1f-32d9-482a-ba97-4750f95c720c | title: \"Timeout errors in great-database spike above threshold during API sync\"]`\n\n2. **Timeout errors in power-database spike above threshold during batch processing**  \n   - This ticket indicates that the `power-database` throws a `ConnectionTimeoutError` under sustained load above 1000 requests per second (RPS) during batch processing.  \n   - `[Ticket | id: ba5498fd-3737-4c38-966c-dd338f9fdc15 | title: \"Timeout errors in power-database spike above threshold during batch processing\"]`\n\n3. **Timeout errors in worry-gateway spike above threshold during database migrations**  \n   - This ticket notes that the `worry-gateway` returns incorrect results when concurrent connections exceed 500 during database migrations.  \n   - `[Ticket | id: 68a50c9b-f8d2-4d63-952b-7fbdaa15a7d3 | title: \"Timeout errors in worry-gateway spike above threshold during database migrations\"]`\n\n4. **make-database throws ConnectionTimeoutError under peak load**  \n   - This ticket describes a `ConnectionTimeoutError` in the `make-database` during peak load, which is caused by a race condition leading to data corruption under high traffic.  \n   - `[Ticket | id: 6e274881-5772-4c55-a5e5-5d3a94eeb2af | title: \"make-database throws ConnectionTimeoutError under peak load\"]`\n\n5. **military-database fails intermittently during authentication flow**  \n   - This ticket reports timeout errors in the `military-database` that spike above threshold during cache invalidation.  \n   - `[Ticket | id: 3625fc20-47e3-41c2-a4ba-e8bf83b8fa05 | title: \"military-database fails intermittently during authentication flow\"]`\n\nSources:\n- `[Ticket | id: f3e25e1f-32d9-482a-ba97-4750f95c720c | title: \"Timeout errors in great-database spike above threshold during API sync\"]`\n- `[Ticket | id: ba5498fd-3737-4c38-966c-dd338f9fdc15 | title: \"Timeout errors in power-database spike above threshold during batch processing\"]`\n- `[Ticket | id: 68a50c9b-f8d2-4d63-952b-7fbdaa15a7d3 | title: \"Timeout errors in worry-gateway spike above threshold during database migrations\"]`\n- `[Ticket | id: 6e274881-5772-4c55-a5e5-5d3a94eeb2af | title: \"make-database throws ConnectionTimeoutError under peak load\"]`\n- `[Ticket | id: 3625fc20-47e3-41c2-a4ba-e8bf83b8fa05 | title: \"military-database fails intermittently during authentication flow\"]`",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 16.083,
+      "cost_usd": 0.000901,
+      "eval_cost_usd": 0.000211,
+      "cost_breakdown": {
+        "llm_input_usd": 0.00042,
+        "llm_output_usd": 0.000479,
+        "embedding_usd": 2e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 2.212,
+        "vector": 1.675,
+        "answer": 12.162
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-01",
+      "category": "SEM",
+      "query": "Find tickets related to database connection timeout issues",
+      "variant": "v2",
+      "answer": "Here are the tickets related to database connection timeout issues:\n\n1. **Timeout errors in great-database spike above threshold during API sync**  \n   - This ticket reports that the `great-database` becomes unresponsive when the database connection pool is exhausted during API synchronization.  \n   - `[Ticket | id: f3e25e1f-32d9-482a-ba97-4750f95c720c | title: \"Timeout errors in great-database spike above threshold during API sync\"]`\n\n2. **Timeout errors in power-database spike above threshold during batch processing**  \n   - This ticket indicates that the `power-database` throws a `ConnectionTimeoutError` under sustained load above 1000 requests per second (RPS) during batch processing.  \n   - `[Ticket | id: ba5498fd-3737-4c38-966c-dd338f9fdc15 | title: \"Timeout errors in power-database spike above threshold during batch processing\"]`\n\n3. **Timeout errors in worry-gateway spike above threshold during database migrations**  \n   - This ticket mentions that the `worry-gateway` returns incorrect results when concurrent connections exceed 500 during database migrations.  \n   - `[Ticket | id: 68a50c9b-f8d2-4d63-952b-7fbdaa15a7d3 | title: \"Timeout errors in worry-gateway spike above threshold during database migrations\"]`\n\n4. **make-database throws ConnectionTimeoutError under peak load**  \n   - This ticket states that the `make-database` throws a `ConnectionTimeoutError` under peak load due to a race condition, which can lead to data corruption during high traffic.  \n   - `[Ticket | id: 6e274881-5772-4c55-a5e5-5d3a94eeb2af | title: \"make-database throws ConnectionTimeoutError under peak load\"]`\n\n5. **military-database fails intermittently during authentication flow**  \n   - This ticket reports timeout errors in the `military-database` that spike above threshold during cache invalidation, affecting the authentication flow.  \n   - `[Ticket | id: 3625fc20-47e3-41c2-a4ba-e8bf83b8fa05 | title: \"military-database fails intermittently during authentication flow\"]`\n\nSources:\n- `[Ticket | id: f3e25e1f-32d9-482a-ba97-4750f95c720c | title: \"Timeout errors in great-database spike above threshold during API sync\"]`\n- `[Ticket | id: ba5498fd-3737-4c38-966c-dd338f9fdc15 | title: \"Timeout errors in power-database spike above threshold during batch processing\"]`\n- `[Ticket | id: 68a50c9b-f8d2-4d63-952b-7fbdaa15a7d3 | title: \"Timeout errors in worry-gateway spike above threshold during database migrations\"]`\n- `[Ticket | id: 6e274881-5772-4c55-a5e5-5d3a94eeb2af | title: \"make-database throws ConnectionTimeoutError under peak load\"]`\n- `[Ticket | id: 3625fc20-47e3-41c2-a4ba-e8bf83b8fa05 | title: \"military-database fails intermittently during authentication flow\"]`",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 17.108,
+      "cost_usd": 0.001389,
+      "eval_cost_usd": 0.000202,
+      "cost_breakdown": {
+        "llm_input_usd": 0.00083,
+        "llm_output_usd": 0.000557,
+        "embedding_usd": 2e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.224,
+        "vector": 1.444,
+        "judge": 2.68,
+        "answer": 11.746
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 5,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results from the Vector Agent provide a comprehensive set of tickets related to database connection timeout issues, covering various scenarios and specific cases. All aspects of the query are addressed with relevant and specific information, thus no further retrieval is needed."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-02",
+      "category": "SEM",
+      "query": "What architectural decisions mention circuit breaker or fallback patterns?",
+      "variant": "v1",
+      "answer": "The architectural decisions that mention the circuit breaker pattern are as follows:\n\n1. **Implement circuit breaker pattern for external API calls** - This decision is documented in two separate entries:\n   - The first entry is identified as `adr-004`, which states the implementation of the circuit breaker pattern for external API calls and is marked as accepted.\n   - The second entry, `adr-025`, also discusses the implementation of the circuit breaker pattern for external API calls, and it is presented as a design document.\n\nBoth entries emphasize the importance of this pattern in managing high-risk scenarios without a mitigation plan.\n\nThere are no mentions of fallback patterns in the retrieved context.\n\nSources:\n- `[ArchDoc | id: adr-004 | title: \"Implement circuit breaker pattern for external API calls\"]`\n- `[ArchDoc | id: adr-025 | title: \"Implement circuit breaker pattern for external API calls\"]`",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 8.569,
+      "cost_usd": 0.000631,
+      "eval_cost_usd": 0.000124,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000472,
+        "llm_output_usd": 0.000157,
+        "embedding_usd": 2e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.744,
+        "vector": 1.253,
+        "answer": 5.551
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 5,
+        "average": 4.75
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-02",
+      "category": "SEM",
+      "query": "What architectural decisions mention circuit breaker or fallback patterns?",
+      "variant": "v2",
+      "answer": "The architectural decisions that mention the circuit breaker pattern are:\n\n1. **Implement circuit breaker pattern for external API calls** - This decision is documented in two places:\n   - The first instance is recorded as `adr-004`, which states the implementation of the circuit breaker pattern for external API calls and is marked as accepted. It highlights that the team considers this approach **high risk** without a mitigation plan. \n   - The second instance is documented as `adr-025`, which also discusses the implementation of the circuit breaker pattern for external API calls, providing a design overview and goals related to this pattern.\n\nBoth documents emphasize the importance of the circuit breaker pattern in managing external API calls, indicating a consensus on its significance in the architecture.\n\nSources:\n- `[ArchDoc | id: adr-004 | title: \"Implement circuit breaker pattern for external API calls\"]`\n- `[ArchDoc | id: adr-025 | title: \"Implement circuit breaker pattern for external API calls\"]`",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 2,
+      "latency_seconds": 14.746,
+      "cost_usd": 0.00242,
+      "eval_cost_usd": 0.000121,
+      "cost_breakdown": {
+        "llm_input_usd": 0.001992,
+        "llm_output_usd": 0.000424,
+        "embedding_usd": 3e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 2.956,
+        "vector": 2.957,
+        "judge": 5.704,
+        "answer": 3.085
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 3,
+          "relevance": 4,
+          "consistency": 5,
+          "specificity": 3
+        },
+        "gaps": [
+          "No results specifically mention fallback patterns, which is a key aspect of the query.",
+          "The results primarily focus on circuit breaker patterns without addressing the broader context of architectural decisions."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "While the results provide relevant information about circuit breaker patterns, they do not address fallback patterns, which is a critical aspect of the query. The absence of fallback pattern discussions means the results are incomplete, but since this gap has been persistent, I am accepting the results as they stand."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-03",
+      "category": "SEM",
+      "query": "Find postmortems where the root cause was an external dependency failure",
+      "variant": "v1",
+      "answer": "Here are the postmortems where the root cause was identified as an external dependency failure:\n\n1. **Postmortem: envisioneer e-business partnerships**\n   - **Root Cause**: The root cause was determined to be an external API rate limit that was exceeded due to a misconfigured retry loop. \n   - **Severity**: P3\n   - **ID**: `pm-032`\n\n2. **Postmortem: utilize enterprise networks**\n   - **Root Cause**: The root cause was determined to be an external API rate limit that was exceeded due to a misconfigured retry loop.\n   - **Severity**: P2\n   - **ID**: `pm-023`\n\n3. **Postmortem: architect back-end ROI**\n   - **Root Cause**: The root cause was determined to be a third-party vendor experiencing an outage that affected our data pipeline.\n   - **Severity**: P3\n   - **ID**: `pm-033`\n\nThese postmortems highlight issues related to external dependencies, including API rate limits and vendor outages.\n\nSources:\n- [Postmortem | id: pm-032 | title: \"envisioneer e-business partnerships\"]\n- [Postmortem | id: pm-023 | title: \"utilize enterprise networks\"]\n- [Postmortem | id: pm-033 | title: \"architect back-end ROI\"]",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 9.577,
+      "cost_usd": 0.000721,
+      "eval_cost_usd": 0.000135,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000502,
+        "llm_output_usd": 0.000217,
+        "embedding_usd": 1e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.297,
+        "vector": 1.445,
+        "answer": 6.812
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-03",
+      "category": "SEM",
+      "query": "Find postmortems where the root cause was an external dependency failure",
+      "variant": "v2",
+      "answer": "Here are the postmortems where the root cause was identified as an external dependency failure:\n\n1. **Postmortem: envisioneer e-business partnerships**\n   - **Root Cause**: The root cause was determined to be an external API rate limit being exceeded due to a misconfigured retry loop. \n   - **ID**: `pm-032`\n\n2. **Postmortem: utilize enterprise networks**\n   - **Root Cause**: The root cause was determined to be an external API rate limit being exceeded due to a misconfigured retry loop.\n   - **ID**: `pm-023`\n\n3. **Postmortem: evolve synergistic deliverables**\n   - **Root Cause**: The root cause was determined to be an external API rate limit being exceeded due to a misconfigured retry loop.\n   - **ID**: `pm-002`\n\n4. **Postmortem: revolutionize open-source portals**\n   - **Root Cause**: The root cause was determined to be an external API rate limit being exceeded due to a misconfigured retry loop.\n   - **ID**: `pm-010`\n\n5. **Postmortem: optimize leading-edge markets**\n   - **Root Cause**: The root cause was determined to be an external API rate limit being exceeded due to a misconfigured retry loop.\n   - **ID**: `pm-018`\n\n6. **Postmortem: extend open-source schemas**\n   - **Root Cause**: The root cause was determined to be an external API rate limit being exceeded due to a misconfigured retry loop.\n   - **ID**: `pm-026`\n\nIn summary, multiple postmortems indicate that the root cause of the failures was consistently linked to external API rate limits being exceeded due to misconfigured retry loops.\n\n### Sources\n- [Postmortem | id: pm-032 | title: \"envisioneer e-business partnerships\"]\n- [Postmortem | id: pm-023 | title: \"utilize enterprise networks\"]\n- [Postmortem | id: pm-002 | title: \"evolve synergistic deliverables\"]\n- [Postmortem | id: pm-010 | title: \"revolutionize open-source portals\"]\n- [Postmortem | id: pm-018 | title: \"optimize leading-edge markets\"]\n- [Postmortem | id: pm-026 | title: \"extend open-source schemas\"]",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 2,
+      "latency_seconds": 20.559,
+      "cost_usd": 0.002862,
+      "eval_cost_usd": 0.000169,
+      "cost_breakdown": {
+        "llm_input_usd": 0.002231,
+        "llm_output_usd": 0.000627,
+        "embedding_usd": 4e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 2.871,
+        "vector": 3.776,
+        "judge": 6.597,
+        "answer": 7.286
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 4,
+          "relevance": 5,
+          "consistency": 4,
+          "specificity": 4
+        },
+        "gaps": [
+          "Not all postmortems explicitly mention 'external dependency failure' as the root cause; some mention cascading failures without specifying external dependencies."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results provide a strong set of postmortems related to external dependency failures, with sufficient relevance and specificity. However, there remains a gap regarding the explicit mention of 'external dependency failure' in all cases, particularly with cascading failures not clearly defined as such."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-04",
+      "category": "SEM",
+      "query": "Which tickets describe intermittent failures under high concurrent load?",
+      "variant": "v1",
+      "answer": "The following tickets describe intermittent failures under high concurrent load:\n\n1. **Ticket ID: `74d4eb9b-0e08-4aab-a7a2-fc8a46fae30d`** - Title: \"Race condition in up-frontend causes data corruption under concurrent peak load\". This ticket indicates that the `up-frontend` fails intermittently during batch processing under high load conditions.\n\n2. **Ticket ID: `86e1d4b3-dc69-4efe-9d29-e050785f7313`** - Title: \"Race condition in majority-frontend causes data corruption under concurrent high traffic\". This ticket describes a race condition in the `majority-frontend` that leads to data corruption under sustained load above 1000 requests per second (RPS).\n\n3. **Ticket ID: `df681283-d4be-477b-8f1f-114793cabbe1`** - Title: \"then-service fails intermittently during database migrations\". This ticket notes that the `then-service` experiences intermittent failures during database migrations under high concurrent load.\n\n4. **Ticket ID: `e8338ef3-7fe3-4f29-9c76-9b42b1194692`** - Title: \"bed-library throws NullPointerException under concurrent writes\". This ticket mentions that the `bed-library` throws a `NullPointerException` under concurrent writes, indicating a failure under high traffic conditions.\n\n5. **Ticket ID: `3c3c7ad6-a6fb-4be1-91c1-7add81a65d1e`** - Title: \"Race condition in hundred-library causes data corruption under concurrent sustained load above 1000 RPS\". This ticket reports that the `hundred-library` experiences timeout errors that spike above the threshold during batch processing under high load.\n\nThese tickets collectively highlight various services that encounter intermittent failures when subjected to high concurrent loads.\n\nSources:\n- `[Ticket | id: 74d4eb9b-0e08-4aab-a7a2-fc8a46fae30d | title: \"Race condition in up-frontend causes data corruption under concurrent peak load\"]`\n- `[Ticket | id: 86e1d4b3-dc69-4efe-9d29-e050785f7313 | title: \"Race condition in majority-frontend causes data corruption under concurrent high traffic\"]`\n- `[Ticket | id: df681283-d4be-477b-8f1f-114793cabbe1 | title: \"then-service fails intermittently during database migrations\"]`\n- `[Ticket | id: e8338ef3-7fe3-4f29-9c76-9b42b1194692 | title: \"bed-library throws NullPointerException under concurrent writes\"]`\n- `[Ticket | id: 3c3c7ad6-a6fb-4be1-91c1-7add81a65d1e | title: \"Race condition in hundred-library causes data corruption under concurrent sustained load above 1000 RPS\"]`",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 13.686,
+      "cost_usd": 0.000873,
+      "eval_cost_usd": 0.000192,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000429,
+        "llm_output_usd": 0.000441,
+        "embedding_usd": 2e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.338,
+        "vector": 1.269,
+        "answer": 11.06
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "SEM-04",
+      "category": "SEM",
+      "query": "Which tickets describe intermittent failures under high concurrent load?",
+      "variant": "v2",
+      "answer": "The following tickets describe intermittent failures under high concurrent load:\n\n1. **Ticket ID: `74d4eb9b-0e08-4aab-a7a2-fc8a46fae30d`** - Title: \"Race condition in up-frontend causes data corruption under concurrent peak load\". This ticket indicates that the `up-frontend` fails intermittently during batch processing under high load.\n\n2. **Ticket ID: `86e1d4b3-dc69-4efe-9d29-e050785f7313`** - Title: \"Race condition in majority-frontend causes data corruption under concurrent high traffic\". It mentions that the `majority-frontend` experiences data corruption under sustained load above 1000 requests per second (RPS).\n\n3. **Ticket ID: `df681283-d4be-477b-8f1f-114793cabbe1`** - Title: \"then-service fails intermittently during database migrations\". This ticket notes that the `then-service` fails intermittently during database migrations under sustained load above 1000 RPS.\n\n4. **Ticket ID: `3c3c7ad6-a6fb-4be1-91c1-7add81a65d1e`** - Title: \"Race condition in hundred-library causes data corruption under concurrent sustained load above 1000 RPS\". It describes timeout errors in the `hundred-library` that spike above threshold during batch processing.\n\n5. **Ticket ID: `e8338ef3-7fe3-4f29-9c76-9b42b1194692`** - Title: \"bed-library throws NullPointerException under concurrent writes\". This ticket indicates that the `bed-library` throws a `NullPointerException` under concurrent high traffic.\n\nThese tickets collectively highlight various services and libraries that experience intermittent failures when subjected to high concurrent loads.\n\nSources:\n- [Ticket | id: 74d4eb9b-0e08-4aab-a7a2-fc8a46fae30d | title: \"Race condition in up-frontend causes data corruption under concurrent peak load\"]\n- [Ticket | id: 86e1d4b3-dc69-4efe-9d29-e050785f7313 | title: \"Race condition in majority-frontend causes data corruption under concurrent high traffic\"]\n- [Ticket | id: df681283-d4be-477b-8f1f-114793cabbe1 | title: \"then-service fails intermittently during database migrations\"]\n- [Ticket | id: 3c3c7ad6-a6fb-4be1-91c1-7add81a65d1e | title: \"Race condition in hundred-library causes data corruption under concurrent sustained load above 1000 RPS\"]\n- [Ticket | id: e8338ef3-7fe3-4f29-9c76-9b42b1194692 | title: \"bed-library throws NullPointerException under concurrent writes\"]",
+      "activated_agents": [
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 13.399,
+      "cost_usd": 0.001351,
+      "eval_cost_usd": 0.000184,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000847,
+        "llm_output_usd": 0.000502,
+        "embedding_usd": 2e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.234,
+        "vector": 1.475,
+        "judge": 2.093,
+        "answer": 8.57
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 5,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results from the Vector Agent provide a comprehensive list of tickets that describe intermittent failures under high concurrent load, covering various aspects of the query. All retrieved tickets are relevant and specific enough to address the user's request."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "REL-01",
+      "category": "REL",
+      "query": "Which teams are responsible for components that depend on the either-gateway?",
+      "variant": "v1",
+      "answer": "The team responsible for components that depend on the `either-gateway` is the \"Require Frontend Team\" with the team ID `team-011`.[Neo4j | Team: \"Require Frontend Team\" via :RESPONSIBLE_FOR \u2192 Component: \"either-gateway\"]\n\n**Sources**\n- [Neo4j | Team: \"Require Frontend Team\" via :RESPONSIBLE_FOR \u2192 Component: \"either-gateway\"]",
+      "activated_agents": [
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 8.476,
+      "cost_usd": 0.000936,
+      "eval_cost_usd": 0.00012,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000753,
+        "llm_output_usd": 0.000183,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.553,
+        "graph": 5.275,
+        "answer": 1.639
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "REL-01",
+      "category": "REL",
+      "query": "Which teams are responsible for components that depend on the either-gateway?",
+      "variant": "v2",
+      "answer": "The teams responsible for components that depend on the `either-gateway` are:\n\n1. **Face Security Team**\n   - Team ID: `team-005`\n   - Department: Security\n   - Source: `[Neo4j | Team: \"Face Security Team\" via :RESPONSIBLE_FOR \u2192 Component: \"either-gateway\"]`\n\n2. **Require Frontend Team**\n   - Team ID: `team-011`\n   - Department: Frontend\n   - Source: `[Neo4j | Team: \"Require Frontend Team\" via :RESPONSIBLE_FOR \u2192 Component: \"either-gateway\"]`\n\nPlease note that only these two teams were identified in the retrieval results, and there may be additional teams that are responsible for components depending on the `either-gateway` that were not captured in the current results.\n\nSources:\n- `[Neo4j | Team: \"Face Security Team\" via :RESPONSIBLE_FOR \u2192 Component: \"either-gateway\"]`\n- `[Neo4j | Team: \"Require Frontend Team\" via :RESPONSIBLE_FOR \u2192 Component: \"either-gateway\"]`",
+      "activated_agents": [
+        "graph"
+      ],
+      "iterations": 3,
+      "latency_seconds": 24.204,
+      "cost_usd": 0.002897,
+      "eval_cost_usd": 0.000166,
+      "cost_breakdown": {
+        "llm_input_usd": 0.002202,
+        "llm_output_usd": 0.000695,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 5.039,
+        "graph": 6.342,
+        "judge": 9.116,
+        "answer": 3.678
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "MAX_ITERATIONS_REACHED",
+        "criteria_scores": {
+          "completeness": 2,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [
+          "Additional teams responsible for components that depend on the either-gateway are missing \u2014 only two teams were returned."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "Despite multiple attempts, the retrieval results consistently show a lack of completeness, with only two teams identified instead of a comprehensive list. The gaps identified in previous iterations remain unresolved, indicating that further retrieval efforts are unlikely to yield additional results."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "REL-02",
+      "category": "REL",
+      "query": "Who are the top contributors to database-type components by commit count?",
+      "variant": "v1",
+      "answer": "The top contributors to database-type components by commit count are as follows:\n\n1. **Timothy Duncan** - 406 commits\n2. **Dylan Miller** - 351 commits\n3. **Mark Lynch** - 345 commits\n4. **Jessica Meadows** - 275 commits\n5. **John Brown** - 210 commits\n6. **Angel Riggs** - 220 commits\n7. **Colleen Nguyen** - 195 commits\n8. **Sandra Aguilar** - 193 commits\n9. **Lisa Brandt** - 192 commits\n10. **Sherry Wood** - 183 commits\n11. **Jeremiah Reeves** - 166 commits\n12. **Christopher Becker** - 157 commits\n13. **Brent Jordan** - 157 commits\n14. **Kevin Mills** - 68 commits\n15. **Jacob Obrien** - 80 commits\n16. **Steven Flynn** - 84 commits\n17. **Patricia Peterson** - 60 commits\n18. **Lauren Daniels** - 54 commits\n19. **Mrs. Marie Harrington DDS** - 47 commits\n20. **Sharon Cochran** - 49 commits\n21. **Michelle Harris** - 40 commits\n22. **Alicia Gilmore** - 41 commits\n23. **Sarah Ashley** - 14 commits\n\nThese developers have contributed significantly to the database components, with Timothy Duncan leading the count. \n\nSources:\n[Neo4j | Developer: \"Timothy Duncan\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Dylan Miller\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Mark Lynch\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Jessica Meadows\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"John Brown\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Angel Riggs\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Colleen Nguyen\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sandra Aguilar\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Lisa Brandt\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sherry Wood\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Jeremiah Reeves\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Christopher Becker\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Brent Jordan\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Kevin Mills\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Jacob Obrien\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Steven Flynn\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Patricia Peterson\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Lauren Daniels\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Mrs. Marie Harrington DDS\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sharon Cochran\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Michelle Harris\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Alicia Gilmore\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sarah Ashley\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]",
+      "activated_agents": [
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 18.549,
+      "cost_usd": 0.001281,
+      "eval_cost_usd": 0.000292,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000648,
+        "llm_output_usd": 0.000632,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.388,
+        "graph": 2.979,
+        "answer": 14.168
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "REL-02",
+      "category": "REL",
+      "query": "Who are the top contributors to database-type components by commit count?",
+      "variant": "v2",
+      "answer": "The top contributors to database-type components by commit count are as follows:\n\n1. **Timothy Duncan** - 3 commits\n2. **Patricia Peterson** - 2 commits\n3. **Paul Larsen** - 2 commits\n4. **John Brown** - 2 commits\n5. **Sharon Cochran** - 2 commits\n6. **Dylan Miller** - 2 commits\n7. **Mark Lynch** - 2 commits\n8. **Jessica Meadows** - 2 commits\n9. **Angel Riggs** - 2 commits\n\nOther contributors include:\n\n- **Kevin Mills** - 1 commit\n- **Sherry Wood** - 1 commit\n- **Sandra Aguilar** - 1 commit\n- **Jeremiah Reeves** - 1 commit\n- **Christopher Becker** - 1 commit\n- **Jacob Obrien** - 1 commit\n- **Brent Jordan** - 1 commit\n- **Alicia Gilmore** - 1 commit\n- **Lauren Daniels** - 1 commit\n- **Lisa Alvarado** - 1 commit\n- **Lisa Brandt** - 1 commit\n- **Steven Flynn** - 1 commit\n- **Colleen Nguyen** - 1 commit\n- **Michelle Harris** - 1 commit\n- **Mrs. Marie Harrington DDS** - 1 commit\n- **Sarah Ashley** - 1 commit\n\nThis data reflects the commit counts for developers who contributed to components categorized as 'database' within the system. \n\nSources:\n[Neo4j | Developer: \"Patricia Peterson\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Kevin Mills\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Timothy Duncan\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sherry Wood\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Paul Larsen\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sandra Aguilar\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"John Brown\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Jeremiah Reeves\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sharon Cochran\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Christopher Becker\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Jacob Obrien\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Dylan Miller\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Brent Jordan\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Alicia Gilmore\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Lauren Daniels\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Lisa Alvarado\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Mark Lynch\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Lisa Brandt\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Steven Flynn\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Jessica Meadows\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Colleen Nguyen\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Michelle Harris\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Angel Riggs\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Mrs. Marie Harrington DDS\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]\n[Neo4j | Developer: \"Sarah Ashley\" via :CONTRIBUTED_TO \u2192 Component: \"database\"]",
+      "activated_agents": [
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 20.615,
+      "cost_usd": 0.001492,
+      "eval_cost_usd": 0.0003,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000787,
+        "llm_output_usd": 0.000706,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.406,
+        "graph": 1.193,
+        "judge": 3.809,
+        "answer": 14.176
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 4,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results from the Graph Agent provide a relevant and specific list of developers contributing to database-type components, covering the query's requirements well. No additional retrieval is needed as all aspects of the query are sufficiently addressed."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "REL-03",
+      "category": "REL",
+      "query": "Which components have the deepest transitive dependency chains?",
+      "variant": "v1",
+      "answer": "The components with the deepest transitive dependency chains, each having a dependency chain length of 2, are as follows:\n\n1. `expect-service`\n2. `power-database`\n3. `system-frontend`\n4. `nothing-service`\n5. `member-service`\n6. `make-database`\n7. `least-service`\n8. `that-service`\n9. `side-service`\n10. `person-library`\n11. `executive-service`\n12. `together-service`\n13. `else-library`\n14. `before-library`\n\nNote that some components appear multiple times in the results, but they all share the same dependency chain length of 2.\n\nSources:\n[Neo4j | Component: \"expect-service\" via :DEPENDS_ON \u2192 Component: \"expect-service\"]\n[Neo4j | Component: \"power-database\" via :DEPENDS_ON \u2192 Component: \"power-database\"]\n[Neo4j | Component: \"system-frontend\" via :DEPENDS_ON \u2192 Component: \"system-frontend\"]\n[Neo4j | Component: \"nothing-service\" via :DEPENDS_ON \u2192 Component: \"nothing-service\"]\n[Neo4j | Component: \"member-service\" via :DEPENDS_ON \u2192 Component: \"member-service\"]\n[Neo4j | Component: \"make-database\" via :DEPENDS_ON \u2192 Component: \"make-database\"]\n[Neo4j | Component: \"least-service\" via :DEPENDS_ON \u2192 Component: \"least-service\"]\n[Neo4j | Component: \"that-service\" via :DEPENDS_ON \u2192 Component: \"that-service\"]\n[Neo4j | Component: \"side-service\" via :DEPENDS_ON \u2192 Component: \"side-service\"]\n[Neo4j | Component: \"person-library\" via :DEPENDS_ON \u2192 Component: \"person-library\"]\n[Neo4j | Component: \"executive-service\" via :DEPENDS_ON \u2192 Component: \"executive-service\"]\n[Neo4j | Component: \"together-service\" via :DEPENDS_ON \u2192 Component: \"together-service\"]\n[Neo4j | Component: \"else-library\" via :DEPENDS_ON \u2192 Component: \"else-library\"]\n[Neo4j | Component: \"before-library\" via :DEPENDS_ON \u2192 Component: \"before-library\"]",
+      "activated_agents": [
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 11.375,
+      "cost_usd": 0.00085,
+      "eval_cost_usd": 0.000239,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000475,
+        "llm_output_usd": 0.000374,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.423,
+        "graph": 2.079,
+        "answer": 7.859
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "REL-03",
+      "category": "REL",
+      "query": "Which components have the deepest transitive dependency chains?",
+      "variant": "v2",
+      "answer": "The components with the deepest transitive dependency chains are as follows:\n\n1. **son-service** (`comp-059`) - 320 dependencies\n2. **upon-service** (`comp-021`) - 320 dependencies\n3. **expect-service** (`comp-001`) - 192 dependencies\n4. **that-service** (`comp-010`) - 192 dependencies\n5. **court-service** (`comp-035`) - 192 dependencies\n6. **side-service** (`comp-011`) - 192 dependencies\n7. **hear-database** (`comp-038`) - 192 dependencies\n8. **difference-service** (`comp-037`) - 192 dependencies\n9. **rock-library** (`comp-061`) - 128 dependencies\n10. **cut-frontend** (`comp-052`) - 128 dependencies\n11. **one-service** (`comp-058`) - 128 dependencies\n12. **else-library** (`comp-016`) - 128 dependencies\n13. **least-service** (`comp-009`) - 128 dependencies\n14. **maybe-library** (`comp-062`) - 128 dependencies\n15. **grow-database** (`comp-041`) - 128 dependencies\n16. **person-library** (`comp-012`) - 128 dependencies\n17. **far-service** (`comp-042`) - 128 dependencies\n18. **garden-service** (`comp-034`) - 128 dependencies\n19. **little-service** (`comp-022`) - 128 dependencies\n20. **up-frontend** (`comp-043`) - 128 dependencies\n21. **executive-service** (`comp-013`) - 128 dependencies\n22. **relate-library** (`comp-028`) - 128 dependencies\n23. **great-database** (`comp-030`) - 128 dependencies\n24. **together-service** (`comp-015`) - 128 dependencies\n25. **race-database** (`comp-063`) - 128 dependencies\n\nThese components exhibit varying lengths of dependency chains, with `son-service` and `upon-service` having the longest chains at 320 dependencies each.\n\nSources:\n[Neo4j | Component: \"son-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"upon-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"expect-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"that-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"court-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"side-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"hear-database\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"difference-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"rock-library\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"cut-frontend\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"one-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"else-library\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"least-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"maybe-library\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"grow-database\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"person-library\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"far-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"garden-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"little-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"up-frontend\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"executive-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"relate-library\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"great-database\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"together-service\" via :DEPENDS_ON \u2192 Component]\n[Neo4j | Component: \"race-database\" via :DEPENDS_ON \u2192 Component]",
+      "activated_agents": [
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 19.865,
+      "cost_usd": 0.001618,
+      "eval_cost_usd": 0.000353,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000886,
+        "llm_output_usd": 0.000732,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.684,
+        "graph": 1.828,
+        "judge": 2.029,
+        "answer": 14.296
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 5,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 5
+        },
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results from the Graph Agent provide a comprehensive list of components with their respective dependency chain lengths, fully addressing the query about the deepest transitive dependency chains. All criteria are met with high scores, indicating no further retrieval is necessary."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "STR-01",
+      "category": "STR",
+      "query": "Which components have a deployment rollback rate above 20% in 2024?",
+      "variant": "v1",
+      "answer": "There are no components with a deployment rollback rate above 20% in 2024, as the SQL query executed returned no results. \n\nSources:\n[PostgreSQL | table: deployments | filter: deployed_at >= '2024-01-01' AND deployed_at < '2025-01-01']",
+      "activated_agents": [
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 11.174,
+      "cost_usd": 0.001017,
+      "eval_cost_usd": 0.000124,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000685,
+        "llm_output_usd": 0.000332,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.849,
+        "sql": 7.799,
+        "answer": 1.505
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "STR-01",
+      "category": "STR",
+      "query": "Which components have a deployment rollback rate above 20% in 2024?",
+      "variant": "v2",
+      "answer": "There are no components with a deployment rollback rate above 20% in 2024, as the SQL query executed returned no results. \n\nSources:\n[PostgreSQL | table: deployments | filter: deployed_at >= '2024-01-01' AND deployed_at < '2025-01-01']",
+      "activated_agents": [
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 13.55,
+      "cost_usd": 0.001346,
+      "eval_cost_usd": 0.000124,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000939,
+        "llm_output_usd": 0.000407,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.546,
+        "sql": 8.58,
+        "judge": 1.914,
+        "answer": 1.471
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 5,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 5
+        },
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The SQL query executed successfully but returned no results, indicating that there are no components with a deployment rollback rate above 20% in 2024. All criteria are sufficiently met, and no additional retrieval is needed."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "STR-02",
+      "category": "STR",
+      "query": "Show sprint velocity trends for the backend department over the last 10 sprints.",
+      "variant": "v1",
+      "answer": "The sprint velocity trends for the backend department over the last 10 sprints are as follows:\n\n1. **sprint-020**: 0.78\n2. **sprint-019**: 0.74\n3. **sprint-018**: 0.77\n4. **sprint-017**: 0.75\n5. **sprint-016**: 0.50\n6. **sprint-015**: 0.74\n7. **sprint-014**: 0.85\n8. **sprint-013**: 0.48\n9. **sprint-012**: 0.62\n10. **sprint-011**: 1.03\n\nThese velocities indicate the performance of the backend department across the specified sprints.\n\nSources:\n[PostgreSQL | table: sprint_metrics | filter: ORDER BY sprint_id DESC LIMIT 10]",
+      "activated_agents": [
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 8.987,
+      "cost_usd": 0.000834,
+      "eval_cost_usd": 0.00015,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000631,
+        "llm_output_usd": 0.000203,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.721,
+        "sql": 3.38,
+        "answer": 3.876
+      },
+      "scores": {
+        "faithfulness": 2,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 3,
+        "average": 3.5
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "STR-02",
+      "category": "STR",
+      "query": "Show sprint velocity trends for the backend department over the last 10 sprints.",
+      "variant": "v2",
+      "answer": "The sprint velocity trends for the backend department over the last 10 sprints are as follows:\n\n1. **Sprint-020**: \n   - Velocity: 0.78\n   - Start Date: 2024-12-05\n   - End Date: 2024-12-18\n\n2. **Sprint-019**: \n   - Velocity: 1.03\n   - Start Date: 2024-10-29\n   - End Date: 2024-11-11\n\n3. **Sprint-018**: \n   - Velocity: 0.87\n   - Start Date: 2024-09-22\n   - End Date: 2024-10-05\n\n4. **Sprint-017**: \n   - Velocity: 0.83\n   - Start Date: 2024-08-16\n   - End Date: 2024-08-29\n\n5. **Sprint-016**: \n   - Velocity: 1.05\n   - Start Date: 2024-07-10\n   - End Date: 2024-07-23\n\nThe velocities for the last 10 sprints show a range of values, with the highest recorded velocity being 1.05 in Sprint-016 and the lowest being 0.48 in Sprint-018. \n\nNote: The data retrieved includes multiple entries for some sprints, which may indicate variations in velocity measurements. The velocities for Sprint-020, for example, are reported multiple times (0.78, 0.74, 0.77, etc.), but the most recent entry is 0.78.\n\nSources:\n- `[PostgreSQL | table: sprint_metrics | filter: team_id IS NOT NULL]`\n- `[PostgreSQL | table: sprint_metrics | filter: ORDER BY sprint_id DESC LIMIT 10]`",
+      "activated_agents": [
+        "sql"
+      ],
+      "iterations": 2,
+      "latency_seconds": 23.455,
+      "cost_usd": 0.002729,
+      "eval_cost_usd": 0.000373,
+      "cost_breakdown": {
+        "llm_input_usd": 0.00206,
+        "llm_output_usd": 0.000668,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 3.57,
+        "sql": 7.279,
+        "judge": 6.652,
+        "answer": 5.927
+      },
+      "scores": {
+        "faithfulness": 4,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 4,
+        "average": 4.25
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 2,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 3
+        },
+        "gaps": [
+          "The results do not specify that the data is for the backend department; it may include data from other departments.",
+          "The velocity data is repeated for the same sprint_id, indicating a potential issue with the data retrieval or representation."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results still do not clarify that the velocity data pertains specifically to the backend department, and there is a repetition of velocity data for the same sprint_id. These gaps are persistent and cannot be resolved through additional retrieval, leading to an ACCEPT decision."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "STR-03",
+      "category": "STR",
+      "query": "Which components show 4 or more consecutive months of declining test coverage?",
+      "variant": "v1",
+      "answer": "The component that shows 4 or more consecutive months of declining test coverage is `comp-040`, with a recorded line coverage of 77.7 on `2024-09-16`. \n\nSources:\n[PostgreSQL | table: test_coverage | filter: line_coverage < prev_1 AND prev_1 < prev_2 AND prev_2 < prev_3 AND prev_3 < prev_4]",
+      "activated_agents": [
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 7.582,
+      "cost_usd": 0.00067,
+      "eval_cost_usd": 0.000149,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000424,
+        "llm_output_usd": 0.000246,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.432,
+        "sql": 4.601,
+        "answer": 1.539
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "STR-03",
+      "category": "STR",
+      "query": "Which components show 4 or more consecutive months of declining test coverage?",
+      "variant": "v2",
+      "answer": "The component that shows 4 or more consecutive months of declining test coverage is `comp-040`, with a recorded line coverage of 77.7 on `2024-09-16`. \n\nSources:\n[PostgreSQL | table: test_coverage | filter: (line_coverage < prev_1 AND prev_1 < prev_2 AND prev_2 < prev_3 AND prev_3 < prev_4)]",
+      "activated_agents": [
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 9.302,
+      "cost_usd": 0.00101,
+      "eval_cost_usd": 0.00015,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000697,
+        "llm_output_usd": 0.000313,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.558,
+        "sql": 3.711,
+        "judge": 1.826,
+        "answer": 2.176
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 4,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The SQL results provide a specific component with declining test coverage over four consecutive months, meeting the query's requirements. No additional retrieval is necessary as all aspects of the query are sufficiently addressed."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "MIX-01",
+      "category": "MIX",
+      "query": "What teams own components with the highest bug reopen rates, and what do their ADRs say about quality practices?",
+      "variant": "v1",
+      "answer": "The teams with the highest bug reopen rates are as follows:\n\n1. `team-001` - 156 reopened bugs\n2. `team-011` - 132 reopened bugs\n3. `team-006` - 102 reopened bugs\n4. `team-005` - 100 reopened bugs\n5. `team-002` - 83 reopened bugs\n6. `team-003` - 82 reopened bugs\n7. `team-007` - 80 reopened bugs\n8. `team-010` - 65 reopened bugs\n9. `team-009` - 60 reopened bugs\n10. `team-004` - 55 reopened bugs\n11. `team-012` - 51 reopened bugs\n12. `team-008` - 34 reopened bugs\n\nThese figures indicate that `team-001` has the highest number of reopened bugs, followed by `team-011` and `team-006` respectively. \n\nRegarding the Architectural Decision Records (ADRs) related to quality practices, the following ADRs were identified:\n\n- **ADR-018**: Adopt chaos engineering practices for resilience testing.\n- **ADR-017**: Adopt chaos engineering practices for resilience testing (duplicate entry).\n- **ADR-004**: Implement circuit breaker pattern for external API calls.\n- **ADR-048**: Use infrastructure-as-code with Terraform.\n- **ADR-046**: Adopt blue-green deployment strategy for zero-downtime releases.\n\nThese ADRs suggest a focus on resilience and deployment strategies, which may reflect the teams' approaches to quality practices. However, the specific content of the ADRs does not provide detailed insights into how these practices directly correlate with the bug reopen rates.\n\nSources:\n- `[PostgreSQL | table: tickets | filter: type = 'bug']`\n- `[Vector Agent | ADR: \"Adopt chaos engineering practices for resilience testing\" via ADR]`\n- `[Vector Agent | ADR: \"Implement circuit breaker pattern for external API calls\" via ADR]`\n- `[Vector Agent | ADR: \"Use infrastructure-as-code with Terraform\" via ADR]`\n- `[Vector Agent | ADR: \"Adopt blue-green deployment strategy for zero-downtime releases\" via ADR]`",
+      "activated_agents": [
+        "sql",
+        "vector"
+      ],
+      "iterations": 1,
+      "latency_seconds": 10.216,
+      "cost_usd": 0.000965,
+      "eval_cost_usd": 0.000194,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000587,
+        "llm_output_usd": 0.000375,
+        "embedding_usd": 3e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.78,
+        "sql": 1.343,
+        "vector": 1.708,
+        "answer": 6.692
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "MIX-01",
+      "category": "MIX",
+      "query": "What teams own components with the highest bug reopen rates, and what do their ADRs say about quality practices?",
+      "variant": "v2",
+      "answer": "The teams with the highest bug reopen rates are as follows:\n\n1. **team-004**: 80.43% reopen rate (222 reopened out of 276 total tickets)\n2. **team-008**: 71.56% reopen rate (151 reopened out of 211 total tickets)\n3. **team-001**: 44.94% reopen rate (333 reopened out of 741 total tickets)\n4. **team-010**: 42.41% reopen rate (134 reopened out of 316 total tickets)\n5. **team-011**: 42.16% reopen rate (277 reopened out of 657 total tickets)\n6. **team-007**: 40.78% reopen rate (157 reopened out of 385 total tickets)\n7. **team-006**: 39.50% reopen rate (205 reopened out of 519 total tickets)\n8. **team-003**: 39.02% reopen rate (167 reopened out of 428 total tickets)\n9. **team-005**: 38.11% reopen rate (186 reopened out of 488 total tickets)\n10. **team-002**: 38.00% reopen rate (160 reopened out of 421 total tickets)\n11. **team-009**: 35.61% reopen rate (99 reopened out of 278 total tickets)\n12. **team-012**: 31.79% reopen rate (89 reopened out of 280 total tickets) \n   \n(Sources: [PostgreSQL | table: tickets | filter: type = 'bug' AND reopened_count > 0])\n\nRegarding the quality practices indicated by the Architectural Decision Records (ADRs), the following ADRs were noted, although they are not specifically linked to the teams with the highest bug reopen rates:\n\n- **ADR-018**: Adopt chaos engineering practices for resilience testing\n- **ADR-017**: Adopt chaos engineering practices for resilience testing\n- **ADR-046**: Adopt blue-green deployment strategy for zero-downtime releases\n- **ADR-004**: Implement circuit breaker pattern for external API calls\n- **ADR-021**: Implement feature flags with LaunchDarkly (Proposed)\n\nThese ADRs suggest a focus on resilience and deployment strategies, which may contribute to overall quality practices, but specific insights on how they relate to the bug reopen rates of the identified teams are not provided in the retrieved data.\n\n(Sources: [Vector Agent results for ADRs]) \n\nIn summary, while we have identified the teams with the highest bug reopen rates, the connection between these rates and the quality practices outlined in the ADRs remains unclear due to the limitations of the retrieved data. \n\nSources:\n- [PostgreSQL | table: tickets | filter: type = 'bug' AND reopened_count > 0]\n- [Vector Agent results for ADRs]",
+      "activated_agents": [
+        "sql",
+        "vector"
+      ],
+      "iterations": 3,
+      "latency_seconds": 30.294,
+      "cost_usd": 0.00487,
+      "eval_cost_usd": 0.000232,
+      "cost_breakdown": {
+        "llm_input_usd": 0.003829,
+        "llm_output_usd": 0.001033,
+        "embedding_usd": 9e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 6.188,
+        "sql": 5.056,
+        "vector": 4.483,
+        "judge": 10.815,
+        "answer": 7.95
+      },
+      "scores": {
+        "faithfulness": 1,
+        "relevancy": 5,
+        "completeness": 3,
+        "citation_accuracy": 4,
+        "average": 3.25
+      },
+      "judge_decision": {
+        "decision": "MAX_ITERATIONS_REACHED",
+        "criteria_scores": {
+          "completeness": 3,
+          "relevance": 4,
+          "consistency": 5,
+          "specificity": 3
+        },
+        "gaps": [
+          "The results provide bug reopen rates by team but do not include any analysis or insights from ADRs regarding quality practices.",
+          "Specific ADRs related to the teams with the highest bug reopen rates are not clearly linked to the quality practices they imply."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The retrieval process has reached its maximum iterations without resolving the identified gaps. The gaps regarding the analysis of ADRs and their connection to quality practices remain unaddressed."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "MIX-02",
+      "category": "MIX",
+      "query": "Which components have the most P1 incidents, and who owns them in the knowledge graph?",
+      "variant": "v1",
+      "answer": "The components with the most P1 incidents, along with their incident counts, are as follows:\n\n1. `comp-031` - 5 incidents\n2. `comp-012` - 5 incidents\n3. `comp-005` - 4 incidents\n4. `comp-003` - 4 incidents\n5. `comp-034` - 3 incidents\n6. `comp-008` - 3 incidents\n7. `comp-043` - 3 incidents\n8. `comp-038` - 2 incidents\n9. `comp-026` - 2 incidents\n10. `comp-002` - 2 incidents\n11. `comp-042` - 2 incidents\n12. `comp-045` - 2 incidents\n13. `comp-054` - 2 incidents\n14. `comp-062` - 2 incidents\n15. `comp-032` - 2 incidents\n16. `comp-004` - 2 incidents\n17. `comp-061` - 2 incidents\n18. `comp-007` - 2 incidents\n\nHowever, there were no records found in the knowledge graph regarding the ownership of these components. The query executed did not return any results for the ownership information.\n\nSources:\n- [PostgreSQL | table: incidents | filter: severity = 'P1']",
+      "activated_agents": [
+        "sql",
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 12.031,
+      "cost_usd": 0.001277,
+      "eval_cost_usd": 0.000205,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000942,
+        "llm_output_usd": 0.000334,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.652,
+        "sql": 1.264,
+        "graph": 4.993,
+        "answer": 5.371
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 4,
+        "average": 4.5
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "MIX-02",
+      "category": "MIX",
+      "query": "Which components have the most P1 incidents, and who owns them in the knowledge graph?",
+      "variant": "v2",
+      "answer": "The components with the most P1 incidents and their respective incident counts are as follows:\n\n1. `comp-012` - 5 incidents\n2. `comp-031` - 5 incidents\n3. `comp-005` - 4 incidents\n4. `comp-003` - 4 incidents\n5. `comp-008` - 3 incidents\n6. `comp-034` - 3 incidents\n7. `comp-043` - 3 incidents\n8. `comp-038` - 2 incidents\n9. `comp-054` - 2 incidents\n10. `comp-053` - 2 incidents\n11. `comp-062` - 2 incidents\n12. `comp-042` - 2 incidents\n13. `comp-032` - 2 incidents\n14. `comp-004` - 2 incidents\n15. `comp-061` - 2 incidents\n16. `comp-045` - 2 incidents\n17. `comp-026` - 2 incidents\n18. `comp-007` - 2 incidents\n19. `comp-002` - 2 incidents\n20. `comp-027` - 1 incident\n21. `comp-035` - 1 incident\n22. `comp-009` - 1 incident\n23. `comp-036` - 1 incident\n24. `comp-055` - 1 incident\n25. `comp-051` - 1 incident\n26. `comp-047` - 1 incident\n27. `comp-011` - 1 incident\n28. `comp-048` - 1 incident\n29. `comp-046` - 1 incident\n30. `comp-058` - 1 incident\n31. `comp-049` - 1 incident\n32. `comp-022` - 1 incident\n33. `comp-065` - 1 incident\n34. `comp-067` - 1 incident\n35. `comp-033` - 1 incident\n36. `comp-020` - 1 incident\n37. `comp-069` - 1 incident\n38. `comp-015` - 1 incident\n39. `comp-070` - 1 incident\n40. `comp-014` - 1 incident\n\nThe ownership of these components is not fully detailed in the retrieved results. However, I can provide ownership information for some components:\n\n- `expect-service` - owned by Angel Riggs\n- `power-database` - owned by James Elliott\n- `system-frontend` - owned by Kevin Mills\n- `wide-library` - owned by Jeremiah Reeves\n- `nothing-service` - owned by Erika Terry\n- `stage-frontend` - owned by William Wilson\n- `member-service` - owned by Sherry Wood\n- `make-database` - owned by Steven Flynn\n- `least-service` - owned by Tammy Allison\n- `that-service` - owned by Christopher Becker\n- `side-service` - owned by Rebecca Valencia\n- `person-library` - owned by Jacob Obrien\n- `executive-service` - owned by Stephanie Freeman\n- `future-service` - owned by Alicia Gilmore\n- `together-service` - owned by Tricia Valencia\n- `else-library` - owned by Kevin Mills\n- `then-service` - owned by Mrs. Marie Harrington DDS\n- `worry-gateway` - owned by Michael Burton\n- `before-library` - owned by Deborah Mason\n- `family-service` - owned by Jacob Obrien\n- `upon-service` - owned by Sherry Wood\n- `little-service` - owned by Rebecca Valencia\n- `either-gateway` - owned by Lisa Alvarado\n- `social-database` - owned by Michael Hoffman\n- `majority-frontend` - owned by Patricia Peterson\n\nPlease note that the ownership information does not directly correlate with the components that have the most P1 incidents, as not all components were retrieved.\n\nSources:\n- [PostgreSQL | table: incidents | filter: severity = 'P1']\n- [Neo4j | Developer: \"Angel Riggs\" via :OWNS \u2192 Component: \"expect-service\"]\n- [Neo4j | Developer: \"James Elliott\" via :OWNS \u2192 Component: \"power-database\"]\n- [Neo4j | Developer: \"Kevin Mills\" via :OWNS \u2192 Component: \"system-frontend\"]\n- [Neo4j | Developer: \"Jeremiah Reeves\" via :OWNS \u2192 Component: \"wide-library\"]\n- [Neo4j | Developer: \"Erika Terry\" via :OWNS \u2192 Component: \"nothing-service\"]\n- [Neo4j | Developer: \"William Wilson\" via :OWNS \u2192 Component: \"stage-frontend\"]\n- [Neo4j | Developer: \"Sherry Wood\" via :OWNS \u2192 Component: \"member-service\"]\n- [Neo4j | Developer: \"Steven Flynn\" via :OWNS \u2192 Component: \"make-database\"]\n- [Neo4j | Developer: \"Tammy Allison\" via :OWNS \u2192 Component: \"least-service\"]\n- [Neo4j | Developer: \"Christopher Becker\" via :OWNS \u2192 Component: \"that-service\"]\n- [Neo4j | Developer: \"Rebecca Valencia\" via :OWNS \u2192 Component: \"side-service\"]\n- [Neo4j | Developer: \"Jacob Obrien\" via :OWNS \u2192 Component: \"person-library\"]\n- [Neo4j | Developer: \"Stephanie Freeman\" via :OWNS \u2192 Component: \"executive-service\"]\n- [Neo4j | Developer: \"Alicia Gilmore\" via :OWNS \u2192 Component: \"future-service\"]\n- [Neo4j | Developer: \"Tricia Valencia\" via :OWNS \u2192 Component: \"together-service\"]\n- [Neo4j | Developer: \"Kevin Mills\" via :OWNS \u2192 Component: \"else-library\"]\n- [Neo4j | Developer: \"Mrs. Marie Harrington DDS\" via :OWNS \u2192 Component: \"then-service\"]\n- [Neo4j | Developer: \"Michael Burton\" via :OWNS \u2192 Component: \"worry-gateway\"]\n- [Neo4j | Developer: \"Deborah Mason\" via :OWNS \u2192 Component: \"before-library\"]\n- [Neo4j | Developer: \"Jacob Obrien\" via :OWNS \u2192 Component: \"family-service\"]\n- [Neo4j | Developer: \"Sherry Wood\" via :OWNS \u2192 Component: \"upon-service\"]\n- [Neo4j | Developer: \"Rebecca Valencia\" via :OWNS \u2192 Component: \"little-service\"]\n- [Neo4j | Developer: \"Lisa Alvarado\" via :OWNS \u2192 Component: \"either-gateway\"]\n- [Neo4j | Developer: \"Michael Hoffman\" via :OWNS \u2192 Component: \"social-database\"]\n- [Neo4j | Developer: \"Patricia Peterson\" via :OWNS \u2192 Component: \"majority-frontend\"]",
+      "activated_agents": [
+        "sql",
+        "graph"
+      ],
+      "iterations": 2,
+      "latency_seconds": 42.396,
+      "cost_usd": 0.00377,
+      "eval_cost_usd": 0.000444,
+      "cost_breakdown": {
+        "llm_input_usd": 0.002419,
+        "llm_output_usd": 0.001351,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 3.14,
+        "sql": 3.378,
+        "graph": 4.78,
+        "judge": 6.578,
+        "answer": 26.872
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 3,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [
+          "Ownership information is missing for components with the most P1 incidents. The Graph Agent did not return ownership data for all components listed in the SQL results."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "While the results provide relevant data on P1 incidents and some ownership information, they do not cover all components with the most incidents. The Graph Agent's results do not match the components identified in the SQL results, leading to incomplete ownership data."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "MIX-03",
+      "category": "MIX",
+      "query": "Find postmortems mentioning cascading failures and show the deployment rollback rate for the involved components.",
+      "variant": "v1",
+      "answer": "There are four postmortems that mention cascading failures as the root cause:\n\n1. **Postmortem: morph global architectures** (`pm-020`) - The root cause was a cascading failure from a dependent component that overwhelmed the message queue.\n2. **Postmortem: repurpose cross-platform portals** (`pm-027`) - The root cause was also a cascading failure from a dependent component that overwhelmed the message queue.\n3. **Postmortem: iterate best-of-breed channels** (`pm-013`) - Similarly, the root cause was a cascading failure from a dependent component that overwhelmed the message queue.\n4. **Postmortem: seize granular content** (`pm-005`) - Again, the root cause was a cascading failure from a dependent component that overwhelmed the message queue.\n\nAll four postmortems indicate that the cascading failure was due to a dependent component overwhelming the message queue.\n\nRegarding the deployment rollback rates for the involved components, all components listed in the SQL results have a rollback rate of 1.0, indicating that every deployment was rolled back in response to incidents. Here are some of the components with their rollback counts:\n\n- `comp-052`: 615 rollbacks\n- `comp-036`: 928 rollbacks\n- `comp-051`: 763 rollbacks\n- `comp-060`: 1254 rollbacks\n- `comp-057`: 966 rollbacks\n- `comp-038`: 1695 rollbacks\n- `comp-026`: 1368 rollbacks\n- `comp-017`: 952 rollbacks\n- `comp-002`: 1008 rollbacks\n- `comp-045`: 864 rollbacks\n\nAll components involved in the incidents have a rollback rate of 1.0, meaning they experienced a complete rollback for each failure.\n\n### Sources\n- [Postmortem | id: pm-020 | title: \"morph global architectures\"]\n- [Postmortem | id: pm-027 | title: \"repurpose cross-platform portals\"]\n- [Postmortem | id: pm-013 | title: \"iterate best-of-breed channels\"]\n- [Postmortem | id: pm-005 | title: \"seize granular content\"]\n- [PostgreSQL | table: deployments | filter: status = 'resolved']",
+      "activated_agents": [
+        "vector",
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 10.848,
+      "cost_usd": 0.001131,
+      "eval_cost_usd": 0.000161,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000731,
+        "llm_output_usd": 0.0004,
+        "embedding_usd": 1e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.884,
+        "vector": 1.111,
+        "sql": 1.816,
+        "answer": 7.133
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "MIX-03",
+      "category": "MIX",
+      "query": "Find postmortems mentioning cascading failures and show the deployment rollback rate for the involved components.",
+      "variant": "v2",
+      "answer": "There are several postmortems that mention cascading failures as the root cause of incidents:\n\n1. **Postmortem: morph global architectures** - The root cause was a cascading failure from a dependent component that overwhelmed the message queue. `[Postmortem | id: pm-020 | title: \"morph global architectures\"]`\n   \n2. **Postmortem: iterate best-of-breed channels** - Similarly, this postmortem identified a cascading failure from a dependent component that overwhelmed the message queue. `[Postmortem | id: pm-013 | title: \"iterate best-of-breed channels\"]`\n   \n3. **Postmortem: seize granular content** - This postmortem also cited a cascading failure from a dependent component overwhelming the message queue. `[Postmortem | id: pm-005 | title: \"seize granular content\"]`\n   \n4. **Postmortem: repurpose cross-platform portals** - Again, the root cause was a cascading failure from a dependent component that overwhelmed the message queue. `[Postmortem | id: pm-027 | title: \"repurpose cross-platform portals\"]`\n\nRegarding the deployment rollback rates for the involved components, the SQL query results did not yield any specific components related to the cascading failures, as it returned no results for rollbacks associated with those components. However, a broader query on deployment rollbacks across all components yielded the following rollback counts:\n\n- `comp-001`: 104\n- `comp-002`: 112\n- `comp-003`: 131\n- `comp-004`: 124\n- `comp-005`: 88\n- `comp-006`: 123\n- `comp-007`: 112\n- `comp-008`: 116\n- `comp-009`: 135\n- `comp-010`: 121\n- `comp-011`: 133\n- `comp-012`: 134\n- `comp-013`: 106\n- `comp-014`: 113\n- `comp-015`: 110\n- `comp-016`: 120\n- `comp-017`: 119\n- `comp-018`: 118\n- `comp-019`: 108\n- `comp-020`: 102\n- `comp-021`: 112\n- `comp-022`: 99\n- `comp-023`: 106\n- `comp-024`: 135\n- `comp-025`: 111\n- `comp-026`: 114\n- `comp-027`: 109\n- `comp-028`: 124\n- `comp-029`: 112\n- `comp-030`: 117\n- `comp-031`: 110\n- `comp-032`: 114\n- `comp-033`: 116\n- `comp-034`: 111\n- `comp-035`: 126\n- `comp-036`: 116\n- `comp-037`: 109\n- `comp-038`: 113\n- `comp-039`: 103\n- `comp-040`: 107\n- `comp-041`: 114\n- `comp-042`: 101\n- `comp-043`: 120\n- `comp-044`: 109\n- `comp-045`: 108\n- `comp-046`: 98\n- `comp-047`: 121\n- `comp-048`: 107\n- `comp-049`: 135\n- `comp-050`: 103\n\nSources:\n- `[Postmortem | id: pm-020 | title: \"morph global architectures\"]`\n- `[Postmortem | id: pm-013 | title: \"iterate best-of-breed channels\"]`\n- `[Postmortem | id: pm-005 | title: \"seize granular content\"]`\n- `[Postmortem | id: pm-027 | title: \"repurpose cross-platform portals\"]`\n- `[PostgreSQL | table: deployments | filter: status = 'rolled back']`\n- `[PostgreSQL | table: deployments | filter: TRUE]`",
+      "activated_agents": [
+        "vector",
+        "sql"
+      ],
+      "iterations": 2,
+      "latency_seconds": 34.603,
+      "cost_usd": 0.004041,
+      "eval_cost_usd": 0.000222,
+      "cost_breakdown": {
+        "llm_input_usd": 0.003025,
+        "llm_output_usd": 0.001011,
+        "embedding_usd": 4e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 3.184,
+        "vector": 2.699,
+        "sql": 8.812,
+        "judge": 5.559,
+        "answer": 17.023
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 4,
+          "relevance": 5,
+          "consistency": 5,
+          "specificity": 4
+        },
+        "gaps": [
+          "Deployment rollback rate data for the involved components is missing \u2014 SQL Agent returned no results."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The results provide comprehensive information on postmortems related to cascading failures, but the SQL Agent did not return any data on the deployment rollback rates for the involved components. This gap is noted, but since all other criteria are met, the decision is ACCEPT."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "CON-01",
+      "category": "CON",
+      "query": "How many P1 incidents in Q1 2024 involved components with more than 3 downstream dependencies?",
+      "variant": "v1",
+      "answer": "In Q1 2024, there were a total of 23 P1 incidents. However, the specific number of these incidents that involved components with more than 3 downstream dependencies is not provided in the retrieved context. \n\nThe Graph Agent results indicate that there are components with more than 3 downstream dependencies, specifically:\n- `comp-021` (\"upon-service\") with 5 dependencies\n- `comp-059` (\"son-service\") with 5 dependencies\n\nYet, the data does not specify how many of the 23 P1 incidents involved these components. Therefore, the exact count of P1 incidents related to components with more than 3 downstream dependencies remains unanswered due to retrieval limits.\n\nSources:\n- [PostgreSQL | table: incidents | filter: severity = 'P1' AND started_at >= '2024-01-01' AND started_at < '2024-04-01']\n- [Neo4j | Component: \"upon-service\" via :DEPENDS_ON \u2192 Component]\n- [Neo4j | Component: \"son-service\" via :DEPENDS_ON \u2192 Component]",
+      "activated_agents": [
+        "sql",
+        "graph"
+      ],
+      "iterations": 1,
+      "latency_seconds": 8.449,
+      "cost_usd": 0.000749,
+      "eval_cost_usd": 0.000161,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000507,
+        "llm_output_usd": 0.000242,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.866,
+        "sql": 1.243,
+        "graph": 1.251,
+        "answer": 5.317
+      },
+      "scores": {
+        "faithfulness": 4,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 5,
+        "average": 4.5
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "CON-01",
+      "category": "CON",
+      "query": "How many P1 incidents in Q1 2024 involved components with more than 3 downstream dependencies?",
+      "variant": "v2",
+      "answer": "There were a total of **23 P1 incidents** reported in Q1 2024, but the data does not specify how many of these incidents involved components with more than 3 downstream dependencies. \n\nThe SQL results indicate that there were **23 P1 incidents** in total during this period `[PostgreSQL | table: incidents | filter: severity = 'P1' AND started_at >= '2024-01-01' AND started_at < '2024-04-01']`. The Graph results identify two components with more than 3 dependencies: \n1. `comp-021` (upon-service) with 5 dependencies\n2. `comp-059` (son-service) with 5 dependencies `[Neo4j | Component: \"comp-021\" via :DEPENDS_ON \u2192 Component]` and `[Neo4j | Component: \"comp-059\" via :DEPENDS_ON \u2192 Component]`.\n\nHowever, there is no direct link provided between these components and the P1 incidents, leaving a gap in determining how many of the 23 incidents involved these specific components.\n\nSources:\n- `[PostgreSQL | table: incidents | filter: severity = 'P1' AND started_at >= '2024-01-01' AND started_at < '2024-04-01']`\n- `[Neo4j | Component: \"comp-021\" via :DEPENDS_ON \u2192 Component]`\n- `[Neo4j | Component: \"comp-059\" via :DEPENDS_ON \u2192 Component]`",
+      "activated_agents": [
+        "sql",
+        "graph"
+      ],
+      "iterations": 3,
+      "latency_seconds": 26.23,
+      "cost_usd": 0.003516,
+      "eval_cost_usd": 0.0003,
+      "cost_breakdown": {
+        "llm_input_usd": 0.002571,
+        "llm_output_usd": 0.000945,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 5.714,
+        "sql": 6.085,
+        "graph": 4.252,
+        "judge": 9.515,
+        "answer": 6.137
+      },
+      "scores": {
+        "faithfulness": 4,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 5,
+        "average": 4.5
+      },
+      "judge_decision": {
+        "decision": "MAX_ITERATIONS_REACHED",
+        "criteria_scores": {
+          "completeness": 2,
+          "relevance": 4,
+          "consistency": 4,
+          "specificity": 3
+        },
+        "gaps": [
+          "The SQL results provide the total count of P1 incidents but do not specify how many of those incidents involved components with more than 3 downstream dependencies.",
+          "The Graph results identify components with more than 3 dependencies but do not link these components to the P1 incidents."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "Despite multiple retrieval attempts, the gaps regarding the linkage between P1 incidents and components with more than 3 dependencies remain unresolved. The criteria scores have not improved, indicating that further iterations will not yield better results."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "CON-02",
+      "category": "CON",
+      "query": "Show me components flagged in postmortems and also with a high rollback rate \u2014 do the two lists agree?",
+      "variant": "v1",
+      "answer": "The components flagged in postmortems and those with a high rollback rate do not have overlapping identifiers based on the retrieved data.\n\n### Postmortem Flagged Components\nThe following components were mentioned in the postmortems:\n1. **Postmortem: morph global architectures** - No specific component ID mentioned.\n2. **Postmortem: iterate best-of-breed channels** - No specific component ID mentioned.\n3. **Postmortem: seize granular content** - No specific component ID mentioned.\n4. **Postmortem: repurpose cross-platform portals** - No specific component ID mentioned.\n5. **Postmortem: syndicate compelling supply-chains** - No specific component ID mentioned.\n\n### High Rollback Rate Components\nThe components with the highest rollback rates, as per the SQL results, are:\n- `comp-057` with 138 rollbacks\n- `comp-049` with 135 rollbacks\n- `comp-065` with 135 rollbacks\n- `comp-009` with 135 rollbacks\n- `comp-024` with 135 rollbacks\n- `comp-012` with 134 rollbacks\n- `comp-011` with 133 rollbacks\n- `comp-003` with 131 rollbacks\n- `comp-035` with 126 rollbacks\n- `comp-058` with 125 rollbacks\n- (and others down to `comp-044` with 109 rollbacks)\n\n### Conclusion\nSince the postmortems did not specify any component IDs, it is not possible to determine if there is agreement between the two lists. The lack of specific component identifiers in the postmortems means that a direct comparison cannot be made.\n\nSources:\n- `[Postmortem | id: pm-020 | title: \"morph global architectures\"]`\n- `[Postmortem | id: pm-013 | title: \"iterate best-of-breed channels\"]`\n- `[Postmortem | id: pm-005 | title: \"seize granular content\"]`\n- `[Postmortem | id: pm-027 | title: \"repurpose cross-platform portals\"]`\n- `[Postmortem | id: pm-006 | title: \"syndicate compelling supply-chains\"]`\n- `[PostgreSQL | table: deployments | filter: (group by component_id)]`",
+      "activated_agents": [
+        "vector",
+        "sql"
+      ],
+      "iterations": 1,
+      "latency_seconds": 16.273,
+      "cost_usd": 0.001309,
+      "eval_cost_usd": 0.000173,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000886,
+        "llm_output_usd": 0.000421,
+        "embedding_usd": 2e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 1.515,
+        "vector": 1.247,
+        "sql": 4.601,
+        "answer": 10.137
+      },
+      "scores": {
+        "faithfulness": 3,
+        "relevancy": 5,
+        "completeness": 4,
+        "citation_accuracy": 4,
+        "average": 4.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "CON-02",
+      "category": "CON",
+      "query": "Show me components flagged in postmortems and also with a high rollback rate \u2014 do the two lists agree?",
+      "variant": "v2",
+      "answer": "The components flagged in postmortems and their associated rollback rates are as follows:\n\n### Components Flagged in Postmortems\n1. **Postmortem: morph global architectures** (`pm-020`)\n2. **Postmortem: iterate best-of-breed channels** (`pm-013`)\n3. **Postmortem: seize granular content** (`pm-005`)\n4. **Postmortem: repurpose cross-platform portals** (`pm-027`)\n5. **Postmortem: syndicate compelling supply-chains** (`pm-006`)\n\n### Rollback Rates\nThe following components have been identified with high rollback counts:\n- `comp-012`: 48 rollbacks\n- `comp-031`: 40 rollbacks\n- `comp-057`: 28 rollbacks\n- `comp-070`: 28 rollbacks\n- `comp-005`: 27 rollbacks\n- `comp-032`: 26 rollbacks\n- `comp-065`: 24 rollbacks\n- `comp-003`: 24 rollbacks\n- `comp-028`: 23 rollbacks\n- `comp-069`: 23 rollbacks\n- `comp-004`: 23 rollbacks\n- `comp-041`: 22 rollbacks\n- `comp-006`: 22 rollbacks\n- `comp-024`: 22 rollbacks\n- `comp-040`: 22 rollbacks\n- `comp-011`: 22 rollbacks\n- `comp-001`: 21 rollbacks\n- `comp-053`: 21 rollbacks\n- `comp-029`: 21 rollbacks\n- `comp-002`: 21 rollbacks\n- `comp-010`: 21 rollbacks\n\n### Comparison of Lists\nThe only component that appears in both lists is:\n- `comp-005`: Flagged in the postmortem titled \"seize granular content\" (`pm-005`) and has 27 rollbacks.\n\nNo other components flagged in the postmortems appear in the high rollback rate list. \n\n### Conclusion\nThe two lists do not fully agree, as only `comp-005` is common to both. The remaining components flagged in postmortems do not have corresponding high rollback counts based on the retrieved data.\n\n### Sources\n- `[Postmortem | id: pm-020 | title: \"morph global architectures\"]`\n- `[Postmortem | id: pm-013 | title: \"iterate best-of-breed channels\"]`\n- `[Postmortem | id: pm-005 | title: \"seize granular content\"]`\n- `[Postmortem | id: pm-027 | title: \"repurpose cross-platform portals\"]`\n- `[Postmortem | id: pm-006 | title: \"syndicate compelling supply-chains\"]`\n- `[PostgreSQL | table: deployments | filter: status ILIKE '%rollback%' GROUP BY component_id HAVING COUNT(*) > 0]`",
+      "activated_agents": [
+        "vector",
+        "sql"
+      ],
+      "iterations": 2,
+      "latency_seconds": 35.254,
+      "cost_usd": 0.004106,
+      "eval_cost_usd": 0.000185,
+      "cost_breakdown": {
+        "llm_input_usd": 0.003194,
+        "llm_output_usd": 0.000908,
+        "embedding_usd": 4e-06
+      },
+      "agent_latencies": {
+        "orchestrator": 4.787,
+        "vector": 2.889,
+        "sql": 11.475,
+        "judge": 7.808,
+        "answer": 11.057
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": {
+        "decision": "ACCEPT",
+        "criteria_scores": {
+          "completeness": 3,
+          "relevance": 5,
+          "consistency": 4,
+          "specificity": 3
+        },
+        "gaps": [
+          "The list of components flagged in postmortems does not include all components with a high rollback rate, making it impossible to determine if the two lists agree.",
+          "The SQL results provide a list of components with high rollback rates, but there is no direct comparison or overlap with the components flagged in postmortems."
+        ],
+        "conflicts": [],
+        "reformulated_query": null,
+        "reasoning": "The retrieval results show that the gaps identified in the previous iteration persist, indicating that the retrieval space is exhausted. The current results do not allow for a conclusive comparison between the two lists."
+      },
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "EDGE-01",
+      "category": "EDGE",
+      "query": "What is today's weather forecast for the Berlin engineering office?",
+      "variant": "v1",
+      "answer": "I'm sorry, but the retrieval results do not contain any information regarding today's weather forecast for the Berlin engineering office.",
+      "activated_agents": [],
+      "iterations": 1,
+      "latency_seconds": 2.635,
+      "cost_usd": 0.000319,
+      "eval_cost_usd": 9.6e-05,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000285,
+        "llm_output_usd": 3.5e-05,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.078,
+        "answer": 1.543
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "EDGE-01",
+      "category": "EDGE",
+      "query": "What is today's weather forecast for the Berlin engineering office?",
+      "variant": "v2",
+      "answer": "I'm sorry, but the retrieved context does not contain any information regarding today's weather forecast for the Berlin engineering office. Therefore, I cannot provide an answer to your query.",
+      "activated_agents": [],
+      "iterations": 0,
+      "latency_seconds": 2.08,
+      "cost_usd": 0.000326,
+      "eval_cost_usd": 0.0001,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000285,
+        "llm_output_usd": 4.1e-05,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 0.895,
+        "answer": 1.159
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 5,
+        "average": 5.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "EDGE-02",
+      "category": "EDGE",
+      "query": "Find postmortems for the non-existent service XYZ123Foobar.",
+      "variant": "v1",
+      "answer": "There are no postmortems available for the non-existent service `XYZ123Foobar`. \n\nSources: None",
+      "activated_agents": [],
+      "iterations": 1,
+      "latency_seconds": 2.046,
+      "cost_usd": 0.000321,
+      "eval_cost_usd": 9.6e-05,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000285,
+        "llm_output_usd": 3.5e-05,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.174,
+        "answer": 0.86
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 1,
+        "average": 4.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    },
+    {
+      "id": "EDGE-02",
+      "category": "EDGE",
+      "query": "Find postmortems for the non-existent service XYZ123Foobar.",
+      "variant": "v2",
+      "answer": "There are no postmortems available for the non-existent service `XYZ123Foobar`. \n\nSources: None.",
+      "activated_agents": [],
+      "iterations": 0,
+      "latency_seconds": 2.239,
+      "cost_usd": 0.000321,
+      "eval_cost_usd": 9.5e-05,
+      "cost_breakdown": {
+        "llm_input_usd": 0.000285,
+        "llm_output_usd": 3.6e-05,
+        "embedding_usd": 0.0
+      },
+      "agent_latencies": {
+        "orchestrator": 1.42,
+        "answer": 0.809
+      },
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "completeness": 5,
+        "citation_accuracy": 1,
+        "average": 4.0
+      },
+      "judge_decision": null,
+      "manual_faithfulness": "",
+      "manual_relevancy": "",
+      "manual_completeness": "",
+      "manual_citation_accuracy": "",
+      "manual_notes": "",
+      "error": null
+    }
+  ]
+}

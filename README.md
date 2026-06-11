@@ -205,6 +205,8 @@ python -m evaluation.runner --category SEM --variant v1
 
 Results are saved to `evaluation/results/` and include faithfulness, relevancy, completeness, citation accuracy, latency, and cost per query.
 
+Sample run: [evaluation/results/RESULTS.md](evaluation/results/RESULTS.md)
+
 ---
 
 ## Example Queries
