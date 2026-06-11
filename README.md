@@ -118,6 +118,14 @@ hybridrag/
 
 ---
 
+## Demo
+
+Interface showing the Closed-Loop variant answering a graph query, with per-agent status, latency breakdown, token count, and cost:
+
+<img src="demo/ui.png">
+
+---
+
 ## Quick Start
 
 ### Prerequisites
