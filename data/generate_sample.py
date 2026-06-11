@@ -15,8 +15,6 @@ from pathlib import Path
 from faker import Faker
 
 fake = Faker()
-random.seed(42)
-Faker.seed(42)
 
 SAMPLE_DIR = Path(__file__).parent / "sample"
 SAMPLE_DIR.mkdir(exist_ok=True)
@@ -399,7 +397,7 @@ def _gen_tickets(comps: list[dict], devs: list[dict], teams: list[dict],
 
         priority = random.choices(PRIORITIES, weights=[5, 30, 45, 20])[0]
         tickets.append({
-            "id": str(uuid.uuid4()),
+            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
             "title": _ticket_description(ttype, comp["name"]).split(".")[0][:120],
             "type": ttype,
             "priority": priority,
@@ -474,7 +472,7 @@ def _gen_deployments(comps: list[dict], devs: list[dict],
         status = random.choice(status_pool)
         deployed_at = _rand_dt(start, end)
         deployments.append({
-            "id": str(uuid.uuid4()),
+            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
             "component_id": comp_id,
             "version": f"{random.randint(1,5)}.{random.randint(0,20)}.{random.randint(0,50)}",
             "status": status,
@@ -505,7 +503,7 @@ def _gen_test_coverage(comps: list[dict], anomaly_comp_ids: list[str]) -> list[d
             noise = round(random.uniform(-3.0, 3.0), 1)
             line_cov = max(10.0, min(99.9, base_cov + noise))
             records.append({
-                "id": str(uuid.uuid4()),
+                "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
                 "component_id": comp["id"],
                 "measured_at": _date(meas_date),
                 "line_coverage": line_cov,
@@ -543,7 +541,7 @@ def _gen_incidents(comps: list[dict], anomaly_comp_ids: list[str]) -> list[dict]
         duration = random.randint(15, 480)
         resolved = started + timedelta(minutes=duration)
         incidents.append({
-            "id": str(uuid.uuid4()),
+            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
             "title": f"{sev} incident: {fake.bs()[:80]}",
             "severity": sev,
             "component_id": comp_id,
@@ -564,7 +562,7 @@ def _gen_incidents(comps: list[dict], anomaly_comp_ids: list[str]) -> list[dict]
         started = _rand_dt(q1_start, q1_end)
         duration = random.randint(60, 300)
         incidents.append({
-            "id": str(uuid.uuid4()),
+            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
             "title": f"P1 incident: {fake.bs()[:80]}",
             "severity": "P1",
             "component_id": comp_id,
@@ -694,7 +692,7 @@ def _gen_postmortems(comps: list[dict], incidents: list[dict]) -> list[dict]:
         date = _date(_rand_dt(datetime(2023, 1, 1), datetime(2024, 12, 31)))
         postmortems.append({
             "id": f"pm-{i:03d}",
-            "incident_id": random.choice(inc_ids) if inc_ids else str(uuid.uuid4()),
+            "incident_id": random.choice(inc_ids) if inc_ids else str(uuid.UUID(int=random.getrandbits(128), version=4)),
             "component_id": random.choice(comp_ids),
             "severity": sev,
             "title": title,
@@ -708,6 +706,8 @@ def _gen_postmortems(comps: list[dict], incidents: list[dict]) -> list[dict]:
 
 def main() -> None:
     import logging
+    random.seed(42)
+    Faker.seed(42)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     log = logging.getLogger(__name__)
 
