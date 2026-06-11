@@ -3,9 +3,9 @@ services:
     image: postgres:16-alpine
     container_name: hybridrag-postgres
     environment:
-      POSTGRES_DB: devanalytics
-      POSTGRES_USER: hybridrag
-      POSTGRES_PASSWORD: hybridrag_postgres
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
@@ -20,7 +20,7 @@ services:
     image: neo4j:5.19-community
     container_name: hybridrag-neo4j
     environment:
-      NEO4J_AUTH: neo4j/hybridrag_neo4j
+      NEO4J_AUTH: ${NEO4J_USER}/${NEO4J_PASSWORD}
       NEO4J_PLUGINS: '["apoc"]'
       NEO4J_dbms_security_procedures_unrestricted: apoc.*
     ports:
