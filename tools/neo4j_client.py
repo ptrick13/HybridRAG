@@ -16,10 +16,30 @@ from typing import Any
 
 from neo4j import GraphDatabase, ManagedTransaction
 from neo4j.exceptions import Neo4jError
+from neo4j.graph import Node, Path, Relationship
 
 from config.settings import settings
 
 logger = logging.getLogger(__name__)
+
+
+def _to_python(value: Any) -> Any:
+    """Convert Neo4j graph objects to JSON-serializable Python types."""
+    if isinstance(value, Node):
+        return {"_labels": list(value.labels), **{k: _to_python(v) for k, v in value.items()}}
+    if isinstance(value, Relationship):
+        return {"_type": value.type, **{k: _to_python(v) for k, v in value.items()}}
+    if isinstance(value, Path):
+        return {
+            "nodes": [_to_python(n) for n in value.nodes],
+            "relationships": [_to_python(r) for r in value.relationships],
+        }
+    if isinstance(value, list):
+        return [_to_python(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _to_python(v) for k, v in value.items()}
+    return value
+
 
 _WRITE_PATTERN = re.compile(
     r"\b(CREATE|MERGE|DELETE|DETACH|SET|REMOVE|DROP|CALL\s*\{)",
@@ -62,7 +82,7 @@ def query_neo4j(cypher: str) -> list[dict[str, Any]]:
 
     def _run_query(tx: ManagedTransaction) -> list[dict[str, Any]]:
         result = tx.run(cypher)
-        return [dict(record) for record in result]
+        return [{k: _to_python(v) for k, v in record.items()} for record in result]
 
     with driver.session() as session:
         records = session.execute_read(_run_query)
