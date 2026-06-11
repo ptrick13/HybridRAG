@@ -170,7 +170,7 @@ import asyncio
 from workflows import v1_workflow
 
 result = asyncio.run(v1_workflow.run(
-    "Which components have a deployment rollback rate above 20%?"
+    "Which components have a deployment rollback rate above 20% in 2024?"
 ))
 print(result.answer)
 ```
@@ -187,7 +187,7 @@ from workflows import v1_workflow, v2_workflow
 
 # V1 — single-pass
 result = asyncio.run(v1_workflow.run(
-    "Which teams own components that depend on the auth-gateway?"
+    "Which teams own components that depend on the either-gateway?"
 ))
 
 # V2 — closed-loop with Judge Agent
@@ -242,14 +242,14 @@ Find tickets related to database connection timeout issues
 
 ### REL — Relational (Graph Agent)
 ```
-Which teams own components that depend on the auth-gateway?
+Which teams own components that depend on the either-gateway?
 Who are the top contributors to database-type components by commit count?
 Which components have the deepest transitive dependency chains?
 ```
 
 ### STR — Structured (SQL Agent)
 ```
-Which components have a deployment rollback rate above 20% in the last 6 months?
+Which components have a deployment rollback rate above 20% in 2024?
 Show sprint velocity trends for the backend department over the last 10 sprints.
 Which components show 4 or more consecutive months of declining test coverage?
 ```

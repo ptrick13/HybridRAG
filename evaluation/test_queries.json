@@ -30,9 +30,9 @@
   {
     "id": "REL-01",
     "category": "REL",
-    "query": "Which teams are responsible for components that depend on the auth-gateway?",
+    "query": "Which teams are responsible for components that depend on the either-gateway?",
     "expected_agents": ["graph"],
-    "notes": "Graph traversal: Component DEPENDS_ON → Team RESPONSIBLE_FOR."
+    "notes": "Graph traversal: Component DEPENDS_ON either-gateway (comp-023) → Team RESPONSIBLE_FOR."
   },
   {
     "id": "REL-02",
@@ -51,9 +51,9 @@
   {
     "id": "STR-01",
     "category": "STR",
-    "query": "Which components have a deployment rollback rate above 20% in the last 6 months?",
+    "query": "Which components have a deployment rollback rate above 20% in 2024?",
     "expected_agents": ["sql"],
-    "notes": "Aggregation with status filter and date range over deployments table."
+    "notes": "Aggregation with status filter and date range over deployments table. Data covers 2023-2024."
   },
   {
     "id": "STR-02",
