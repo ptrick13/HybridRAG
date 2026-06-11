@@ -163,41 +163,9 @@ uvicorn scripts.web_ui:app --host 0.0.0.0 --port 8000
 # Open http://localhost:8000
 ```
 
-### 6. Run a query
-
-```python
-import asyncio
-from workflows import v1_workflow
-
-result = asyncio.run(v1_workflow.run(
-    "Which components have a deployment rollback rate above 20% in 2024?"
-))
-print(result.answer)
-```
-
 ---
 
 ## Usage
-
-### Python API
-
-```python
-import asyncio
-from workflows import v1_workflow, v2_workflow
-
-# V1 — single-pass
-result = asyncio.run(v1_workflow.run(
-    "Which teams own components that depend on the either-gateway?"
-))
-
-# V2 — closed-loop with Judge Agent
-result = asyncio.run(v2_workflow.run(
-    "Find postmortems mentioning cascading failures and show the rollback rate for the involved components."
-))
-print(f"Iterations: {result.iterations}")
-print(f"Cost: ${result.cost_usd:.6f}")
-print(result.answer)
-```
 
 ### MCP Server
 
