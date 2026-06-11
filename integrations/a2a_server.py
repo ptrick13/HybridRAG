@@ -38,7 +38,7 @@ app = FastAPI(
 class A2ATaskInput(BaseModel):
     """Input payload for an A2A task."""
 
-    query: str = Field(..., description="Natural language query about Stack Overflow data.")
+    query: str = Field(..., description="Natural language query about Software Development Analytics data.")
     variant: str = Field(default="v1", description="Workflow variant: 'v1' or 'v2'.")
 
 
@@ -70,7 +70,7 @@ class A2ATaskResult(BaseModel):
 _AGENT_CARD = {
     "name": "HybridRAG",
     "description": (
-        "A hybrid multi-agent RAG system for Stack Overflow data. "
+        "A hybrid multi-agent RAG system for Software Development Analytics data. "
         "Routes queries across semantic search (Qdrant), graph queries (Neo4j), "
         "and structured SQL queries (PostgreSQL). "
         "Supports two orchestration variants: V1 (single-pass) and V2 (closed-loop with Judge Agent)."
@@ -87,7 +87,7 @@ _AGENT_CARD = {
             "id": "query_hybrid_rag",
             "name": "Query Hybrid RAG",
             "description": (
-                "Answer questions about Stack Overflow data. Queries are automatically "
+                "Answer questions about Software Development Analytics data. Queries are automatically "
                 "routed to the appropriate retrieval agents. Every answer includes "
                 "source citations."
             ),
