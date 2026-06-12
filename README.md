@@ -212,15 +212,25 @@ Sample run: [evaluation/results/RESULTS.md](evaluation/results/RESULTS.md)
 
 ## Testing
 
-```bash
-pip install -r requirements.txt
+No running databases, no API keys required — all LLM and database calls are replaced with mocks so the suite runs in seconds.
 
+```bash
 # Lint
 ruff check .
 
-# Tests (no running databases or API keys required)
-pytest
+# Tests
+pytest -v
 ```
+
+| Test file | What is tested |
+|---|---|
+| `tests/test_orchestrator.py` | `route_query()` — JSON parsing, multi-agent routing, error handling, token tracking |
+| `tests/test_judge.py` | `evaluate()` — ACCEPT / REJECT / MAX_ITERATIONS decisions, prompt construction, history serialization |
+| `tests/test_nodes.py` | `orchestrator_node`, `single_retrieval_node`, `judge_node` — latency recording, state mutations |
+| `tests/test_routing.py` | V1 `_dispatch()` fan-out via `Send()` and V2 `_judge_routing()` edge conditions |
+| `tests/test_answer_format.py` | `_format_results_for_prompt()` — per-source headers, conflict and gap sections |
+| `tests/test_state.py` | `_merge_latencies()` reducer — accumulation, immutability, disjoint merge |
+| `tests/test_usage.py` | Token accumulation, per-model cost computation, `asyncio` context-var isolation |
 
 ---
 
