@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.11+-blue)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1.2.4-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+[![CI](https://github.com/ptrick13/HybridRAG/actions/workflows/ci.yml/badge.svg)](https://github.com/ptrick13/HybridRAG/actions/workflows/ci.yml)
 
 A **hybrid multi-agent Retrieval-Augmented Generation (RAG) system** that routes queries across three specialised retrieval agents connected to three heterogeneous data stores — a vector database, a knowledge graph, and a relational database.
 
@@ -206,6 +207,20 @@ python -m evaluation.runner --category SEM --variant v1
 Results are saved to `evaluation/results/` and include faithfulness, relevancy, completeness, citation accuracy, latency, and cost per query.
 
 Sample run: [evaluation/results/RESULTS.md](evaluation/results/RESULTS.md)
+
+---
+
+## Testing
+
+```bash
+pip install -r requirements.txt
+
+# Lint
+ruff check .
+
+# Tests (no running databases or API keys required)
+pytest
+```
 
 ---
 
