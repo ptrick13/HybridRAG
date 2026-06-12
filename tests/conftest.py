@@ -2,8 +2,9 @@ import os
 
 os.environ.setdefault("OPENAI_API_KEY", "test-key-does-not-matter")
 
-import pytest
 from unittest.mock import MagicMock
+
+import pytest
 
 from agents.judge_agent import CriteriaScores, JudgeDecision
 from agents.orchestrator import RoutingDecision, SubTask

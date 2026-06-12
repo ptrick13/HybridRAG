@@ -25,7 +25,8 @@ streaming API — preserving the original progressive-render behaviour.
 
 import logging
 import time
-from typing import Any, AsyncGenerator, Optional
+from collections.abc import AsyncGenerator
+from typing import Any
 
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Send
@@ -40,9 +41,9 @@ from agents.usage import (
     init_tracking,
 )
 from config.settings import settings
-from workflows.registry import AGENT_REGISTRY
 from workflows.models import WorkflowResult
 from workflows.nodes import answer_node, judge_node, orchestrator_node, single_retrieval_node
+from workflows.registry import AGENT_REGISTRY
 from workflows.state import DEFAULT_WORKFLOW_STATE, WorkflowState
 
 logger = logging.getLogger(__name__)
@@ -74,7 +75,7 @@ def _dispatch(state: WorkflowState):
 
 
 def _judge_routing(state: WorkflowState) -> str:
-    decision: Optional[JudgeDecision] = state.get("final_decision")
+    decision: JudgeDecision | None = state.get("final_decision")
     if decision is None or decision.decision in ("ACCEPT", "MAX_ITERATIONS_REACHED"):
         return "answer"
     if state.get("iteration", 0) >= settings.max_retrieval_iterations:
@@ -110,7 +111,7 @@ def _dispatch_retrieval(state: WorkflowState):
 
 
 def _judge_routing_retrieval(state: WorkflowState) -> str:
-    decision: Optional[JudgeDecision] = state.get("final_decision")
+    decision: JudgeDecision | None = state.get("final_decision")
     if decision is None or decision.decision in ("ACCEPT", "MAX_ITERATIONS_REACHED"):
         return END
     if state.get("iteration", 0) >= settings.max_retrieval_iterations:
@@ -169,7 +170,7 @@ async def run(query: str) -> WorkflowResult:
     elapsed = time.perf_counter() - start_time
     retrieval_results = final["retrieval_results"]
     activated = list(dict.fromkeys(r["source"] for r in retrieval_results))
-    final_decision: Optional[JudgeDecision] = final.get("final_decision")
+    final_decision: JudgeDecision | None = final.get("final_decision")
     iterations = final.get("iteration", 0)
     cost = compute_cost(settings.openai_model)
 
@@ -249,7 +250,7 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
 
     # Accumulated from LangGraph events — mirrors WorkflowState reducers manually.
     accumulated_results: list[dict[str, Any]] = []
-    final_decision: Optional[JudgeDecision] = None
+    final_decision: JudgeDecision | None = None
     all_latencies: dict[str, float] = {}
     final_iteration = 0
     current_iteration_number = 0
@@ -300,7 +301,7 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
                     yield {"event": "agent_done", "agent": agent_name, "latency": latency}
 
             elif name == "judge":
-                fd: Optional[JudgeDecision] = output.get("final_decision")
+                fd: JudgeDecision | None = output.get("final_decision")
                 judge_latency = output.get("agent_latencies", {}).get("judge", 0.0)
                 all_latencies["judge"] = all_latencies.get("judge", 0.0) + judge_latency
                 final_iteration = output.get("iteration", final_iteration)

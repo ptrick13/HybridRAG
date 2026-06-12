@@ -25,7 +25,7 @@ import time
 from collections import defaultdict
 from itertools import groupby
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 from tqdm import tqdm
 
@@ -200,8 +200,8 @@ def _compute_summary(results: list[dict[str, Any]]) -> dict[str, Any]:
 
 async def run_evaluation(
     variants: list[str],
-    category_filter: Optional[str],
-    limit: Optional[int],
+    category_filter: str | None,
+    limit: int | None,
 ) -> dict[str, Any]:
     """Run the full evaluation suite and return a structured report.
 

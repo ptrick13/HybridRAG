@@ -15,7 +15,7 @@ the Judge documents remaining gaps so the Answer Agent can acknowledge them.
 
 import json
 import logging
-from typing import Any, Optional
+from typing import Any
 
 from pydantic import BaseModel, Field
 
@@ -195,7 +195,7 @@ class JudgeDecision(BaseModel):
     criteria_scores: CriteriaScores
     gaps: list[str] = Field(default_factory=list, description="Identified information gaps.")
     conflicts: list[str] = Field(default_factory=list, description="Detected cross-source conflicts.")
-    reformulated_query: Optional[str] = Field(
+    reformulated_query: str | None = Field(
         default=None,
         description="Revised query for the next retrieval cycle (None on ACCEPT).",
     )
@@ -207,7 +207,7 @@ async def evaluate(
     retrieval_results: list[dict[str, Any]],
     iteration: int,
     max_iterations: int,
-    previous_decisions: Optional[list["JudgeDecision"]] = None,
+    previous_decisions: list["JudgeDecision"] | None = None,
 ) -> "JudgeDecision":
     """Evaluate consolidated retrieval results and decide accept or reject.
 

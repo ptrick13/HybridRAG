@@ -1,6 +1,6 @@
 """Shared Pydantic models used across both workflow variants."""
 
-from typing import Any, Optional
+from typing import Any
 
 from pydantic import BaseModel, Field
 
@@ -23,7 +23,7 @@ class WorkflowResult(BaseModel):
         default=1,
         description="Number of retrieval iterations executed (always 1 for V1).",
     )
-    judge_decision: Optional[dict[str, Any]] = Field(
+    judge_decision: dict[str, Any] | None = Field(
         default=None,
         description="Final Judge Agent decision (V2 only).",
     )

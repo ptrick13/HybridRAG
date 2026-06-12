@@ -12,7 +12,8 @@ No quality evaluation occurs between retrieval and synthesis.
 
 import logging
 import time
-from typing import Any, AsyncGenerator
+from collections.abc import AsyncGenerator
+from typing import Any
 
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Send
@@ -25,9 +26,9 @@ from agents.usage import (
     init_tracking,
 )
 from config.settings import settings
-from workflows.registry import AGENT_REGISTRY
 from workflows.models import WorkflowResult
 from workflows.nodes import answer_node, orchestrator_node, single_retrieval_node
+from workflows.registry import AGENT_REGISTRY
 from workflows.state import DEFAULT_WORKFLOW_STATE, WorkflowState
 
 logger = logging.getLogger(__name__)

@@ -1,7 +1,8 @@
 """LangGraph state definitions shared by V1 and V2 workflows."""
 
 import operator
-from typing import Annotated, Any, Optional
+from typing import Annotated, Any
+
 from typing_extensions import TypedDict
 
 from agents.judge_agent import JudgeDecision
@@ -28,7 +29,7 @@ class WorkflowState(TypedDict):
     current_query: str  # may be enriched by judge_node on V2 rejection
 
     # ── Orchestrator output ───────────────────────────────────────────────────
-    routing: Optional[RoutingDecision]
+    routing: RoutingDecision | None
 
     # ── Retrieval results — accumulate across parallel branches & iterations ──
     retrieval_results: Annotated[list[dict[str, Any]], operator.add]
@@ -41,7 +42,7 @@ class WorkflowState(TypedDict):
 
     # ── V2-only fields (unused by V1 graph) ───────────────────────────────────
     iteration: int                          # completed iteration count (0-indexed increment)
-    final_decision: Optional[JudgeDecision]
+    final_decision: JudgeDecision | None
     previous_decisions: list[JudgeDecision]
 
 

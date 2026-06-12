@@ -1,6 +1,8 @@
 import json
-import pytest
 from unittest.mock import AsyncMock, patch
+
+import pytest
+from pydantic import ValidationError
 
 from agents.orchestrator import route_query
 
@@ -65,7 +67,7 @@ async def test_missing_required_field_raises(mock_client):
     client, make_response = mock_client
     bad_json = json.dumps({"subtasks": [{"agent": "vector"}], "reasoning": "test"})
     client.chat.completions.create.return_value = make_response(bad_json)
-    with pytest.raises(Exception):
+    with pytest.raises(ValidationError):
         await route_query("some query")
 
 

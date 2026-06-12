@@ -376,7 +376,6 @@ def _gen_tickets(comps: list[dict], devs: list[dict], teams: list[dict],
     tickets = []
     type_pool = TICKET_TYPES[:]
     random.shuffle(type_pool)
-    comp_by_id = {c["id"]: c for c in comps}
     dev_ids = [d["id"] for d in devs]
     team_ids = [t["id"] for t in teams]
     sprint_ids = [_fid("sprint", i, N_SPRINTS_PER_TEAM) for i in range(1, N_SPRINTS_PER_TEAM + 1)]

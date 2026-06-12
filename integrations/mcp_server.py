@@ -84,6 +84,5 @@ async def query_hybrid_rag(query: str, variant: str = "v1") -> str:
 
 
 if __name__ == "__main__":
-    import uvicorn
 
     mcp.run(transport="sse", port=settings.mcp_port)

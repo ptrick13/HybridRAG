@@ -15,7 +15,6 @@ from functools import lru_cache
 from typing import Any
 
 from neo4j import GraphDatabase, ManagedTransaction
-from neo4j.exceptions import Neo4jError
 from neo4j.graph import Node, Path, Relationship
 
 from config.settings import settings

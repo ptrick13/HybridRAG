@@ -10,9 +10,10 @@ tool boundary, complementing the agent-level prompt constraint.
 
 import logging
 import re
+from collections.abc import Generator
 from contextlib import contextmanager
 from functools import lru_cache
-from typing import Any, Generator
+from typing import Any
 
 import psycopg2
 import psycopg2.extras

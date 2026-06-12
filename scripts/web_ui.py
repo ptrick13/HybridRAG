@@ -7,8 +7,9 @@ Run from the project root:
 import json
 import logging
 import sys
+from collections.abc import AsyncGenerator
 from pathlib import Path
-from typing import AsyncGenerator, Literal
+from typing import Literal
 
 # Ensure project root is importable regardless of working directory
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -54,7 +55,7 @@ async def run_query(req: QueryRequest):
         }
     except Exception as exc:
         logger.exception("Workflow error")
-        raise HTTPException(status_code=500, detail=str(exc))
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
 
 
 def _sse(event: str, data: dict) -> str:

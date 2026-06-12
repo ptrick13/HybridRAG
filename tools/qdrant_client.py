@@ -9,7 +9,6 @@ different score scales across retrieval methods and requires no calibration.
 """
 
 import asyncio
-import json
 import logging
 import threading
 import uuid

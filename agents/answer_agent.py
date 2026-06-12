@@ -13,7 +13,8 @@ Citation format by source type:
 
 import json
 import logging
-from typing import Any, AsyncGenerator, Optional
+from collections.abc import AsyncGenerator
+from typing import Any
 
 from agents.client import get_async_client
 from agents.judge_agent import JudgeDecision
@@ -89,7 +90,7 @@ well-cited answer.
 
 def _format_results_for_prompt(
     retrieval_results: list[dict[str, Any]],
-    judge_decision: Optional[JudgeDecision],
+    judge_decision: JudgeDecision | None,
 ) -> str:
     """Build the user-facing prompt section from retrieval results and judge metadata.
 
@@ -121,7 +122,7 @@ def _format_results_for_prompt(
                 )
                 text = payload.get("text", "")[:_MAX_CHUNK_PREVIEW_CHARS]
                 doc_lines.append(f"  - ID: {doc_ref!r} | Title: {title!r}\n    Text: {text}")
-            sections.append(f"=== VECTOR AGENT RESULTS ===\n" + "\n".join(doc_lines))
+            sections.append("=== VECTOR AGENT RESULTS ===\n" + "\n".join(doc_lines))
 
         elif source == "graph":
             cypher = result.get("cypher", "")
@@ -160,7 +161,7 @@ def _format_results_for_prompt(
 async def synthesise(
     original_query: str,
     retrieval_results: list[dict[str, Any]],
-    judge_decision: Optional[JudgeDecision] = None,
+    judge_decision: JudgeDecision | None = None,
 ) -> str:
     """Synthesise a cited answer from consolidated retrieval results.
 
@@ -205,7 +206,7 @@ above. Follow all citation and conflict-handling rules from your system prompt.
 async def synthesise_streaming(
     original_query: str,
     retrieval_results: list[dict[str, Any]],
-    judge_decision: Optional[JudgeDecision] = None,
+    judge_decision: JudgeDecision | None = None,
 ) -> AsyncGenerator[str, None]:
     """Stream a cited answer token-by-token from consolidated retrieval results.
 
