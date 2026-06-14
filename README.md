@@ -11,35 +11,28 @@ A **hybrid multi-agent Retrieval-Augmented Generation (RAG) system** that routes
 
 ## Architecture Overview
 
-```
-                               User Query
-                                   │
-                                   ▼
-                       ┌───────────────────────┐
-                       │      Orchestrator     │◄──────────────────┐
-                       └───────────┬───────────┘                   │
-                                   │                               │
-                   ┌───────────────┼───────────────┐               │
-                   ▼               ▼               ▼               │
-            ┌────────────┐  ┌────────────┐  ┌────────────┐         │
-            │   Vector   │  │   Graph    │  │    SQL     │         │
-            │   Agent    │  │   Agent    │  │   Agent    │         │
-            │  (Qdrant)  │  │  (Neo4j)   │  │ (Postgres) │         │
-            └──────┬─────┘  └──────┬─────┘  └──────┬─────┘         │
-                   └───────────────┼───────────────┘               │
-                                   │                               │
-                                   ▼                               │
-                       ┌───────────────────────┐      rejected     │
-                       │      Judge Agent      │───────────────────┘
-                       └───────────┬───────────┘
-                                   │ accepted
-                                   ▼
-                       ┌───────────────────────┐
-                       │     Answer Agent      │
-                       └───────────────────────┘
+```mermaid
+flowchart TD
+    Q([User Query]) --> O["Orchestrator"]
 
-                   Judge Agent + loop: Variant 2 only
+    subgraph PAR[" "]
+        V["Vector Agent\n(Qdrant)"]
+        G["Graph Agent\n(Neo4j)"]
+        S["SQL Agent\n(Postgres)"]
+    end
+
+    O --> V & G & S
+    V & G & S --> J["Judge Agent\n(Variant 2 only)"]:::v2only
+
+    J -.->|"ACCEPT"| A["Answer Agent"]
+    J -.->|"REJECT"| O
+
+    A --> E([Result])
+
+    classDef v2only stroke-dasharray: 5 5
 ```
+
+*Variant 1 skips the Judge and the retry loop — retrieval results flow directly to the Answer Agent.*
 
 ### Two Workflow Variants
 
@@ -321,7 +314,7 @@ Embeddings: `text-embedding-3-large` (3072 dims), chunked at 512 tokens with 64-
 
 ## Context
 
-An independent research project exploring hybrid multi-agent RAG architectures over heterogeneous data sources — a vector database, a knowledge graph, and a relational database. All experiments run on a purely synthetic dataset generated within this repository; no external data or proprietary systems are required.
+An independent project exploring hybrid multi-agent RAG over heterogeneous data sources, combining a vector database, a knowledge graph, and a relational database. Everything runs on a synthetic dataset generated within this repository, which keeps the whole system fully reproducible without any external data.
 
 ---
 
