@@ -321,7 +321,7 @@ Embeddings: `text-embedding-3-large` (3072 dims), chunked at 512 tokens with 64-
 
 ## Context
 
-This project was developed as an independent implementation inspired by my Master's thesis on hybrid multi-agent RAG architectures for enterprise AI applications.
+An independent research project exploring hybrid multi-agent RAG architectures over heterogeneous data sources — a vector database, a knowledge graph, and a relational database. All experiments run on a purely synthetic dataset generated within this repository; no external data or proprietary systems are required.
 
 ---
 

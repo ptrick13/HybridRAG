@@ -459,7 +459,7 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
-    /* Sidebar wird zum Overlay-Drawer */
+    /* Sidebar becomes an overlay drawer */
     .sidebar {
       position: fixed;
       top: 0; left: 0;
@@ -488,23 +488,23 @@
     }
     .sidebar-backdrop.visible { display: block; }
 
-    /* Sidebar-Open-Button immer sichtbar */
+    /* Sidebar open button always visible */
     .sidebar-open { display: flex !important; }
 
-    /* Chat-Bereich nimmt volle Breite */
+    /* Chat area takes full width */
     .chat { width: 100%; }
 
-    /* Weniger horizontales Padding */
+    /* Less horizontal padding */
     .messages { padding: 16px 16px; }
     .examples { padding: 0 16px 12px; flex-direction: column; }
     .ex-card { flex: unset; min-width: unset; }
     .input-bar { padding: 10px 16px; }
     .send-btn { right: 26px; bottom: 18px; }
 
-    /* Messages dürfen breiter werden */
+    /* Messages can be wider */
     .msg { max-width: 92%; }
 
-    /* Empty state kleiner */
+    /* Empty state smaller */
     .empty-title { font-size: 26px; }
     .empty-sub { font-size: 13px; max-width: 300px; }
 
@@ -693,7 +693,7 @@
     }
   }
 
-  // Auf Mobile Sidebar beim Start einklappen
+  // Collapse sidebar on mobile at startup
   if (window.innerWidth <= 768) {
     document.getElementById('sidebar').classList.add('collapsed');
   }
