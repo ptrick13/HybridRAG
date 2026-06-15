@@ -16,6 +16,7 @@ Key routing rules:
 
 import json
 import logging
+from typing import Any
 
 from pydantic import BaseModel, Field
 
@@ -131,7 +132,7 @@ Response:
 }
 """
 
-_RESPONSE_SCHEMA = {
+_RESPONSE_SCHEMA: Any = {
     "type": "json_schema",
     "json_schema": {
         "name": "routing_decision",
@@ -188,14 +189,15 @@ async def route_query(query: str) -> RoutingDecision:
         what focused sub-task per agent.
     """
     client = get_async_client()
+    messages: Any = [
+        {"role": "system", "content": _SYSTEM_PROMPT},
+        {"role": "user", "content": query},
+    ]
     response = await client.chat.completions.create(
         model=settings.openai_model,
-        messages=[
-            {"role": "system", "content": _SYSTEM_PROMPT},
-            {"role": "user", "content": query},
-        ],
+        messages=messages,
         response_format=_RESPONSE_SCHEMA,
-        temperature=0,
+        temperature=0.0,
     )
 
     raw = response.choices[0].message.content

@@ -16,6 +16,7 @@ from collections.abc import AsyncGenerator
 from typing import Any
 
 from langgraph.graph import END, START, StateGraph
+from langgraph.graph.state import CompiledStateGraph
 from langgraph.types import Send
 
 from agents.usage import (
@@ -48,7 +49,7 @@ def _dispatch(state: WorkflowState):
     return sends if sends else "answer"
 
 
-def _build_graph() -> StateGraph:
+def _build_graph() -> CompiledStateGraph:
     g = StateGraph(WorkflowState)
     g.add_node("orchestrator", orchestrator_node)
     g.add_node("single_retrieval", single_retrieval_node)
@@ -163,7 +164,7 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
     async for event in _graph.astream_events(initial, version="v2"):
         kind: str = event["event"]
         name: str = event.get("name", "")
-        data: dict = event.get("data", {}) or {}
+        data: Any = event.get("data", {}) or {}
 
         if kind == "on_chain_start" and name in _STREAMING_NODES:
             if name == "single_retrieval":

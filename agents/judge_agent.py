@@ -147,7 +147,7 @@ Response:
 }
 """
 
-_RESPONSE_SCHEMA = {
+_RESPONSE_SCHEMA: Any = {
     "type": "json_schema",
     "json_schema": {
         "name": "judge_decision",
@@ -258,14 +258,15 @@ Please evaluate the results and return your structured decision.
 """
 
     client = get_async_client()
+    messages: Any = [
+        {"role": "system", "content": _SYSTEM_PROMPT},
+        {"role": "user", "content": user_content},
+    ]
     response = await client.chat.completions.create(
         model=settings.openai_model,
-        messages=[
-            {"role": "system", "content": _SYSTEM_PROMPT},
-            {"role": "user", "content": user_content},
-        ],
+        messages=messages,
         response_format=_RESPONSE_SCHEMA,
-        temperature=0,
+        temperature=0.0,
     )
 
     raw = response.choices[0].message.content

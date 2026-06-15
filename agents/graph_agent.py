@@ -75,7 +75,7 @@ If the tool call returns an error or empty result:
 - Do not add explanation or use general LLM knowledge.
 """
 
-_TOOL_DEFINITION = {
+_TOOL_DEFINITION: Any = {
     "type": "function",
     "function": {
         "name": "query_neo4j",
@@ -101,6 +101,8 @@ _TOOL_DEFINITION = {
     },
 }
 
+_GRAPH_TOOL_CHOICE: Any = {"type": "function", "function": {"name": "query_neo4j"}}
+
 
 async def retrieve(subtask_query: str) -> dict[str, Any]:
     """Execute a graph query for the given sub-task with self-correction.
@@ -117,7 +119,7 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         containing the list of record dicts.
     """
     client = get_async_client()
-    messages: list[dict] = [
+    messages: Any = [
         {"role": "system", "content": _SYSTEM_PROMPT},
         {"role": "user", "content": subtask_query},
     ]
@@ -131,8 +133,8 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
             model=settings.openai_model,
             messages=messages,
             tools=[_TOOL_DEFINITION],
-            tool_choice={"type": "function", "function": {"name": "query_neo4j"}},
-            temperature=0,
+            tool_choice=_GRAPH_TOOL_CHOICE,
+            temperature=0.0,
         )
 
         if response.usage:
@@ -143,7 +145,7 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
             messages.append({"role": "assistant", "content": assistant_message.content or ""})
             messages.append({"role": "user", "content": "You must call the query_neo4j tool. Please try again."})
             continue
-        tool_call = assistant_message.tool_calls[0]
+        tool_call: Any = assistant_message.tool_calls[0]
         tool_args = json.loads(tool_call.function.arguments)
         last_cypher = tool_args["cypher"]
 

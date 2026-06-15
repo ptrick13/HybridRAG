@@ -88,7 +88,7 @@ If the tool call returns an error or "No results found.":
 - Do not add explanation or use general LLM knowledge.
 """
 
-_TOOL_DEFINITION = {
+_TOOL_DEFINITION: Any = {
     "type": "function",
     "function": {
         "name": "query_postgres",
@@ -113,6 +113,8 @@ _TOOL_DEFINITION = {
     },
 }
 
+_SQL_TOOL_CHOICE: Any = {"type": "function", "function": {"name": "query_postgres"}}
+
 
 async def retrieve(subtask_query: str) -> dict[str, Any]:
     """Execute a SQL query for the given sub-task with self-correction.
@@ -129,7 +131,7 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         ``results`` as the formatted string returned by ``query_postgres``.
     """
     client = get_async_client()
-    messages: list[dict] = [
+    messages: Any = [
         {"role": "system", "content": _SYSTEM_PROMPT},
         {"role": "user", "content": subtask_query},
     ]
@@ -143,8 +145,8 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
             model=settings.openai_model,
             messages=messages,
             tools=[_TOOL_DEFINITION],
-            tool_choice={"type": "function", "function": {"name": "query_postgres"}},
-            temperature=0,
+            tool_choice=_SQL_TOOL_CHOICE,
+            temperature=0.0,
         )
 
         if response.usage:
@@ -155,7 +157,7 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
             messages.append({"role": "assistant", "content": assistant_message.content or ""})
             messages.append({"role": "user", "content": "You must call the query_postgres tool. Please try again."})
             continue
-        tool_call = assistant_message.tool_calls[0]
+        tool_call: Any = assistant_message.tool_calls[0]
         tool_args = json.loads(tool_call.function.arguments)
         last_sql = tool_args["sql"]
 

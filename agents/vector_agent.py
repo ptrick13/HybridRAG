@@ -52,7 +52,7 @@ Qdrant vector database containing chunked engineering documents across three col
 - If the tool returns empty results, report that clearly.
 """
 
-_TOOL_DEFINITION = {
+_TOOL_DEFINITION: Any = {
     "type": "function",
     "function": {
         "name": "search_documents",
@@ -88,6 +88,8 @@ _TOOL_DEFINITION = {
     },
 }
 
+_VECTOR_TOOL_CHOICE: Any = {"type": "function", "function": {"name": "search_documents"}}
+
 
 async def retrieve(subtask_query: str) -> dict[str, Any]:
     """Execute semantic retrieval for the given sub-task.
@@ -103,7 +105,7 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         containing the list of retrieved document dicts.
     """
     client = get_async_client()
-    messages: list[dict] = [
+    messages: Any = [
         {"role": "system", "content": _SYSTEM_PROMPT},
         {"role": "user", "content": subtask_query},
     ]
@@ -113,8 +115,8 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         model=settings.openai_model,
         messages=messages,
         tools=[_TOOL_DEFINITION],
-        tool_choice={"type": "function", "function": {"name": "search_documents"}},
-        temperature=0,
+        tool_choice=_VECTOR_TOOL_CHOICE,
+        temperature=0.0,
     )
 
     if response.usage:
@@ -123,7 +125,7 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
     if not tool_calls:
         logger.warning("Vector Agent: LLM returned no tool call; returning empty results.")
         return {"source": "vector", "query": subtask_query, "collection": "tickets", "results": []}
-    tool_call = tool_calls[0]
+    tool_call: Any = tool_calls[0]
     tool_args = json.loads(tool_call.function.arguments)
     optimised_query = tool_args["query"]
     collection = tool_args.get("collection", "tickets")

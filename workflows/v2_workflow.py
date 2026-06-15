@@ -29,6 +29,7 @@ from collections.abc import AsyncGenerator
 from typing import Any
 
 from langgraph.graph import END, START, StateGraph
+from langgraph.graph.state import CompiledStateGraph
 from langgraph.types import Send
 
 from agents import answer_agent
@@ -83,7 +84,7 @@ def _judge_routing(state: WorkflowState) -> str:
     return "orchestrator"
 
 
-def _build_graph() -> StateGraph:
+def _build_graph() -> CompiledStateGraph:
     g = StateGraph(WorkflowState)
     g.add_node("orchestrator", orchestrator_node)
     g.add_node("single_retrieval", single_retrieval_node)
@@ -119,7 +120,7 @@ def _judge_routing_retrieval(state: WorkflowState) -> str:
     return "orchestrator"
 
 
-def _build_retrieval_graph() -> StateGraph:
+def _build_retrieval_graph() -> CompiledStateGraph:
     """Retrieval loop without answer_node — used by run_streaming()."""
     g = StateGraph(WorkflowState)
     g.add_node("orchestrator", orchestrator_node)
@@ -259,7 +260,7 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
     async for event in _retrieval_graph.astream_events(initial, version="v2"):
         kind: str = event["event"]
         name: str = event.get("name", "")
-        data: dict = event.get("data", {}) or {}
+        data: Any = event.get("data", {}) or {}
 
         if kind == "on_chain_start" and name in _STREAMING_NODES:
             if name == "orchestrator":
