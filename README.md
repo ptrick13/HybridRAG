@@ -4,6 +4,7 @@
 ![LangGraph](https://img.shields.io/badge/LangGraph-1.2.4-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 [![CI](https://github.com/ptrick13/HybridRAG/actions/workflows/ci.yml/badge.svg)](https://github.com/ptrick13/HybridRAG/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/ptrick13/HybridRAG/graph/badge.svg)](https://codecov.io/gh/ptrick13/HybridRAG)
 
 A **hybrid multi-agent Retrieval-Augmented Generation (RAG) system** that routes queries across three specialised retrieval agents connected to three heterogeneous data stores — a vector database, a knowledge graph, and a relational database.
 

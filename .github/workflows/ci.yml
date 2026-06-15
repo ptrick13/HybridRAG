@@ -35,6 +35,12 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Test (pytest)
-        run: pytest
+        run: pytest --cov=agents --cov=workflows --cov-report=xml --cov-report=term-missing
         env:
           OPENAI_API_KEY: test-key-does-not-matter
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: coverage.xml
+          fail_ci_if_error: false
