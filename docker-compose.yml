@@ -52,6 +52,10 @@ services:
     build: .
     container_name: hybridrag-app
     env_file: .env
+    environment:
+      NEO4J_URI: bolt://neo4j:7687
+      POSTGRES_HOST: postgres
+      QDRANT_HOST: qdrant
     ports:
       - "8000:8000"
     depends_on:
