@@ -1,0 +1,10 @@
+.env
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+.git
+.gitignore
+coverage.xml
+.coverage
+htmlcov/
