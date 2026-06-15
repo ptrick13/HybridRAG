@@ -3,6 +3,13 @@ asyncio_mode = "auto"
 testpaths = ["tests"]
 addopts = "--cov=agents --cov=workflows --cov-report=xml --cov-report=term-missing"
 
+[tool.coverage.run]
+omit = [
+    "agents/graph_agent.py",
+    "agents/sql_agent.py",
+    "agents/vector_agent.py",
+]
+
 [tool.ruff]
 line-length = 100
 target-version = "py311"

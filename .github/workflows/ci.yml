@@ -43,9 +43,10 @@ jobs:
           OPENAI_API_KEY: test-key-does-not-matter
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
           fail_ci_if_error: false
 
   typecheck:
