@@ -85,10 +85,13 @@ async def _run_single(
             "eval_cost_usd": round(eval_cost_usd, 6),
             "cost_breakdown": {
                 "llm_input_usd": round(
-                    result.metadata.get("prompt_tokens", 0) * model_price(settings.openai_model)[0], 6
+                    result.metadata.get("prompt_tokens", 0) * model_price(settings.openai_model)[0],
+                    6,
                 ),
                 "llm_output_usd": round(
-                    result.metadata.get("completion_tokens", 0) * model_price(settings.openai_model)[1], 6
+                    result.metadata.get("completion_tokens", 0)
+                    * model_price(settings.openai_model)[1],
+                    6,
                 ),
                 "embedding_usd": round(
                     result.embedding_tokens * embedding_price(settings.embedding_model), 6
@@ -185,7 +188,9 @@ def _compute_summary(results: list[dict[str, Any]]) -> dict[str, Any]:
         entry["total_embedding_usd"] = round(sum(embedding_usds), 6)
         entry["total_cost_usd"] = round(sum(costs), 6)
         entry["total_eval_cost_usd"] = round(sum(eval_costs), 6)
-        entry["avg_latency_seconds"] = round(sum(latencies) / len(latencies), 3) if latencies else 0.0
+        entry["avg_latency_seconds"] = (
+            round(sum(latencies) / len(latencies), 3) if latencies else 0.0
+        )
         by_variant_summary[v] = entry
 
     summary = {

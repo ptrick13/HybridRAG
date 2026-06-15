@@ -65,7 +65,13 @@ _SCORE_SCHEMA = {
                 "citation_accuracy": {"type": "integer"},
                 "reasoning": {"type": "string"},
             },
-            "required": ["faithfulness", "relevancy", "completeness", "citation_accuracy", "reasoning"],
+            "required": [
+                "faithfulness",
+                "relevancy",
+                "completeness",
+                "citation_accuracy",
+                "reasoning",
+            ],
             "additionalProperties": False,
         },
     },
@@ -84,7 +90,9 @@ class EvaluationScores(BaseModel):
     @property
     def average(self) -> float:
         """Mean of all four dimension scores."""
-        return (self.faithfulness + self.relevancy + self.completeness + self.citation_accuracy) / 4.0
+        return (
+            self.faithfulness + self.relevancy + self.completeness + self.citation_accuracy
+        ) / 4.0
 
 
 async def score_answer(
@@ -139,7 +147,9 @@ Please score this answer on all four dimensions.
 
     raw = response.choices[0].message.content
     if response.usage:
-        record_llm_call("eval_judge", response.usage.prompt_tokens, response.usage.completion_tokens)
+        record_llm_call(
+            "eval_judge", response.usage.prompt_tokens, response.usage.completion_tokens
+        )
     if not raw:
         raise ValueError("Eval judge: LLM returned empty content for structured output call")
     data = json.loads(raw)

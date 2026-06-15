@@ -55,6 +55,7 @@ _STREAMING_NODES = frozenset({"orchestrator", "single_retrieval", "judge"})
 
 # ── Shared routing helpers ────────────────────────────────────────────────────
 
+
 def _sends_for_routing(state: WorkflowState, fallback: str):
     """Return Send() list for each subtask, or ``fallback`` node name if none."""
     routing = state.get("routing")
@@ -70,6 +71,7 @@ def _sends_for_routing(state: WorkflowState, fallback: str):
 
 
 # ── Full graph (run) ──────────────────────────────────────────────────────────
+
 
 def _dispatch(state: WorkflowState):
     return _sends_for_routing(state, fallback="answer")
@@ -140,6 +142,7 @@ _retrieval_graph = _build_retrieval_graph()
 
 # ── run() ─────────────────────────────────────────────────────────────────────
 
+
 async def run(query: str) -> WorkflowResult:
     """Execute Variant 2: hierarchical retrieval with closed-loop evaluation.
 
@@ -177,7 +180,10 @@ async def run(query: str) -> WorkflowResult:
 
     logger.info(
         "[V2] Completed in %.2fs | iterations: %d | agents: %s | cost: $%.4f",
-        elapsed, iterations, activated, cost,
+        elapsed,
+        iterations,
+        activated,
+        cost,
     )
 
     return WorkflowResult(
@@ -204,6 +210,7 @@ async def run(query: str) -> WorkflowResult:
 
 
 # ── run_streaming() ───────────────────────────────────────────────────────────
+
 
 async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
     """V2 workflow that yields SSE-style events for live demos.
@@ -323,7 +330,9 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
     t0 = time.perf_counter()
 
     full_answer = ""
-    async for token in answer_agent.synthesise_streaming(query, accumulated_results, final_decision):
+    async for token in answer_agent.synthesise_streaming(
+        query, accumulated_results, final_decision
+    ):
         full_answer += token
         yield {"event": "answer_token", "token": token}
 
@@ -338,7 +347,10 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
 
     logger.info(
         "[V2 streaming] Completed in %.2fs | iterations: %d | agents: %s | cost: $%.4f",
-        elapsed, final_iteration, activated_all, cost,
+        elapsed,
+        final_iteration,
+        activated_all,
+        cost,
     )
 
     result = WorkflowResult(

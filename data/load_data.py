@@ -65,8 +65,7 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(
         description=(
-            "Load Software Development Analytics sample data into "
-            "PostgreSQL, Neo4j, and Qdrant."
+            "Load Software Development Analytics sample data into PostgreSQL, Neo4j, and Qdrant."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,

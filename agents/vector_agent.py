@@ -136,7 +136,12 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         results = await search_documents(optimised_query, collection=collection)
     except Exception as exc:
         logger.warning("Vector Agent search failed: %s", exc, exc_info=True)
-        return {"source": "vector", "query": optimised_query, "collection": collection, "results": []}
+        return {
+            "source": "vector",
+            "query": optimised_query,
+            "collection": collection,
+            "results": [],
+        }
 
     logger.info("Vector Agent retrieved %d results from '%s'.", len(results), collection)
 

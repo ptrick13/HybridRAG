@@ -21,6 +21,9 @@ jobs:
       - name: Lint (Ruff)
         run: ruff check .
 
+      - name: Format (Ruff)
+        run: ruff format --check .
+
   test:
     runs-on: ubuntu-latest
     steps:

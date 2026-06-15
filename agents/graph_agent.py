@@ -89,8 +89,7 @@ _TOOL_DEFINITION: Any = {
                 "cypher": {
                     "type": "string",
                     "description": (
-                        "A read-only Cypher query (MATCH/RETURN). "
-                        "Must include LIMIT 25."
+                        "A read-only Cypher query (MATCH/RETURN). Must include LIMIT 25."
                     ),
                 }
             },
@@ -143,7 +142,9 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         if not assistant_message.tool_calls:
             logger.warning("Graph Agent: no tool call on attempt %d.", attempt + 1)
             messages.append({"role": "assistant", "content": assistant_message.content or ""})
-            messages.append({"role": "user", "content": "You must call the query_neo4j tool. Please try again."})
+            messages.append(
+                {"role": "user", "content": "You must call the query_neo4j tool. Please try again."}
+            )
             continue
         tool_call: Any = assistant_message.tool_calls[0]
         tool_args = json.loads(tool_call.function.arguments)
@@ -162,21 +163,34 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         except Exception as exc:
             tool_result_content = f"ERROR: {exc}"
             success = False
-            logger.warning("Graph Agent unexpected error (attempt %d): %s", attempt + 1, exc, exc_info=True)
+            logger.warning(
+                "Graph Agent unexpected error (attempt %d): %s", attempt + 1, exc, exc_info=True
+            )
 
         # Feed the tool result back to the LLM for potential self-correction
-        messages.append({"role": "assistant", "content": None, "tool_calls": [
+        messages.append(
             {
-                "id": tool_call.id,
-                "type": "function",
-                "function": {"name": "query_neo4j", "arguments": tool_call.function.arguments},
+                "role": "assistant",
+                "content": None,
+                "tool_calls": [
+                    {
+                        "id": tool_call.id,
+                        "type": "function",
+                        "function": {
+                            "name": "query_neo4j",
+                            "arguments": tool_call.function.arguments,
+                        },
+                    }
+                ],
             }
-        ]})
-        messages.append({
-            "role": "tool",
-            "tool_call_id": tool_call.id,
-            "content": tool_result_content,
-        })
+        )
+        messages.append(
+            {
+                "role": "tool",
+                "tool_call_id": tool_call.id,
+                "content": tool_result_content,
+            }
+        )
 
         if success and last_results:
             break

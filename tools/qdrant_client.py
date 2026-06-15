@@ -101,9 +101,7 @@ _COLLECTION_KEY_MAP = {
 }
 
 
-async def search_documents(
-    query: str, collection: str = "tickets"
-) -> list[dict[str, Any]]:
+async def search_documents(query: str, collection: str = "tickets") -> list[dict[str, Any]]:
     """Retrieve the top-k most relevant Software Development Analytics documents.
 
     Hybrid retrieval pipeline:
@@ -162,7 +160,9 @@ async def search_documents(
 
     logger.debug(
         "Qdrant '%s' returned %d results for query: %s",
-        collection_name, len(formatted), query[:80],
+        collection_name,
+        len(formatted),
+        query[:80],
     )
     return formatted
 

@@ -38,12 +38,9 @@ N_POSTMORTEMS = 40
 ANOMALY_COMP_INDICES = [4, 11, 30]  # 0-based → comp-005, comp-012, comp-031
 
 DEPARTMENTS = ["backend", "frontend", "platform", "data", "security"]
-SENIORITY_LEVELS = (
-    ["junior"] * 24 + ["mid"] * 32 + ["senior"] * 16 + ["lead"] * 8
-)
+SENIORITY_LEVELS = ["junior"] * 24 + ["mid"] * 32 + ["senior"] * 16 + ["lead"] * 8
 COMPONENT_TYPES = (
-    ["service"] * 28 + ["library"] * 18 + ["database"] * 14
-    + ["frontend"] * 7 + ["gateway"] * 3
+    ["service"] * 28 + ["library"] * 18 + ["database"] * 14 + ["frontend"] * 7 + ["gateway"] * 3
 )
 LANGUAGES = ["Python", "Go", "TypeScript", "Java", "Rust", "Kotlin", "C++"]
 TICKET_TYPES = ["bug"] * 500 + ["feature"] * 1250 + ["tech_debt"] * 500 + ["incident"] * 250
@@ -74,20 +71,33 @@ CONDITIONS = [
     "requests arrive faster than the rate limit allows",
 ]
 ERRORS = [
-    "NullPointerException", "ConnectionTimeoutError", "OutOfMemoryError",
-    "IndexOutOfBoundsException", "DeadlockException", "ConcurrentModificationException",
+    "NullPointerException",
+    "ConnectionTimeoutError",
+    "OutOfMemoryError",
+    "IndexOutOfBoundsException",
+    "DeadlockException",
+    "ConcurrentModificationException",
 ]
 LOADS = [
-    "high traffic", "peak load", "sustained load above 1000 RPS",
-    "burst traffic", "concurrent writes",
+    "high traffic",
+    "peak load",
+    "sustained load above 1000 RPS",
+    "burst traffic",
+    "concurrent writes",
 ]
 OPERATIONS = [
-    "database migrations", "cache invalidation", "batch processing",
-    "report generation", "authentication flow", "API sync",
+    "database migrations",
+    "cache invalidation",
+    "batch processing",
+    "report generation",
+    "authentication flow",
+    "API sync",
 ]
 EDGE_CASES = [
-    "empty payloads", "null values in required fields",
-    "unicode characters in user input", "very large request bodies",
+    "empty payloads",
+    "null values in required fields",
+    "unicode characters in user input",
+    "very large request bodies",
 ]
 ENVS = ["production", "staging", "canary environment"]
 
@@ -100,13 +110,23 @@ FEATURE_TEMPLATES = [
     "Introduce {feature} caching layer in {component} to reduce latency",
 ]
 FEATURES = [
-    "bulk export", "real-time streaming", "role-based access control",
-    "audit logging", "multi-tenancy", "webhook", "GraphQL",
-    "async job queue", "rate limiting", "circuit breaker",
+    "bulk export",
+    "real-time streaming",
+    "role-based access control",
+    "audit logging",
+    "multi-tenancy",
+    "webhook",
+    "GraphQL",
+    "async job queue",
+    "rate limiting",
+    "circuit breaker",
 ]
 USE_CASES = [
-    "enterprise customers", "compliance reporting", "mobile clients",
-    "third-party integrations", "SLA monitoring",
+    "enterprise customers",
+    "compliance reporting",
+    "mobile clients",
+    "third-party integrations",
+    "SLA monitoring",
 ]
 
 TECH_DEBT_TEMPLATES = [
@@ -171,6 +191,7 @@ POSTMORTEM_ROOT_CAUSES = [
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
+
 def _fid(prefix: str, n: int, total: int) -> str:
     width = max(3, len(str(total)))
     return f"{prefix}-{str(n).zfill(width)}"
@@ -191,16 +212,19 @@ def _rand_dt(start: datetime, end: datetime) -> datetime:
 
 # ── Generators ────────────────────────────────────────────────────────────────
 
+
 def _gen_teams() -> list[dict]:
     teams = []
     dept_cycle = (DEPARTMENTS * 3)[:N_TEAMS]
     random.shuffle(dept_cycle)
     for i in range(1, N_TEAMS + 1):
-        teams.append({
-            "id": _fid("team", i, N_TEAMS),
-            "name": f"{fake.word().capitalize()} {dept_cycle[i-1].capitalize()} Team",
-            "department": dept_cycle[i - 1],
-        })
+        teams.append(
+            {
+                "id": _fid("team", i, N_TEAMS),
+                "name": f"{fake.word().capitalize()} {dept_cycle[i - 1].capitalize()} Team",
+                "department": dept_cycle[i - 1],
+            }
+        )
     return teams
 
 
@@ -209,12 +233,14 @@ def _gen_repositories() -> list[dict]:
     for i in range(1, N_REPOS + 1):
         lang = random.choice(LANGUAGES)
         name = f"{fake.word()}-{fake.word()}".lower()
-        repos.append({
-            "id": _fid("repo", i, N_REPOS),
-            "name": name,
-            "url": f"https://github.com/acme-corp/{name}",
-            "language": lang,
-        })
+        repos.append(
+            {
+                "id": _fid("repo", i, N_REPOS),
+                "name": name,
+                "url": f"https://github.com/acme-corp/{name}",
+                "language": lang,
+            }
+        )
     return repos
 
 
@@ -224,13 +250,15 @@ def _gen_developers(teams: list[dict]) -> list[dict]:
     random.shuffle(seniority_pool)
     team_ids = [t["id"] for t in teams]
     for i in range(1, N_DEVS + 1):
-        devs.append({
-            "id": _fid("dev", i, N_DEVS),
-            "name": fake.name(),
-            "email": fake.email(),
-            "seniority": seniority_pool[i - 1],
-            "team_id": random.choice(team_ids),
-        })
+        devs.append(
+            {
+                "id": _fid("dev", i, N_DEVS),
+                "name": fake.name(),
+                "email": fake.email(),
+                "seniority": seniority_pool[i - 1],
+                "team_id": random.choice(team_ids),
+            }
+        )
     return devs
 
 
@@ -242,14 +270,16 @@ def _gen_components(teams: list[dict], repos: list[dict], devs: list[dict]) -> l
     team_ids = [t["id"] for t in teams]
     dev_ids = [d["id"] for d in devs]
     for i in range(1, N_COMPONENTS + 1):
-        comps.append({
-            "id": _fid("comp", i, N_COMPONENTS),
-            "name": f"{fake.word()}-{type_pool[i-1]}".lower(),
-            "type": type_pool[i - 1],
-            "team_id": random.choice(team_ids),
-            "owner_id": random.choice(dev_ids),
-            "repo_id": random.choice(repo_ids),
-        })
+        comps.append(
+            {
+                "id": _fid("comp", i, N_COMPONENTS),
+                "name": f"{fake.word()}-{type_pool[i - 1]}".lower(),
+                "type": type_pool[i - 1],
+                "team_id": random.choice(team_ids),
+                "owner_id": random.choice(dev_ids),
+                "repo_id": random.choice(repo_ids),
+            }
+        )
     return comps
 
 
@@ -261,13 +291,15 @@ def _gen_epics(teams: list[dict], comps: list[dict]) -> list[dict]:
     random.shuffle(statuses)
     for i in range(1, N_EPICS + 1):
         n_comps = random.randint(2, 6)
-        epics.append({
-            "id": _fid("epic", i, N_EPICS),
-            "title": f"{fake.bs().capitalize()}",
-            "status": statuses[i - 1],
-            "team_id": random.choice(team_ids),
-            "component_ids": random.sample(comp_ids, n_comps),
-        })
+        epics.append(
+            {
+                "id": _fid("epic", i, N_EPICS),
+                "title": f"{fake.bs().capitalize()}",
+                "status": statuses[i - 1],
+                "team_id": random.choice(team_ids),
+                "component_ids": random.sample(comp_ids, n_comps),
+            }
+        )
     return epics
 
 
@@ -284,7 +316,7 @@ def _gen_depends_on(comps: list[dict], anomaly_comp_ids: list[str]) -> list[dict
 
     # Force 3 explicit chains of depth ≥ 3
     chains = [
-        comp_ids[0:4],    # depth 3 chain
+        comp_ids[0:4],  # depth 3 chain
         comp_ids[10:14],  # depth 3 chain
         comp_ids[20:24],  # depth 3 chain
     ]
@@ -314,11 +346,13 @@ def _gen_member_of(devs: list[dict]) -> list[dict]:
     start = datetime(2019, 1, 1)
     end = datetime(2023, 1, 1)
     for dev in devs:
-        rels.append({
-            "developer_id": dev["id"],
-            "team_id": dev["team_id"],
-            "since": _date(_rand_dt(start, end)),
-        })
+        rels.append(
+            {
+                "developer_id": dev["id"],
+                "team_id": dev["team_id"],
+                "since": _date(_rand_dt(start, end)),
+            }
+        )
     return rels
 
 
@@ -328,11 +362,13 @@ def _gen_contributed_to(devs: list[dict], comps: list[dict]) -> list[dict]:
     for dev in devs:
         n = random.randint(1, 6)
         for comp_id in random.sample(comp_ids, n):
-            rels.append({
-                "developer_id": dev["id"],
-                "component_id": comp_id,
-                "commits": random.randint(1, 200),
-            })
+            rels.append(
+                {
+                    "developer_id": dev["id"],
+                    "component_id": comp_id,
+                    "commits": random.randint(1, 200),
+                }
+            )
     return rels
 
 
@@ -371,8 +407,9 @@ def _ticket_description(ticket_type: str, comp_name: str) -> str:
     )
 
 
-def _gen_tickets(comps: list[dict], devs: list[dict], teams: list[dict],
-                 anomaly_comp_ids: list[str]) -> list[dict]:
+def _gen_tickets(
+    comps: list[dict], devs: list[dict], teams: list[dict], anomaly_comp_ids: list[str]
+) -> list[dict]:
     tickets = []
     type_pool = TICKET_TYPES[:]
     random.shuffle(type_pool)
@@ -395,28 +432,31 @@ def _gen_tickets(comps: list[dict], devs: list[dict], teams: list[dict],
         reopen = random.choices([0, 1, 2], weights=[0.7, 0.2, 0.1])[0]
 
         priority = random.choices(PRIORITIES, weights=[5, 30, 45, 20])[0]
-        tickets.append({
-            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
-            "title": _ticket_description(ttype, comp["name"]).split(".")[0][:120],
-            "type": ttype,
-            "priority": priority,
-            "status": status,
-            "component_id": comp["id"],
-            "assignee_id": random.choice(dev_ids),
-            "team_id": comp.get("team_id", random.choice(team_ids)),
-            "story_points": random.choice([1, 2, 3, 5, 8, 13]),
-            "created_at": _ts(created),
-            "resolved_at": resolved,
-            "reopened_count": reopen,
-            "sprint_id": random.choice(sprint_ids),
-            "description": _ticket_description(ttype, comp["name"])
-            + " " + fake.paragraph(nb_sentences=3),
-        })
+        tickets.append(
+            {
+                "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
+                "title": _ticket_description(ttype, comp["name"]).split(".")[0][:120],
+                "type": ttype,
+                "priority": priority,
+                "status": status,
+                "component_id": comp["id"],
+                "assignee_id": random.choice(dev_ids),
+                "team_id": comp.get("team_id", random.choice(team_ids)),
+                "story_points": random.choice([1, 2, 3, 5, 8, 13]),
+                "created_at": _ts(created),
+                "resolved_at": resolved,
+                "reopened_count": reopen,
+                "sprint_id": random.choice(sprint_ids),
+                "description": _ticket_description(ttype, comp["name"])
+                + " "
+                + fake.paragraph(nb_sentences=3),
+            }
+        )
 
     # Anomaly 1: bug reopen hotspots — force avg reopened_count > 3 for 3 components
     for comp_id in anomaly_comp_ids:
         affected = [t for t in tickets if t["component_id"] == comp_id and t["type"] == "bug"]
-        for t in affected[:max(5, len(affected))]:
+        for t in affected[: max(5, len(affected))]:
             t["reopened_count"] = random.randint(4, 8)
 
     return tickets
@@ -439,25 +479,28 @@ def _gen_sprint_metrics(teams: list[dict], anomaly_team_ids: list[str]) -> list[
             else:
                 velocity = round(random.uniform(0.70, 1.05), 2)
             completed = int(planned * velocity)
-            metrics.append({
-                "id": f"sm-{team['id']}-sprint-{s:02d}",
-                "sprint_id": _fid("sprint", s, N_SPRINTS_PER_TEAM),
-                "team_id": team["id"],
-                "start_date": _date(s_start),
-                "end_date": _date(s_end),
-                "planned_points": planned,
-                "completed_points": completed,
-                "velocity": velocity,
-                "bug_count": random.randint(0, 8),
-                "feature_count": random.randint(2, 12),
-                "carried_over_count": random.randint(0, 5),
-            })
+            metrics.append(
+                {
+                    "id": f"sm-{team['id']}-sprint-{s:02d}",
+                    "sprint_id": _fid("sprint", s, N_SPRINTS_PER_TEAM),
+                    "team_id": team["id"],
+                    "start_date": _date(s_start),
+                    "end_date": _date(s_end),
+                    "planned_points": planned,
+                    "completed_points": completed,
+                    "velocity": velocity,
+                    "bug_count": random.randint(0, 8),
+                    "feature_count": random.randint(2, 12),
+                    "carried_over_count": random.randint(0, 5),
+                }
+            )
 
     return metrics
 
 
-def _gen_deployments(comps: list[dict], devs: list[dict],
-                     anomaly_comp_ids: list[str]) -> list[dict]:
+def _gen_deployments(
+    comps: list[dict], devs: list[dict], anomaly_comp_ids: list[str]
+) -> list[dict]:
     deployments = []
     dev_ids = [d["id"] for d in devs]
     comp_ids = [c["id"] for c in comps]
@@ -470,16 +513,18 @@ def _gen_deployments(comps: list[dict], devs: list[dict],
         comp_id = random.choice(comp_ids)
         status = random.choice(status_pool)
         deployed_at = _rand_dt(start, end)
-        deployments.append({
-            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
-            "component_id": comp_id,
-            "version": f"{random.randint(1,5)}.{random.randint(0,20)}.{random.randint(0,50)}",
-            "status": status,
-            "environment": random.choices(["production", "staging"], weights=[60, 40])[0],
-            "deployed_by": random.choice(dev_ids),
-            "deployed_at": _ts(deployed_at),
-            "duration_seconds": random.randint(30, 600),
-        })
+        deployments.append(
+            {
+                "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
+                "component_id": comp_id,
+                "version": f"{random.randint(1, 5)}.{random.randint(0, 20)}.{random.randint(0, 50)}",
+                "status": status,
+                "environment": random.choices(["production", "staging"], weights=[60, 40])[0],
+                "deployed_by": random.choice(dev_ids),
+                "deployed_at": _ts(deployed_at),
+                "duration_seconds": random.randint(30, 600),
+            }
+        )
 
     # Anomaly 3: rollback hotspots — force >20% rollback rate for 3 components
     for comp_id in anomaly_comp_ids:
@@ -501,14 +546,16 @@ def _gen_test_coverage(comps: list[dict], anomaly_comp_ids: list[str]) -> list[d
             meas_date = meas_start + timedelta(days=37 * m)
             noise = round(random.uniform(-3.0, 3.0), 1)
             line_cov = max(10.0, min(99.9, base_cov + noise))
-            records.append({
-                "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
-                "component_id": comp["id"],
-                "measured_at": _date(meas_date),
-                "line_coverage": line_cov,
-                "branch_coverage": round(line_cov * random.uniform(0.80, 0.95), 1),
-                "test_count": base_tests + random.randint(-20, 40),
-            })
+            records.append(
+                {
+                    "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
+                    "component_id": comp["id"],
+                    "measured_at": _date(meas_date),
+                    "line_coverage": line_cov,
+                    "branch_coverage": round(line_cov * random.uniform(0.80, 0.95), 1),
+                    "test_count": base_tests + random.randint(-20, 40),
+                }
+            )
 
     # Anomaly 4: coverage decline — 4 consecutive declining measurements
     for comp_id in anomaly_comp_ids:
@@ -539,18 +586,20 @@ def _gen_incidents(comps: list[dict], anomaly_comp_ids: list[str]) -> list[dict]
         started = _rand_dt(start, end)
         duration = random.randint(15, 480)
         resolved = started + timedelta(minutes=duration)
-        incidents.append({
-            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
-            "title": f"{sev} incident: {fake.bs()[:80]}",
-            "severity": sev,
-            "component_id": comp_id,
-            "root_cause_component_id": None,
-            "started_at": _ts(started),
-            "resolved_at": _ts(resolved),
-            "duration_minutes": duration,
-            "affected_users": random.randint(0, 50000),
-            "status": "resolved",
-        })
+        incidents.append(
+            {
+                "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
+                "title": f"{sev} incident: {fake.bs()[:80]}",
+                "severity": sev,
+                "component_id": comp_id,
+                "root_cause_component_id": None,
+                "started_at": _ts(started),
+                "resolved_at": _ts(resolved),
+                "duration_minutes": duration,
+                "affected_users": random.randint(0, 50000),
+                "status": "resolved",
+            }
+        )
 
     # Anomaly 5: 6 P1 incidents in Q1 2024 with root_cause_component_id
     q1_start = datetime(2024, 1, 1)
@@ -560,18 +609,20 @@ def _gen_incidents(comps: list[dict], anomaly_comp_ids: list[str]) -> list[dict]
         root_cause = random.choice([c for c in comp_ids if c != comp_id])
         started = _rand_dt(q1_start, q1_end)
         duration = random.randint(60, 300)
-        incidents.append({
-            "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
-            "title": f"P1 incident: {fake.bs()[:80]}",
-            "severity": "P1",
-            "component_id": comp_id,
-            "root_cause_component_id": root_cause,
-            "started_at": _ts(started),
-            "resolved_at": _ts(started + timedelta(minutes=duration)),
-            "duration_minutes": duration,
-            "affected_users": random.randint(5000, 100000),
-            "status": "resolved",
-        })
+        incidents.append(
+            {
+                "id": str(uuid.UUID(int=random.getrandbits(128), version=4)),
+                "title": f"P1 incident: {fake.bs()[:80]}",
+                "severity": "P1",
+                "component_id": comp_id,
+                "root_cause_component_id": root_cause,
+                "started_at": _ts(started),
+                "resolved_at": _ts(started + timedelta(minutes=duration)),
+                "duration_minutes": duration,
+                "affected_users": random.randint(5000, 100000),
+                "status": "resolved",
+            }
+        )
 
     return incidents
 
@@ -583,11 +634,13 @@ def _adr_text(n: int, title: str, status: str) -> str:
     # Ensure ≥10 ADRs mention "critical" / "high risk" / "architecturally sensitive"
     risk_phrase = ""
     if n <= 10:
-        risk_phrase = random.choice([
-            " This decision is **critical** to system reliability.",
-            " The team considers this **high risk** without a mitigation plan.",
-            " This area is **architecturally sensitive** and requires careful review.",
-        ])
+        risk_phrase = random.choice(
+            [
+                " This decision is **critical** to system reliability.",
+                " The team considers this **high risk** without a mitigation plan.",
+                " This area is **architecturally sensitive** and requires careful review.",
+            ]
+        )
     return (
         f"# ADR-{n:03d}: {title}\n\n"
         f"## Status: {status}\n\n"
@@ -642,14 +695,16 @@ def _gen_arch_docs(comps: list[dict]) -> list[dict]:
             text = _design_doc_text(title)
         else:
             text = _rfc_text(title)
-        docs.append({
-            "id": f"adr-{i:03d}",
-            "component_id": random.choice(comp_ids),
-            "doc_type": dtype,
-            "title": title,
-            "date": date,
-            "text": text,
-        })
+        docs.append(
+            {
+                "id": f"adr-{i:03d}",
+                "component_id": random.choice(comp_ids),
+                "doc_type": dtype,
+                "title": title,
+                "date": date,
+                "text": text,
+            }
+        )
     return docs
 
 
@@ -662,11 +717,7 @@ def _postmortem_text(title: str, severity: str, root_cause: str) -> str:
         f"- {fake.time_object().strftime('%H:%M')} — Mitigation applied\n"
         f"- {fake.time_object().strftime('%H:%M')} — Service restored\n"
     )
-    action_items = (
-        f"- [ ] {fake.sentence()}\n"
-        f"- [ ] {fake.sentence()}\n"
-        f"- [ ] {fake.sentence()}\n"
-    )
+    action_items = f"- [ ] {fake.sentence()}\n- [ ] {fake.sentence()}\n- [ ] {fake.sentence()}\n"
     return (
         f"# Postmortem: {title}\n\n"
         f"**Severity**: {severity}\n\n"
@@ -689,22 +740,28 @@ def _gen_postmortems(comps: list[dict], incidents: list[dict]) -> list[dict]:
         root_cause = random.choice(POSTMORTEM_ROOT_CAUSES)
         title = fake.bs()[:80]
         date = _date(_rand_dt(datetime(2023, 1, 1), datetime(2024, 12, 31)))
-        postmortems.append({
-            "id": f"pm-{i:03d}",
-            "incident_id": random.choice(inc_ids) if inc_ids else str(uuid.UUID(int=random.getrandbits(128), version=4)),
-            "component_id": random.choice(comp_ids),
-            "severity": sev,
-            "title": title,
-            "date": date,
-            "text": _postmortem_text(title, sev, root_cause),
-        })
+        postmortems.append(
+            {
+                "id": f"pm-{i:03d}",
+                "incident_id": random.choice(inc_ids)
+                if inc_ids
+                else str(uuid.UUID(int=random.getrandbits(128), version=4)),
+                "component_id": random.choice(comp_ids),
+                "severity": sev,
+                "title": title,
+                "date": date,
+                "text": _postmortem_text(title, sev, root_cause),
+            }
+        )
     return postmortems
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+
 def main() -> None:
     import logging
+
     random.seed(42)
     Faker.seed(42)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -728,8 +785,14 @@ def main() -> None:
         "epics": epics,
     }
     (SAMPLE_DIR / "shared_ids.json").write_text(json.dumps(shared, indent=2))
-    log.info("  teams=%d devs=%d comps=%d repos=%d epics=%d",
-             len(teams), len(devs), len(comps), len(repos), len(epics))
+    log.info(
+        "  teams=%d devs=%d comps=%d repos=%d epics=%d",
+        len(teams),
+        len(devs),
+        len(comps),
+        len(repos),
+        len(epics),
+    )
 
     log.info("Generating graph_relationships …")
     rels = {
@@ -738,8 +801,12 @@ def main() -> None:
         "contributed_to": _gen_contributed_to(devs, comps),
     }
     (SAMPLE_DIR / "graph_relationships.json").write_text(json.dumps(rels, indent=2))
-    log.info("  member_of=%d depends_on=%d contributed_to=%d",
-             len(rels["member_of"]), len(rels["depends_on"]), len(rels["contributed_to"]))
+    log.info(
+        "  member_of=%d depends_on=%d contributed_to=%d",
+        len(rels["member_of"]),
+        len(rels["depends_on"]),
+        len(rels["contributed_to"]),
+    )
 
     log.info("Generating tickets …")
     tickets = _gen_tickets(comps, devs, teams, anomaly_comp_ids)

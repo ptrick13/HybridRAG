@@ -101,9 +101,7 @@ _TOOL_DEFINITION: Any = {
             "properties": {
                 "sql": {
                     "type": "string",
-                    "description": (
-                        "A read-only SELECT statement. Must include LIMIT 50."
-                    ),
+                    "description": ("A read-only SELECT statement. Must include LIMIT 50."),
                 }
             },
             "required": ["sql"],
@@ -155,7 +153,12 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         if not assistant_message.tool_calls:
             logger.warning("SQL Agent: no tool call on attempt %d.", attempt + 1)
             messages.append({"role": "assistant", "content": assistant_message.content or ""})
-            messages.append({"role": "user", "content": "You must call the query_postgres tool. Please try again."})
+            messages.append(
+                {
+                    "role": "user",
+                    "content": "You must call the query_postgres tool. Please try again.",
+                }
+            )
             continue
         tool_call: Any = assistant_message.tool_calls[0]
         tool_args = json.loads(tool_call.function.arguments)
@@ -174,20 +177,33 @@ async def retrieve(subtask_query: str) -> dict[str, Any]:
         except Exception as exc:
             tool_result_content = f"ERROR: {exc}"
             success = False
-            logger.warning("SQL Agent unexpected error (attempt %d): %s", attempt + 1, exc, exc_info=True)
+            logger.warning(
+                "SQL Agent unexpected error (attempt %d): %s", attempt + 1, exc, exc_info=True
+            )
 
-        messages.append({"role": "assistant", "content": None, "tool_calls": [
+        messages.append(
             {
-                "id": tool_call.id,
-                "type": "function",
-                "function": {"name": "query_postgres", "arguments": tool_call.function.arguments},
+                "role": "assistant",
+                "content": None,
+                "tool_calls": [
+                    {
+                        "id": tool_call.id,
+                        "type": "function",
+                        "function": {
+                            "name": "query_postgres",
+                            "arguments": tool_call.function.arguments,
+                        },
+                    }
+                ],
             }
-        ]})
-        messages.append({
-            "role": "tool",
-            "tool_call_id": tool_call.id,
-            "content": tool_result_content,
-        })
+        )
+        messages.append(
+            {
+                "role": "tool",
+                "tool_call_id": tool_call.id,
+                "content": tool_result_content,
+            }
+        )
 
         if success and last_results != "No results found.":
             break

@@ -5,41 +5,49 @@ import pytest
 
 from agents.judge_agent import evaluate
 
-_ACCEPT_JSON = json.dumps({
-    "decision": "ACCEPT",
-    "criteria_scores": {"completeness": 5, "relevance": 5, "consistency": 5, "specificity": 4},
-    "gaps": [],
-    "conflicts": [],
-    "reformulated_query": None,
-    "reasoning": "All criteria met.",
-})
+_ACCEPT_JSON = json.dumps(
+    {
+        "decision": "ACCEPT",
+        "criteria_scores": {"completeness": 5, "relevance": 5, "consistency": 5, "specificity": 4},
+        "gaps": [],
+        "conflicts": [],
+        "reformulated_query": None,
+        "reasoning": "All criteria met.",
+    }
+)
 
-_REJECT_JSON = json.dumps({
-    "decision": "REJECT",
-    "criteria_scores": {"completeness": 2, "relevance": 4, "consistency": 4, "specificity": 3},
-    "gaps": ["Expert data missing from Graph Agent"],
-    "conflicts": [],
-    "reformulated_query": "Find top contributors with commit counts",
-    "reasoning": "Graph data missing. Retry with broader traversal.",
-})
+_REJECT_JSON = json.dumps(
+    {
+        "decision": "REJECT",
+        "criteria_scores": {"completeness": 2, "relevance": 4, "consistency": 4, "specificity": 3},
+        "gaps": ["Expert data missing from Graph Agent"],
+        "conflicts": [],
+        "reformulated_query": "Find top contributors with commit counts",
+        "reasoning": "Graph data missing. Retry with broader traversal.",
+    }
+)
 
-_REJECT_WITH_CONFLICTS_JSON = json.dumps({
-    "decision": "REJECT",
-    "criteria_scores": {"completeness": 3, "relevance": 4, "consistency": 2, "specificity": 3},
-    "gaps": [],
-    "conflicts": ["Vector Agent states 8 incidents; SQL Agent reports 47 total incidents"],
-    "reformulated_query": "Clarify incident count scope",
-    "reasoning": "Conflicting incident counts detected.",
-})
+_REJECT_WITH_CONFLICTS_JSON = json.dumps(
+    {
+        "decision": "REJECT",
+        "criteria_scores": {"completeness": 3, "relevance": 4, "consistency": 2, "specificity": 3},
+        "gaps": [],
+        "conflicts": ["Vector Agent states 8 incidents; SQL Agent reports 47 total incidents"],
+        "reformulated_query": "Clarify incident count scope",
+        "reasoning": "Conflicting incident counts detected.",
+    }
+)
 
-_MAX_ITER_JSON = json.dumps({
-    "decision": "MAX_ITERATIONS_REACHED",
-    "criteria_scores": {"completeness": 3, "relevance": 4, "consistency": 4, "specificity": 3},
-    "gaps": ["Contributor details still incomplete"],
-    "conflicts": [],
-    "reformulated_query": None,
-    "reasoning": "Max iterations reached. Documenting remaining gaps.",
-})
+_MAX_ITER_JSON = json.dumps(
+    {
+        "decision": "MAX_ITERATIONS_REACHED",
+        "criteria_scores": {"completeness": 3, "relevance": 4, "consistency": 4, "specificity": 3},
+        "gaps": ["Contributor details still incomplete"],
+        "conflicts": [],
+        "reformulated_query": None,
+        "reasoning": "Max iterations reached. Documenting remaining gaps.",
+    }
+)
 
 
 @pytest.fixture
@@ -140,10 +148,14 @@ async def test_previous_decisions_empty_no_history_section(mock_client, sample_r
     assert "Previous Iteration Decisions" not in user_content
 
 
-async def test_previous_decisions_serialized_in_prompt(mock_client, sample_retrieval_results, accept_decision):
+async def test_previous_decisions_serialized_in_prompt(
+    mock_client, sample_retrieval_results, accept_decision
+):
     client, make_response = mock_client
     client.chat.completions.create.return_value = make_response(_ACCEPT_JSON)
-    await evaluate("some query", sample_retrieval_results, 1, 3, previous_decisions=[accept_decision])
+    await evaluate(
+        "some query", sample_retrieval_results, 1, 3, previous_decisions=[accept_decision]
+    )
     messages = client.chat.completions.create.call_args.kwargs["messages"]
     user_content = next(m["content"] for m in messages if m["role"] == "user")
     assert "Previous Iteration Decisions" in user_content

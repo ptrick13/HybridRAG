@@ -45,7 +45,9 @@ class EmbeddingCall:
 
 
 _CALL_LOG: ContextVar[list[LLMCall] | None] = ContextVar("_llm_call_log", default=None)
-_EMBEDDING_LOG: ContextVar[list[EmbeddingCall] | None] = ContextVar("_embedding_call_log", default=None)
+_EMBEDDING_LOG: ContextVar[list[EmbeddingCall] | None] = ContextVar(
+    "_embedding_call_log", default=None
+)
 
 
 def init_tracking() -> None:

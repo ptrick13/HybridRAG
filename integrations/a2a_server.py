@@ -35,17 +35,22 @@ app = FastAPI(
 
 # ── A2A Protocol Models ───────────────────────────────────────────────────────
 
+
 class A2ATaskInput(BaseModel):
     """Input payload for an A2A task."""
 
-    query: str = Field(..., description="Natural language query about Software Development Analytics data.")
+    query: str = Field(
+        ..., description="Natural language query about Software Development Analytics data."
+    )
     variant: str = Field(default="v1", description="Workflow variant: 'v1' or 'v2'.")
 
 
 class A2ATask(BaseModel):
     """Incoming A2A task request body following the Agent2Agent protocol."""
 
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Client-assigned task ID.")
+    id: str = Field(
+        default_factory=lambda: str(uuid.uuid4()), description="Client-assigned task ID."
+    )
     input: A2ATaskInput
 
 
@@ -113,6 +118,7 @@ _AGENT_CARD = {
 
 
 # ── Endpoints ─────────────────────────────────────────────────────────────────
+
 
 @app.get("/.well-known/agent.json", summary="Agent Card")
 async def agent_card() -> dict[str, Any]:

@@ -32,7 +32,8 @@ def _check_rel_summary(summary, rel_name: str, input_count: int) -> None:
         logger.warning(
             "%s: 0 relationships created from %d input rows — "
             "MATCH may have found no nodes (expected only on re-runs, not first ingestion).",
-            rel_name, input_count,
+            rel_name,
+            input_count,
         )
     logger.info("Loaded %d %s relationships (%d new).", input_count, rel_name, created)
 
@@ -185,9 +186,7 @@ def _load_affects(driver, epics: list[dict[str, Any]]) -> None:
         MERGE (e)-[:AFFECTS]->(c)
     """
     rows = [
-        {"epic_id": e["id"], "comp_id": c_id}
-        for e in epics
-        for c_id in e.get("component_ids", [])
+        {"epic_id": e["id"], "comp_id": c_id} for e in epics for c_id in e.get("component_ids", [])
     ]
     with driver.session() as session:
         result = session.run(cypher, rows=rows)

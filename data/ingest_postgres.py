@@ -114,10 +114,20 @@ def load_tickets(tickets: list[dict[str, Any]]) -> None:
     """
     params = [
         (
-            t["id"], t["title"], t["type"], t["priority"], t["status"],
-            t["component_id"], t["assignee_id"], t["team_id"],
-            t.get("story_points"), t.get("created_at"), t.get("resolved_at"),
-            t.get("reopened_count", 0), t.get("sprint_id"), t.get("description"),
+            t["id"],
+            t["title"],
+            t["type"],
+            t["priority"],
+            t["status"],
+            t["component_id"],
+            t["assignee_id"],
+            t["team_id"],
+            t.get("story_points"),
+            t.get("created_at"),
+            t.get("resolved_at"),
+            t.get("reopened_count", 0),
+            t.get("sprint_id"),
+            t.get("description"),
         )
         for t in tickets
     ]
@@ -135,9 +145,17 @@ def load_sprint_metrics(metrics: list[dict[str, Any]]) -> None:
     """
     params = [
         (
-            m["id"], m["sprint_id"], m["team_id"], m["start_date"], m["end_date"],
-            m["planned_points"], m["completed_points"], m["velocity"],
-            m["bug_count"], m["feature_count"], m["carried_over_count"],
+            m["id"],
+            m["sprint_id"],
+            m["team_id"],
+            m["start_date"],
+            m["end_date"],
+            m["planned_points"],
+            m["completed_points"],
+            m["velocity"],
+            m["bug_count"],
+            m["feature_count"],
+            m["carried_over_count"],
         )
         for m in metrics
     ]
@@ -155,8 +173,13 @@ def load_deployments(deployments: list[dict[str, Any]]) -> None:
     """
     params = [
         (
-            d["id"], d["component_id"], d["version"], d["status"],
-            d["environment"], d["deployed_by"], d["deployed_at"],
+            d["id"],
+            d["component_id"],
+            d["version"],
+            d["status"],
+            d["environment"],
+            d["deployed_by"],
+            d["deployed_at"],
             d.get("duration_seconds"),
         )
         for d in deployments
@@ -174,8 +197,12 @@ def load_test_coverage(records: list[dict[str, Any]]) -> None:
     """
     params = [
         (
-            r["id"], r["component_id"], r["measured_at"],
-            r["line_coverage"], r["branch_coverage"], r["test_count"],
+            r["id"],
+            r["component_id"],
+            r["measured_at"],
+            r["line_coverage"],
+            r["branch_coverage"],
+            r["test_count"],
         )
         for r in records
     ]
@@ -193,9 +220,16 @@ def load_incidents(incidents: list[dict[str, Any]]) -> None:
     """
     params = [
         (
-            i["id"], i["title"], i["severity"], i["component_id"],
-            i.get("root_cause_component_id"), i["started_at"], i["resolved_at"],
-            i["duration_minutes"], i["affected_users"], i["status"],
+            i["id"],
+            i["title"],
+            i["severity"],
+            i["component_id"],
+            i.get("root_cause_component_id"),
+            i["started_at"],
+            i["resolved_at"],
+            i["duration_minutes"],
+            i["affected_users"],
+            i["status"],
         )
         for i in incidents
     ]

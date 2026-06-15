@@ -41,7 +41,7 @@ class WorkflowState(TypedDict):
     answer: str
 
     # ── V2-only fields (unused by V1 graph) ───────────────────────────────────
-    iteration: int                          # completed iteration count (0-indexed increment)
+    iteration: int  # completed iteration count (0-indexed increment)
     final_decision: JudgeDecision | None
     previous_decisions: list[JudgeDecision]
 

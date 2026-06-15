@@ -155,7 +155,10 @@ _RESPONSE_SCHEMA: Any = {
         "schema": {
             "type": "object",
             "properties": {
-                "decision": {"type": "string", "enum": ["ACCEPT", "REJECT", "MAX_ITERATIONS_REACHED"]},
+                "decision": {
+                    "type": "string",
+                    "enum": ["ACCEPT", "REJECT", "MAX_ITERATIONS_REACHED"],
+                },
                 "criteria_scores": {
                     "type": "object",
                     "properties": {
@@ -172,7 +175,14 @@ _RESPONSE_SCHEMA: Any = {
                 "reformulated_query": {"type": ["string", "null"]},
                 "reasoning": {"type": "string"},
             },
-            "required": ["decision", "criteria_scores", "gaps", "conflicts", "reformulated_query", "reasoning"],
+            "required": [
+                "decision",
+                "criteria_scores",
+                "gaps",
+                "conflicts",
+                "reformulated_query",
+                "reasoning",
+            ],
             "additionalProperties": False,
         },
     },
@@ -194,7 +204,9 @@ class JudgeDecision(BaseModel):
     decision: str = Field(..., description="ACCEPT, REJECT, or MAX_ITERATIONS_REACHED.")
     criteria_scores: CriteriaScores
     gaps: list[str] = Field(default_factory=list, description="Identified information gaps.")
-    conflicts: list[str] = Field(default_factory=list, description="Detected cross-source conflicts.")
+    conflicts: list[str] = Field(
+        default_factory=list, description="Detected cross-source conflicts."
+    )
     reformulated_query: str | None = Field(
         default=None,
         description="Revised query for the next retrieval cycle (None on ACCEPT).",
@@ -251,7 +263,7 @@ Consolidated Retrieval Results (all iterations):
 {results_summary}
 
 Current Iteration: {iteration + 1} / {max_iterations}
-{('IMPORTANT: This is the FINAL allowed iteration. You MUST use decision="MAX_ITERATIONS_REACHED", document all remaining gaps, and set reformulated_query to null.' if is_last_iteration else '')}
+{('IMPORTANT: This is the FINAL allowed iteration. You MUST use decision="MAX_ITERATIONS_REACHED", document all remaining gaps, and set reformulated_query to null.' if is_last_iteration else "")}
 {history_section}
 
 Please evaluate the results and return your structured decision.

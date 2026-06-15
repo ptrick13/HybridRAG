@@ -202,7 +202,9 @@ async def route_query(query: str) -> RoutingDecision:
 
     raw = response.choices[0].message.content
     if response.usage:
-        record_llm_call("orchestrator", response.usage.prompt_tokens, response.usage.completion_tokens)
+        record_llm_call(
+            "orchestrator", response.usage.prompt_tokens, response.usage.completion_tokens
+        )
     if not raw:
         raise ValueError("Orchestrator: LLM returned empty content for structured output call")
     data = json.loads(raw)

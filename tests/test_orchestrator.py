@@ -6,23 +6,29 @@ from pydantic import ValidationError
 
 from agents.orchestrator import route_query
 
-_SINGLE_VECTOR = json.dumps({
-    "subtasks": [{"agent": "vector", "query": "database timeout ticket search"}],
-    "reasoning": "Pure semantic question about ticket descriptions.",
-})
+_SINGLE_VECTOR = json.dumps(
+    {
+        "subtasks": [{"agent": "vector", "query": "database timeout ticket search"}],
+        "reasoning": "Pure semantic question about ticket descriptions.",
+    }
+)
 
-_MULTI_AGENT = json.dumps({
-    "subtasks": [
-        {"agent": "graph", "query": "Who owns the auth-gateway component?"},
-        {"agent": "sql", "query": "Sprint velocity for auth-gateway team last 10 sprints"},
-    ],
-    "reasoning": "Ownership requires Graph; sprint velocity requires SQL.",
-})
+_MULTI_AGENT = json.dumps(
+    {
+        "subtasks": [
+            {"agent": "graph", "query": "Who owns the auth-gateway component?"},
+            {"agent": "sql", "query": "Sprint velocity for auth-gateway team last 10 sprints"},
+        ],
+        "reasoning": "Ownership requires Graph; sprint velocity requires SQL.",
+    }
+)
 
-_EMPTY_SUBTASKS = json.dumps({
-    "subtasks": [],
-    "reasoning": "Weather data is not available in Software Development Analytics.",
-})
+_EMPTY_SUBTASKS = json.dumps(
+    {
+        "subtasks": [],
+        "reasoning": "Weather data is not available in Software Development Analytics.",
+    }
+)
 
 
 @pytest.fixture

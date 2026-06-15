@@ -69,16 +69,19 @@ async def _v1_stream(query: str) -> AsyncGenerator[str, None]:
             if evt == "result":
                 data = event["data"]
                 total_tokens = get_llm_token_count()
-                yield _sse("result", {
-                    "answer": data["answer"],
-                    "activated_agents": data["activated_agents"],
-                    "metrics": {
-                        "total_latency_seconds": round(data["latency_seconds"], 2),
-                        "total_tokens": total_tokens,
-                        "iterations": 1,
-                        "cost_usd": round(data["cost_usd"], 6),
+                yield _sse(
+                    "result",
+                    {
+                        "answer": data["answer"],
+                        "activated_agents": data["activated_agents"],
+                        "metrics": {
+                            "total_latency_seconds": round(data["latency_seconds"], 2),
+                            "total_tokens": total_tokens,
+                            "iterations": 1,
+                            "cost_usd": round(data["cost_usd"], 6),
+                        },
                     },
-                })
+                )
             else:
                 payload = {k: v for k, v in event.items() if k != "event"}
                 yield _sse(evt, payload)
@@ -94,16 +97,19 @@ async def _v2_stream(query: str) -> AsyncGenerator[str, None]:
             if evt == "result":
                 data = event["data"]
                 total_tokens = get_llm_token_count()
-                yield _sse("result", {
-                    "answer": data["answer"],
-                    "activated_agents": data["activated_agents"],
-                    "metrics": {
-                        "total_latency_seconds": round(data["latency_seconds"], 2),
-                        "total_tokens": total_tokens,
-                        "iterations": data["iterations"],
-                        "cost_usd": round(data["cost_usd"], 6),
+                yield _sse(
+                    "result",
+                    {
+                        "answer": data["answer"],
+                        "activated_agents": data["activated_agents"],
+                        "metrics": {
+                            "total_latency_seconds": round(data["latency_seconds"], 2),
+                            "total_tokens": total_tokens,
+                            "iterations": data["iterations"],
+                            "cost_usd": round(data["cost_usd"], 6),
+                        },
                     },
-                })
+                )
             else:
                 payload = {k: v for k, v in event.items() if k != "event"}
                 yield _sse(evt, payload)

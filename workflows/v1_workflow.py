@@ -214,7 +214,9 @@ async def run_streaming(query: str) -> AsyncGenerator[dict[str, Any], None]:
 
     logger.info(
         "[V1 streaming] Completed in %.2fs | agents: %s | cost: $%.4f",
-        elapsed, activated, cost,
+        elapsed,
+        activated,
+        cost,
     )
 
     result = WorkflowResult(

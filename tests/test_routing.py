@@ -42,6 +42,7 @@ def make_judge_decision(decision: str):
 
 # V1 _dispatch
 
+
 def test_dispatch_two_subtasks_returns_two_sends():
     state = make_state(routing=make_routing("vector", "sql"))
     with patch("workflows.v1_workflow.AGENT_REGISTRY", _MOCK_REGISTRY):
@@ -67,6 +68,7 @@ def test_dispatch_empty_subtasks_returns_answer():
 
 
 # V2 _judge_routing
+
 
 def test_judge_routing_accept():
     state = make_state(final_decision=make_judge_decision("ACCEPT"), iteration=1)

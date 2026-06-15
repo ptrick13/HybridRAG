@@ -130,17 +130,14 @@ def _format_results_for_prompt(
             sections.append(
                 f"=== GRAPH AGENT RESULTS ===\n"
                 f"Executed Cypher: {cypher}\n"
-                f"Records ({len(records)}):\n"
-                + json.dumps(records, indent=2, default=str)
+                f"Records ({len(records)}):\n" + json.dumps(records, indent=2, default=str)
             )
 
         elif source == "sql":
             sql = result.get("sql", "")
             results_str = result.get("results", "No results.")
             sections.append(
-                f"=== SQL AGENT RESULTS ===\n"
-                f"Executed SQL: {sql}\n"
-                f"Results:\n{results_str}"
+                f"=== SQL AGENT RESULTS ===\nExecuted SQL: {sql}\nResults:\n{results_str}"
             )
 
     if judge_decision:

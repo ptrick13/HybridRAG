@@ -58,7 +58,9 @@ async def _ingest_collection(
     id_fn,
 ) -> None:
     """Generic chunking + indexing loop for one collection."""
-    await asyncio.get_running_loop().run_in_executor(None, ensure_collection_exists, collection_name)
+    await asyncio.get_running_loop().run_in_executor(
+        None, ensure_collection_exists, collection_name
+    )
     total_chunks = 0
     failed_chunks = 0
 
@@ -80,14 +82,23 @@ async def _ingest_collection(
                 failed_chunks += 1
                 logger.warning(
                     "Failed to index %s chunk %d (skipping): %s",
-                    id_fn(item), i, exc,
+                    id_fn(item),
+                    i,
+                    exc,
                 )
 
         if (total_chunks + failed_chunks) % 50 == 0:
-            logger.info("  %s: %d chunks indexed, %d failed …", collection_name, total_chunks, failed_chunks)
+            logger.info(
+                "  %s: %d chunks indexed, %d failed …", collection_name, total_chunks, failed_chunks
+            )
 
     if failed_chunks:
-        logger.warning("Collection '%s' complete — %d chunks indexed, %d failed.", collection_name, total_chunks, failed_chunks)
+        logger.warning(
+            "Collection '%s' complete — %d chunks indexed, %d failed.",
+            collection_name,
+            total_chunks,
+            failed_chunks,
+        )
     else:
         logger.info("Collection '%s' complete — %d chunks.", collection_name, total_chunks)
 
