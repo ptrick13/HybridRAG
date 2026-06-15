@@ -110,7 +110,7 @@ hybridrag/
 │   ├── web_ui.py          # FastAPI web UI (port 8000)
 │   └── static/
 │       └── index.html     # Single-page frontend
-├── docker-compose.yml     # PostgreSQL + Neo4j + Qdrant
+├── docker-compose.yml     # PostgreSQL + Neo4j + Qdrant + app
 ├── requirements.txt
 └── .env.example
 ```
@@ -129,46 +129,62 @@ Interface showing the Closed-Loop variant answering a graph query, with per-agen
 
 ### Prerequisites
 
-- Python 3.11+
 - Docker and Docker Compose
 - OpenAI API key (or Azure OpenAI credentials)
 
-### 1. Clone and install
+### 1. Clone and configure
 
 ```bash
 git clone https://github.com/ptrick13/HybridRAG.git
 cd HybridRAG
-pip install -r requirements.txt
-```
-
-### 2. Configure environment
-
-```bash
 cp .env.example .env
 # Edit .env and set your OPENAI_API_KEY
 ```
 
-### 3. Start the databases
+### 2. Start everything
 
 ```bash
-docker-compose up -d
+docker-compose up --build
+# Builds the app image and starts PostgreSQL, Neo4j, Qdrant, and the web UI.
+# The app waits for all databases to be healthy before starting.
+# Open http://localhost:8000
+```
+
+### 3. Generate and load sample data
+
+```bash
+docker-compose exec app python -m data.generate_sample
+docker-compose exec app python -m data.load_data
+```
+
+---
+
+### Alternative: manual setup (without Docker for the app)
+
+<details>
+<summary>Expand manual setup instructions</summary>
+
+**Prerequisites:** Python 3.11+, Docker and Docker Compose
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Start only the databases
+docker-compose up -d postgres neo4j qdrant
 # Wait until all services are healthy — Neo4j may take ~60s on first start
 docker-compose ps
-```
 
-### 4. Generate and load sample data
-
-```bash
+# Generate and load sample data
 python -m data.generate_sample
 python -m data.load_data
-```
 
-### 5. Start the web UI
-
-```bash
+# Start the web UI
 uvicorn scripts.web_ui:app --host 0.0.0.0 --port 8000
 # Open http://localhost:8000
 ```
+
+</details>
 
 ---
 
@@ -213,8 +229,12 @@ Sample run: [evaluation/results/RESULTS.md](evaluation/results/RESULTS.md)
 No running databases, no API keys required — all LLM and database calls are replaced with mocks so the suite runs in seconds.
 
 ```bash
-# Lint
+# Lint + Format
 ruff check .
+ruff format --check .
+
+# Type check
+mypy agents/ workflows/ --ignore-missing-imports
 
 # Tests
 pytest -v
