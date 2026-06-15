@@ -12,6 +12,10 @@ A **hybrid multi-agent Retrieval-Augmented Generation (RAG) system** that routes
 ## Architecture Overview
 
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TD
     Q([User Query]) --> O["Orchestrator"]
 
