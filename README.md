@@ -1,8 +1,8 @@
 # Hybrid Multi-Agent RAG Architecture
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue)
-![LangGraph](https://img.shields.io/badge/LangGraph-1.2.4-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![CI](https://github.com/ptrick13/HybridRAG/actions/workflows/ci.yml/badge.svg)](https://github.com/ptrick13/HybridRAG/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/ptrick13/HybridRAG/graph/badge.svg)](https://codecov.io/gh/ptrick13/HybridRAG)
 
