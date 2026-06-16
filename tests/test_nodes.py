@@ -2,7 +2,7 @@ from unittest.mock import AsyncMock, patch
 
 import pytest
 
-from workflows.nodes import judge_node, orchestrator_node, single_retrieval_node
+from workflows.nodes import answer_node, judge_node, orchestrator_node, single_retrieval_node
 
 
 @pytest.fixture
@@ -99,3 +99,24 @@ async def test_judge_node_increments_iteration(base_state, accept_decision):
             mock_settings.max_retrieval_iterations = 3
             result = await judge_node(base_state)
     assert result["iteration"] == 2
+
+
+async def test_retrieval_node_unknown_agent_raises():
+    state = {"_subtask_agent": "unknown_agent", "_subtask_query": "some query"}
+    with patch("workflows.nodes.AGENT_REGISTRY", {}):
+        with pytest.raises(ValueError, match="Unknown agent"):
+            await single_retrieval_node(state)
+
+
+async def test_answer_node_returns_answer(base_state, sample_retrieval_results):
+    base_state["retrieval_results"] = sample_retrieval_results
+    with patch("agents.answer_agent.synthesise", new=AsyncMock(return_value="Synthesised answer.")):
+        result = await answer_node(base_state)
+    assert result["answer"] == "Synthesised answer."
+
+
+async def test_answer_node_returns_latency(base_state):
+    with patch("agents.answer_agent.synthesise", new=AsyncMock(return_value="Answer.")):
+        result = await answer_node(base_state)
+    assert "answer" in result["agent_latencies"]
+    assert result["agent_latencies"]["answer"] >= 0.0
